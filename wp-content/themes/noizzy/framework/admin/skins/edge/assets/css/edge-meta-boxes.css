@@ -1,0 +1,34 @@
+.edge-meta-box {
+  margin: -6px -12px -12px; }
+  .edge-meta-box .edge-meta-box-holder {
+    width: 100%; }
+  .edge-meta-box .edge-meta-box-holder .edge-page-form-section th {
+    width: 250px; }
+  .edge-meta-box .edge-meta-box-holder .edge-page-form-section th p {
+    font-weight: 400;
+    color: #9e9e9e; }
+  .edge-meta-box .edge-meta-box-hidden {
+    display: none; }
+  .edge-meta-box .edge-meta-box-holder .edge-page-form-container-holder .edge-page-form-container-holder {
+    border-left: none;
+    margin-left: 0; }
+  .edge-meta-box .edge-page.btn-default {
+    margin-right: 0; }
+
+div.inside > div > div > div.edge-page-form-section:first-child {
+  border-top: none; 
+}
+
+.edge-meta-box-holder .edge-page-section-subtitle {
+    color: #374a59;
+    font-weight: 400;
+    display: inline-block;
+    margin: 15px 0 15px;
+    font-size: 14px;
+    position: relative;
+    left: 0px;
+    padding: 0px 20px;
+    border-left: 3px solid #bba011;
+}
+
+/*# sourceMappingURL=edge-meta-boxes.css.map */

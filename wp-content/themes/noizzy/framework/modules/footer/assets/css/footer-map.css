@@ -1,0 +1,101 @@
+/* ==========================================================================
+   Footer styles - begin
+   ========================================================================== */
+/* common mixins - start */
+/* common mixins - end */
+/* mixins styles - start */
+/* mixins styles - end */
+/* ==========================================================================
+   Footer style - begin
+   ========================================================================== */
+.edge-page-footer {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  z-index: 100;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+.edge-page-footer h1, .edge-page-footer h2, .edge-page-footer h3, .edge-page-footer h4, .edge-page-footer h5, .edge-page-footer h6, .edge-page-footer p {
+  color: #fff;
+}
+
+.edge-page-footer .edge-footer-top-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  background-color: #000;
+  box-sizing: border-box;
+}
+
+.edge-page-footer .edge-footer-top-holder .edge-footer-top-alignment-center {
+  text-align: center;
+}
+
+.edge-page-footer .edge-footer-top-holder .edge-footer-top-alignment-left {
+  text-align: left;
+}
+
+.edge-page-footer .edge-footer-top-holder .edge-footer-top-alignment-right {
+  text-align: right;
+}
+
+.edge-page-footer .edge-footer-top-holder .edge-footer-top-inner {
+  box-sizing: border-box;
+}
+
+.edge-page-footer .edge-footer-top-holder .edge-footer-top-inner.edge-grid {
+  padding: 56px 0 64px;
+}
+
+.edge-page-footer .edge-footer-top-holder .edge-footer-top-inner.edge-full-width {
+  padding: 56px 40px;
+}
+
+.edge-page-footer .edge-footer-bottom-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  background-color: #000;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.edge-page-footer .edge-footer-bottom-holder .edge-footer-bottom-inner {
+  box-sizing: border-box;
+}
+
+.edge-page-footer .edge-footer-bottom-holder .edge-footer-bottom-inner.edge-grid {
+  padding: 19px 0;
+}
+
+.edge-page-footer .edge-footer-bottom-holder .edge-footer-bottom-inner.edge-full-width {
+  padding: 19px 40px;
+}
+
+.no-touch body:not(.error404) .edge-page-footer.edge-footer-uncover {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  -webkit-transition: left 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);
+  -moz-transition: left 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);
+  transition: left 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);
+}
+
+.edge-right-side-menu-opened .edge-page-footer.edge-footer-uncover {
+  left: -270px;
+}
+
+/* ==========================================================================
+   Footer style - end
+   ========================================================================== */
+/* ==========================================================================
+   Footer styles - end
+   ========================================================================== */
+
+/*# sourceMappingURL=footer-map.css.map */

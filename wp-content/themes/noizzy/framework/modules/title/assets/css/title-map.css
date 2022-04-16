@@ -1,0 +1,285 @@
+/* ==========================================================================
+   Title styles - begin
+   ========================================================================== */
+/* common mixins - start */
+/* common mixins - end */
+/* mixins styles - start */
+/* mixins styles - end */
+/* ==========================================================================
+   Title style - begin
+   ========================================================================== */
+.edge-title-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  height: 340px;
+  background: url(../img/title-bg.png);
+  background-position: center 0;
+  background-repeat: no-repeat;
+  z-index: 101;
+}
+
+.edge-title-holder.edge-title-full-width .edge-grid {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+.edge-title-holder.edge-bg-responsive {
+  height: auto !important;
+}
+
+.edge-title-holder.edge-bg-responsive .edge-title-image {
+  display: block;
+}
+
+.edge-title-holder.edge-bg-responsive .edge-title-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.edge-title-holder.edge-bg-parallax {
+  background-attachment: fixed;
+}
+
+.edge-title-holder .edge-title-image {
+  display: none;
+}
+
+.edge-title-holder .edge-title-image img {
+  display: block;
+  width: 100%;
+}
+
+.edge-title-holder .edge-title-wrapper {
+  position: relative;
+  display: table;
+  table-layout: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+.edge-title-holder .edge-title-wrapper .edge-page-title {
+  color: #fff;
+}
+
+.edge-title-holder .edge-title-inner {
+  position: relative;
+  display: table-cell;
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+}
+
+/* ==========================================================================
+   Title style - end
+   ========================================================================== */
+/* ==========================================================================
+   Breadcrumbs Title type style - begin
+   ========================================================================== */
+.edge-title-holder.edge-breadcrumbs-type .edge-breadcrumbs {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  color: #fff;
+}
+
+.edge-title-holder.edge-breadcrumbs-type .edge-breadcrumbs.edge-has-inline-style a {
+  opacity: 1;
+  -webkit-transition: opacity 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
+}
+
+.edge-title-holder.edge-breadcrumbs-type .edge-breadcrumbs.edge-has-inline-style a:hover {
+  color: inherit;
+  opacity: 0.9;
+}
+
+.edge-title-holder.edge-breadcrumbs-type .edge-breadcrumbs a,
+.edge-title-holder.edge-breadcrumbs-type .edge-breadcrumbs span {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  color: inherit;
+}
+
+.edge-title-holder.edge-breadcrumbs-type .edge-breadcrumbs a.edge-current,
+.edge-title-holder.edge-breadcrumbs-type .edge-breadcrumbs span.edge-current {
+  color: #000;
+}
+
+.edge-title-holder.edge-breadcrumbs-type .edge-breadcrumbs a:hover {
+  color: #000;
+}
+
+/* ==========================================================================
+   Breadcrumbs Title type style - end
+   ========================================================================== */
+/* ==========================================================================
+   Centered Title type style - begin
+   ========================================================================== */
+.edge-title-holder.edge-centered-with-breadcrumbs-type .edge-title-inner {
+  text-align: center;
+}
+
+.edge-title-holder.edge-centered-with-breadcrumbs-type .edge-page-title {
+  margin: 0;
+}
+
+.edge-title-holder.edge-centered-with-breadcrumbs-type .edge-page-subtitle {
+  display: block;
+  margin: 10px 0 0;
+  box-sizing: border-box;
+}
+
+.edge-title-holder.edge-centered-with-breadcrumbs-type .edge-breadcrumbs {
+  color: #fff;
+  font-size: 17px;
+  margin-top: 22px;
+}
+
+.edge-title-holder.edge-centered-with-breadcrumbs-type .edge-breadcrumbs.edge-has-inline-style a {
+  opacity: 1;
+  -webkit-transition: opacity 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
+}
+
+.edge-title-holder.edge-centered-with-breadcrumbs-type .edge-breadcrumbs.edge-has-inline-style a:hover {
+  color: inherit;
+  opacity: 0.9;
+}
+
+.edge-title-holder.edge-centered-with-breadcrumbs-type .edge-breadcrumbs a,
+.edge-title-holder.edge-centered-with-breadcrumbs-type .edge-breadcrumbs span {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  color: inherit;
+}
+
+.edge-title-holder.edge-centered-with-breadcrumbs-type .edge-breadcrumbs a.edge-current,
+.edge-title-holder.edge-centered-with-breadcrumbs-type .edge-breadcrumbs span.edge-current {
+  color: #000;
+}
+
+.edge-title-holder.edge-centered-with-breadcrumbs-type .edge-breadcrumbs a:hover {
+  color: #000;
+}
+
+/* ==========================================================================
+   Centered Title type style - end
+   ========================================================================== */
+/* ==========================================================================
+   Centered Title type style - begin
+   ========================================================================== */
+.edge-title-holder.edge-centered-type .edge-title-inner {
+  text-align: center;
+}
+
+.edge-title-holder.edge-centered-type .edge-page-title {
+  margin: 0;
+}
+
+.edge-title-holder.edge-centered-type .edge-page-subtitle {
+  display: block;
+  margin: 10px 0 0;
+  box-sizing: border-box;
+}
+
+/* ==========================================================================
+   Centered Title type style - end
+   ========================================================================== */
+/* ==========================================================================
+   Standard With Breadcrumbs Title type style - begin
+   ========================================================================== */
+.edge-title-holder.edge-standard-with-breadcrumbs-type .edge-title-info,
+.edge-title-holder.edge-standard-with-breadcrumbs-type .edge-breadcrumbs-info {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.edge-title-holder.edge-standard-with-breadcrumbs-type .edge-title-info {
+  width: 99%;
+}
+
+.edge-title-holder.edge-standard-with-breadcrumbs-type .edge-breadcrumbs-info {
+  width: 1%;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.edge-title-holder.edge-standard-with-breadcrumbs-type .edge-page-title {
+  margin: 0;
+}
+
+.edge-title-holder.edge-standard-with-breadcrumbs-type .edge-page-subtitle {
+  margin: 5px 0 0;
+}
+
+.edge-title-holder.edge-standard-with-breadcrumbs-type .edge-breadcrumbs {
+  color: #fff;
+}
+
+.edge-title-holder.edge-standard-with-breadcrumbs-type .edge-breadcrumbs.edge-has-inline-style a {
+  opacity: 1;
+  -webkit-transition: opacity 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
+}
+
+.edge-title-holder.edge-standard-with-breadcrumbs-type .edge-breadcrumbs.edge-has-inline-style a:hover {
+  color: inherit;
+  opacity: 0.9;
+}
+
+.edge-title-holder.edge-standard-with-breadcrumbs-type .edge-breadcrumbs a,
+.edge-title-holder.edge-standard-with-breadcrumbs-type .edge-breadcrumbs span {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  color: inherit;
+}
+
+.edge-title-holder.edge-standard-with-breadcrumbs-type .edge-breadcrumbs a.edge-current,
+.edge-title-holder.edge-standard-with-breadcrumbs-type .edge-breadcrumbs span.edge-current {
+  color: #000;
+}
+
+.edge-title-holder.edge-standard-with-breadcrumbs-type .edge-breadcrumbs a:hover {
+  color: #000;
+}
+
+/* ==========================================================================
+   Standard With Breadcrumbs Title type style - end
+   ========================================================================== */
+/* ==========================================================================
+   Standard Title type style - begin
+   ========================================================================== */
+.edge-title-holder.edge-standard-type .edge-page-title {
+  margin: 0;
+}
+
+.edge-title-holder.edge-standard-type .edge-page-subtitle {
+  margin: 10px 0 0;
+}
+
+/* ==========================================================================
+   Standard Title type style - end
+   ========================================================================== */
+/* ==========================================================================
+   Title styles - end
+   ========================================================================== */
+
+/*# sourceMappingURL=title-map.css.map */

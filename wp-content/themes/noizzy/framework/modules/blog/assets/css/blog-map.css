@@ -1,0 +1,2363 @@
+/* ==========================================================================
+   Blog styles - begin
+   ========================================================================== */
+/* common mixins - start */
+/* common mixins - end */
+/* mixins styles - start */
+/* mixins styles - end */
+/* ==========================================================================
+   Blog Common style - begin
+   ========================================================================== */
+.edge-blog-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  clear: both;
+}
+
+.edge-blog-holder article {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.edge-blog-holder article.sticky .edge-post-title a {
+  color: #000;
+}
+
+.edge-blog-holder article.sticky .edge-post-title a:after {
+  content: "\2605";
+  display: inline-block;
+  font-size: inherit;
+}
+
+.edge-blog-holder article .edge-post-content {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.edge-blog-holder article .edge-post-heading .edge-post-info-date {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 52px;
+  height: 67px;
+  padding: 10px 0;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+.edge-blog-holder article .edge-post-heading .edge-post-info-date span {
+  display: block;
+  color: #fff;
+}
+
+.edge-blog-holder article .edge-post-heading .edge-post-info-date .edge-day {
+  font-family: "Oswald", sans-serif;
+  font-size: 32px;
+}
+
+.edge-blog-holder article .edge-post-heading .edge-post-info-date .edge-month {
+  font-weight: 400;
+}
+
+.edge-blog-holder article .edge-post-heading .edge-post-info-date.edge-default-date-format {
+  width: 150px;
+  height: auto;
+  word-break: break-word;
+}
+
+.edge-blog-holder article .edge-post-image {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+.edge-blog-holder article .edge-post-image img {
+  display: block;
+}
+
+.edge-blog-holder article .edge-post-image-background {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.edge-blog-holder article .edge-post-image-background a {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.edge-blog-holder article .edge-post-image-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  line-height: 1;
+  color: #fff;
+}
+
+.edge-blog-holder article .edge-post-text {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.edge-blog-holder article .edge-post-title {
+  margin: 0;
+}
+
+.edge-blog-holder article .edge-post-excerpt-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 25px 0 0;
+}
+
+.edge-blog-holder article .edge-post-excerpt-holder p {
+  margin: 0;
+}
+
+.edge-blog-holder article .edge-more-link-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 15px 0 0;
+}
+
+.edge-blog-holder article .edge-post-info {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.edge-blog-holder article .edge-post-info > * {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  color: currentColor;
+}
+
+.edge-blog-holder article .edge-post-info > * a {
+  color: inherit;
+}
+
+.edge-blog-holder article .edge-post-info-top {
+  margin-bottom: 3px;
+}
+
+.edge-blog-holder article .edge-post-info-top > div {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 14px 0 0;
+  color: #000;
+  letter-spacing: .05em;
+}
+
+.edge-blog-holder article .edge-post-info-top > div:after {
+  content: '/';
+  position: absolute;
+  top: 0;
+  right: -2px;
+}
+
+.edge-blog-holder article .edge-post-info-top > div:last-child {
+  padding: 0;
+}
+
+.edge-blog-holder article .edge-post-info-top > div:last-child:after {
+  content: '';
+}
+
+.edge-blog-holder article .edge-post-info-top > div a {
+  color: inherit;
+}
+
+.edge-blog-holder article .edge-post-info-top > div a:hover {
+  color: #000;
+}
+
+.edge-blog-holder article .edge-post-info-bottom {
+  padding-top: 22px;
+}
+
+.edge-blog-holder article .edge-post-info-bottom a:not(.edge-share-link) {
+  position: relative;
+  color: #000;
+}
+
+.edge-blog-holder article .edge-post-info-bottom a:not(.edge-share-link):hover {
+  color: #000;
+}
+
+.edge-blog-holder article .edge-post-info-bottom .edge-post-info-bottom-left,
+.edge-blog-holder article .edge-post-info-bottom .edge-post-info-bottom-right {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.edge-blog-holder article .edge-post-info-bottom .edge-post-info-bottom-left {
+  float: left;
+  text-transform: uppercase;
+}
+
+.edge-blog-holder article .edge-post-info-bottom .edge-post-info-bottom-left > div {
+  display: inline-block;
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+}
+
+.edge-blog-holder article .edge-post-info-bottom .edge-post-info-bottom-left > div:before {
+  color: #000;
+  content: "/";
+}
+
+.edge-blog-holder article .edge-post-info-bottom .edge-post-info-bottom-left > div:first-child:before {
+  content: "";
+}
+
+.edge-blog-holder article .edge-post-info-bottom .edge-post-info-bottom-left > div a:after {
+  display: none;
+}
+
+@media only screen and (min-width: 769px) {
+  .edge-blog-holder article .edge-post-info-bottom .edge-post-info-bottom-left,
+  .edge-blog-holder article .edge-post-info-bottom .edge-post-info-bottom-right {
+    width: 50%;
+  }
+  .edge-blog-holder article .edge-post-info-bottom .edge-post-info-bottom-right {
+    text-align: right;
+    float: right;
+  }
+}
+
+.edge-blog-holder article .edge-post-info-bottom .edge-post-info-bottom-right > div {
+  margin-left: 17px;
+}
+
+.edge-blog-holder article .edge-post-info-bottom .edge-post-info-bottom-right > div:first-child {
+  margin-left: 0;
+}
+
+.edge-blog-holder article .edge-post-info-bottom .edge-blog-share-label {
+  text-transform: uppercase;
+  color: #000;
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  padding-right: 13px;
+}
+
+.edge-blog-holder article.format-link .edge-post-link-holder {
+  width: 100%;
+  background-color: #000;
+  padding: 90px 11%;
+  box-sizing: border-box;
+}
+
+.edge-blog-holder article.format-link .edge-post-link-holder .edge-link-title {
+  color: #fff;
+  text-align: center;
+}
+
+.edge-blog-holder article.format-link .edge-post-link-holder .edge-link-title a:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.edge-blog-holder article.format-link .edge-post-link-instagram, .edge-blog-holder article.format-link .edge-post-link-twitter {
+  position: relative;
+  display: inline-block;
+}
+
+.edge-blog-holder article.format-link .edge-link-title a:hover {
+  color: #000;
+}
+
+.edge-blog-holder article.format-link .edge-post-link-instagram img {
+  display: block;
+}
+
+.edge-blog-holder article.format-link .edge-post-link-instagram:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.edge-blog-holder article.format-link .edge-instagram-post-icon {
+  position: absolute;
+  color: #fff;
+  font-size: 31px;
+  z-index: 2;
+  top: 13px;
+  right: 17px;
+}
+
+.edge-blog-holder article.format-quote .edge-post-quote-holder {
+  padding: 68px 53px 68px;
+  background-color: #000;
+  text-align: center;
+}
+
+.edge-blog-holder article.format-quote .edge-post-text-main {
+  position: relative;
+  display: table;
+  table-layout: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+.edge-blog-holder article.format-quote .edge-quote-title {
+  color: #fff;
+}
+
+.edge-blog-holder article.format-quote .edge-quote-title a:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.edge-blog-holder article.format-quote .edge-quote-author {
+  display: block;
+  color: #fff;
+  margin-top: 19px;
+}
+
+.edge-blog-holder article.format-gallery .edge-owl-slider .owl-nav .owl-next,
+.edge-blog-holder article.format-gallery .edge-owl-slider .owl-nav .owl-prev {
+  color: #fff;
+}
+
+.edge-blog-holder article.format-gallery .edge-post-image {
+  width: 100%;
+}
+
+.edge-blog-holder article.format-gallery .owl-carousel .owl-item {
+  z-index: 2;
+}
+
+.edge-blog-holder article.format-gallery .owl-carousel .owl-item.active {
+  z-index: 3;
+}
+
+.edge-blog-holder article.format-audio .edge-post-heading .edge-post-info-date {
+  display: none;
+}
+
+.edge-blog-holder article.format-audio.has-post-thumbnail .edge-post-heading {
+  position: relative;
+}
+
+.edge-blog-holder article.format-audio.has-post-thumbnail .edge-blog-audio-holder {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.edge-blog-holder article.format-audio.has-post-thumbnail .edge-blog-audio-holder iframe {
+  display: block;
+}
+
+.edge-blog-holder article.format-audio.has-post-thumbnail .edge-blog-audio-holder.edge-no-featured-image {
+  position: relative;
+}
+
+.edge-blog-holder article.format-audio .edge-post-image {
+  width: 100%;
+  max-width: inherit;
+}
+
+.edge-blog-holder article.format-audio .edge-post-image img {
+  width: 100%;
+}
+
+.edge-blog-holder article.format-audio .edge-blog-audio-holder iframe {
+  display: block;
+  width: 100%;
+}
+
+.edge-blog-holder article.format-audio .edge-blog-audio-holder .mejs-container, .edge-blog-holder article.format-audio .edge-blog-audio-holder .mejs-embed, .edge-blog-holder article.format-audio .edge-blog-audio-holder .mejs-embed body, .edge-blog-holder article.format-audio .edge-blog-audio-holder .mejs-container .mejs-controls {
+  background: none;
+}
+
+.edge-blog-holder article.format-audio .edge-blog-audio-holder .mejs-container {
+  background-color: #fbfbfb;
+}
+
+.edge-blog-holder article.format-audio .edge-blog-audio-holder .mejs-container,
+.edge-blog-holder article.format-audio .edge-blog-audio-holder .mejs-container .mejs-controls {
+  height: 38px !important;
+}
+
+.edge-blog-holder article.format-audio .edge-blog-audio-holder .mejs-container .mejs-controls {
+  padding: 0 10px 0 4px;
+  box-sizing: border-box;
+}
+
+.edge-blog-holder article.format-audio .edge-blog-audio-holder .mejs-container .mejs-controls > .mejs-playpause-button {
+  width: 39px;
+}
+
+.edge-blog-holder article.format-audio .edge-blog-audio-holder .mejs-container .mejs-controls > .mejs-volume-button {
+  width: 30px;
+}
+
+.edge-blog-holder article.format-audio .edge-blog-audio-holder .mejs-container .mejs-controls > .mejs-playpause-button,
+.edge-blog-holder article.format-audio .edge-blog-audio-holder .mejs-container .mejs-controls > .mejs-volume-button {
+  height: 38px;
+}
+
+.edge-blog-holder article.format-audio .edge-blog-audio-holder .mejs-container .mejs-controls > .mejs-playpause-button button,
+.edge-blog-holder article.format-audio .edge-blog-audio-holder .mejs-container .mejs-controls > .mejs-volume-button button {
+  position: relative;
+  height: 100%;
+  background: none;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  border: 0;
+  outline: none;
+}
+
+.edge-blog-holder article.format-audio .edge-blog-audio-holder .mejs-container .mejs-controls > .mejs-playpause-button.mejs-play button,
+.edge-blog-holder article.format-audio .edge-blog-audio-holder .mejs-container .mejs-controls > .mejs-volume-button.mejs-play button {
+  width: 39px;
+  background-image: url("../img/audio/play.png");
+}
+
+.edge-blog-holder article.format-audio .edge-blog-audio-holder .mejs-container .mejs-controls > .mejs-playpause-button.mejs-pause button,
+.edge-blog-holder article.format-audio .edge-blog-audio-holder .mejs-container .mejs-controls > .mejs-volume-button.mejs-pause button {
+  width: 39px;
+  background-image: url("../img/audio/pause.png");
+}
+
+.edge-blog-holder article.format-audio .edge-blog-audio-holder .mejs-container .mejs-controls > .mejs-playpause-button.mejs-stop button,
+.edge-blog-holder article.format-audio .edge-blog-audio-holder .mejs-container .mejs-controls > .mejs-volume-button.mejs-stop button {
+  width: 39px;
+  background-image: url("../img/audio/stop.png");
+}
+
+.edge-blog-holder article.format-audio .edge-blog-audio-holder .mejs-container .mejs-controls > .mejs-playpause-button.mejs-mute button,
+.edge-blog-holder article.format-audio .edge-blog-audio-holder .mejs-container .mejs-controls > .mejs-volume-button.mejs-mute button {
+  width: 30px;
+  background-image: url("../img/audio/sound.png");
+}
+
+.edge-blog-holder article.format-audio .edge-blog-audio-holder .mejs-container .mejs-controls > .mejs-playpause-button.mejs-unmute button,
+.edge-blog-holder article.format-audio .edge-blog-audio-holder .mejs-container .mejs-controls > .mejs-volume-button.mejs-unmute button {
+  width: 30px;
+  background-image: url("../img/audio/mute.png");
+}
+
+.edge-blog-holder article.format-audio .edge-blog-audio-holder .mejs-container .mejs-controls > .mejs-time {
+  height: 100%;
+  padding: 0;
+  font-family: inherit;
+  font-size: 13px;
+  color: #acacac;
+  line-height: 36px;
+}
+
+.edge-blog-holder article.format-audio .edge-blog-audio-holder .mejs-container .mejs-controls > .mejs-time-rail {
+  height: 100%;
+  padding: 0;
+  font-family: inherit;
+}
+
+.edge-blog-holder article.format-audio .edge-blog-audio-holder .mejs-container .mejs-controls > .mejs-time-rail .mejs-time-total {
+  height: 5px;
+  margin: 15px 0;
+  background: none;
+  background-color: #e2e2e2;
+}
+
+.edge-blog-holder article.format-audio .edge-blog-audio-holder .mejs-container .mejs-controls > .mejs-time-rail .mejs-time-total .mejs-time-current {
+  height: 5px;
+  background-color: #000;
+}
+
+.edge-blog-holder article.format-audio .edge-blog-audio-holder .mejs-container .mejs-controls > .mejs-time-rail .mejs-time-total .mejs-time-buffering,
+.edge-blog-holder article.format-audio .edge-blog-audio-holder .mejs-container .mejs-controls > .mejs-time-rail .mejs-time-total .mejs-time-hovered {
+  height: 5px;
+  z-index: 9999;
+}
+
+.edge-blog-holder article.format-audio .edge-blog-audio-holder .mejs-container .mejs-controls > .mejs-time-rail .mejs-time-total .mejs-time-hovered {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.edge-blog-holder article.format-audio .edge-blog-audio-holder .mejs-container .mejs-controls > .mejs-time-rail .mejs-time-total .mejs-time-float {
+  top: -16px;
+  border: 0;
+  color: #fff;
+}
+
+.edge-blog-holder article.format-audio .edge-blog-audio-holder .mejs-container .mejs-controls > .mejs-time-rail .mejs-time-total .mejs-time-handle-content {
+  display: none;
+}
+
+.edge-blog-holder article.format-audio .edge-blog-audio-holder .mejs-container .mejs-controls > .mejs-time-rail .mejs-time-total .mejs-time-float-corner {
+  top: 11px;
+}
+
+.edge-blog-holder article.format-audio .edge-blog-audio-holder .mejs-container .mejs-controls > .mejs-time-rail .mejs-time-total .mejs-time-loaded,
+.edge-blog-holder article.format-audio .edge-blog-audio-holder .mejs-container .mejs-controls > .mejs-time-rail .mejs-time-total .mejs-time-float {
+  background: none;
+}
+
+.edge-blog-holder article.format-audio .edge-blog-audio-holder .mejs-container .mejs-controls > a.mejs-horizontal-volume-slider {
+  height: 38px;
+}
+
+.edge-blog-holder article.format-audio .edge-blog-audio-holder .mejs-container .mejs-controls > a.mejs-horizontal-volume-slider .mejs-horizontal-volume-total,
+.edge-blog-holder article.format-audio .edge-blog-audio-holder .mejs-container .mejs-controls > a.mejs-horizontal-volume-slider .mejs-horizontal-volume-current {
+  height: 5px;
+  background: none;
+}
+
+.edge-blog-holder article.format-audio .edge-blog-audio-holder .mejs-container .mejs-controls > a.mejs-horizontal-volume-slider .mejs-horizontal-volume-total {
+  top: 15px;
+  background-color: #e2e2e2;
+}
+
+.edge-blog-holder article.format-audio .edge-blog-audio-holder .mejs-container .mejs-controls > a.mejs-horizontal-volume-slider .mejs-horizontal-volume-current {
+  background-color: #000;
+}
+
+.edge-blog-holder article.format-video .edge-post-heading .edge-post-info-date {
+  display: none;
+}
+
+.edge-blog-holder article.format-video .edge-self-hosted-video {
+  max-width: 100%;
+}
+
+/* ==========================================================================
+   Blog Common style - end
+   ========================================================================== */
+/* ==========================================================================
+   Blog Masonry general style - begin
+   ========================================================================== */
+.edge-blog-holder.edge-blog-type-masonry {
+  /***** Number of Columns - begin *****/
+  /***** Number of Columns - end *****/
+  /***** Space on container if full width - start *****/
+  /***** Space on container if full width - end *****/
+}
+
+.edge-blog-holder.edge-blog-type-masonry .edge-blog-holder-inner {
+  opacity: 0;
+}
+
+.edge-blog-holder.edge-blog-type-masonry article {
+  float: left;
+}
+
+.edge-blog-holder.edge-blog-type-masonry article,
+.edge-blog-holder.edge-blog-type-masonry .edge-blog-masonry-grid-sizer {
+  width: 100%;
+}
+
+.edge-blog-holder.edge-blog-type-masonry .edge-blog-masonry-grid-gutter {
+  width: 0;
+}
+
+.edge-blog-holder.edge-blog-type-masonry article.format-standard .edge-post-content, .edge-blog-holder.edge-blog-type-masonry article.format-audio .edge-post-content, .edge-blog-holder.edge-blog-type-masonry article.format-gallery .edge-post-content, .edge-blog-holder.edge-blog-type-masonry article.format-video .edge-post-content {
+  background-color: #fff;
+  box-shadow: 3px 4px 31.04px 0.96px rgba(0, 0, 0, 0.05);
+}
+
+.edge-blog-holder.edge-blog-type-masonry article.format-standard .edge-post-content .edge-post-text, .edge-blog-holder.edge-blog-type-masonry article.format-audio .edge-post-content .edge-post-text, .edge-blog-holder.edge-blog-type-masonry article.format-gallery .edge-post-content .edge-post-text, .edge-blog-holder.edge-blog-type-masonry article.format-video .edge-post-content .edge-post-text {
+  padding: 58px 44px 58px;
+}
+
+.edge-blog-holder.edge-blog-type-masonry article.format-standard .edge-post-content .edge-post-info-date, .edge-blog-holder.edge-blog-type-masonry article.format-audio .edge-post-content .edge-post-info-date, .edge-blog-holder.edge-blog-type-masonry article.format-gallery .edge-post-content .edge-post-info-date, .edge-blog-holder.edge-blog-type-masonry article.format-video .edge-post-content .edge-post-info-date {
+  font-size: 13px;
+}
+
+.edge-blog-holder.edge-blog-type-masonry article.format-standard .edge-post-content .edge-post-excerpt-holder, .edge-blog-holder.edge-blog-type-masonry article.format-audio .edge-post-content .edge-post-excerpt-holder, .edge-blog-holder.edge-blog-type-masonry article.format-gallery .edge-post-content .edge-post-excerpt-holder, .edge-blog-holder.edge-blog-type-masonry article.format-video .edge-post-content .edge-post-excerpt-holder {
+  margin: 0;
+}
+
+.edge-blog-holder.edge-blog-type-masonry article.format-standard .edge-post-content .edge-post-read-more-button, .edge-blog-holder.edge-blog-type-masonry article.format-audio .edge-post-content .edge-post-read-more-button, .edge-blog-holder.edge-blog-type-masonry article.format-gallery .edge-post-content .edge-post-read-more-button, .edge-blog-holder.edge-blog-type-masonry article.format-video .edge-post-content .edge-post-read-more-button {
+  margin-top: 45px;
+}
+
+.edge-blog-holder.edge-blog-type-masonry article.format-standard .edge-post-content .edge-post-read-more-button a, .edge-blog-holder.edge-blog-type-masonry article.format-audio .edge-post-content .edge-post-read-more-button a, .edge-blog-holder.edge-blog-type-masonry article.format-gallery .edge-post-content .edge-post-read-more-button a, .edge-blog-holder.edge-blog-type-masonry article.format-video .edge-post-content .edge-post-read-more-button a {
+  position: relative;
+  font-size: 17px;
+  color: #000;
+}
+
+.edge-blog-holder.edge-blog-type-masonry article.format-standard .edge-post-content .edge-post-read-more-button a:after, .edge-blog-holder.edge-blog-type-masonry article.format-audio .edge-post-content .edge-post-read-more-button a:after, .edge-blog-holder.edge-blog-type-masonry article.format-gallery .edge-post-content .edge-post-read-more-button a:after, .edge-blog-holder.edge-blog-type-masonry article.format-video .edge-post-content .edge-post-read-more-button a:after {
+  content: '';
+  height: 1px;
+  width: 0;
+  bottom: 3px;
+  left: 0;
+  position: absolute;
+  background-color: #000;
+}
+
+.edge-blog-holder.edge-blog-type-masonry article.format-standard .edge-post-content .edge-post-read-more-button a:hover:after, .edge-blog-holder.edge-blog-type-masonry article.format-audio .edge-post-content .edge-post-read-more-button a:hover:after, .edge-blog-holder.edge-blog-type-masonry article.format-gallery .edge-post-content .edge-post-read-more-button a:hover:after, .edge-blog-holder.edge-blog-type-masonry article.format-video .edge-post-content .edge-post-read-more-button a:hover:after {
+  width: 100%;
+}
+
+.edge-blog-holder.edge-blog-type-masonry article.format-video .edge-post-image a:after {
+  content: '';
+  background-color: rgba(23, 22, 22, 0.52);
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  z-index: 1;
+}
+
+.edge-blog-holder.edge-blog-type-masonry article.format-video .edge-video-play-button {
+  color: #fff;
+  font-size: 48px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.edge-blog-holder.edge-blog-type-masonry article .edge-post-link-twitter {
+  background-color: #fff;
+  box-shadow: 3px 4px 31.04px 0.96px rgba(0, 0, 0, 0.05);
+  padding: 51px 30px;
+  text-align: center;
+}
+
+.edge-blog-holder.edge-blog-type-masonry article .edge-post-link-twitter .edge-post-link-twitter-author {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.edge-blog-holder.edge-blog-type-masonry article .edge-post-link-twitter .edge-post-title {
+  margin-top: 30px;
+}
+
+.edge-blog-holder.edge-blog-type-masonry article .edge-post-link-twitter .edge-post-link-twitter-text {
+  margin-top: 23px;
+}
+
+.edge-blog-holder.edge-blog-type-masonry article .edge-post-link-twitter .edge-post-info-date {
+  font-size: 13px;
+  margin-top: 29px;
+}
+
+.edge-blog-holder.edge-blog-type-masonry article .edge-post-link-twitter .edge-twitter-post-icon {
+  color: #4094de;
+  font-size: 28px;
+  position: absolute;
+  top: 26px;
+  right: 18px;
+}
+
+.edge-blog-holder.edge-blog-type-masonry.edge-blog-two-columns article,
+.edge-blog-holder.edge-blog-type-masonry.edge-blog-two-columns .edge-blog-masonry-grid-sizer {
+  width: 50%;
+}
+
+.edge-blog-holder.edge-blog-type-masonry.edge-blog-two-columns article.edge-masonry-size-large-width, .edge-blog-holder.edge-blog-type-masonry.edge-blog-two-columns article.edge-masonry-size-large-width-height {
+  width: 100%;
+}
+
+.edge-blog-holder.edge-blog-type-masonry.edge-blog-three-columns article,
+.edge-blog-holder.edge-blog-type-masonry.edge-blog-three-columns .edge-blog-masonry-grid-sizer {
+  width: 33.33333%;
+}
+
+.edge-blog-holder.edge-blog-type-masonry.edge-blog-three-columns article.edge-masonry-size-large-width, .edge-blog-holder.edge-blog-type-masonry.edge-blog-three-columns article.edge-masonry-size-large-width-height {
+  width: 66.66667%;
+}
+
+.edge-blog-holder.edge-blog-type-masonry.edge-blog-four-columns article,
+.edge-blog-holder.edge-blog-type-masonry.edge-blog-four-columns .edge-blog-masonry-grid-sizer {
+  width: 25%;
+}
+
+.edge-blog-holder.edge-blog-type-masonry.edge-blog-four-columns article.edge-masonry-size-large-width, .edge-blog-holder.edge-blog-type-masonry.edge-blog-four-columns article.edge-masonry-size-large-width-height {
+  width: 50%;
+}
+
+.edge-blog-holder.edge-blog-type-masonry.edge-blog-five-columns article,
+.edge-blog-holder.edge-blog-type-masonry.edge-blog-five-columns .edge-blog-masonry-grid-sizer {
+  width: 20%;
+}
+
+.edge-blog-holder.edge-blog-type-masonry.edge-blog-five-columns article.edge-masonry-size-large-width, .edge-blog-holder.edge-blog-type-masonry.edge-blog-five-columns article.edge-masonry-size-large-width-height {
+  width: 40%;
+}
+
+.edge-blog-holder.edge-blog-type-masonry.edge-blog-masonry-full-width {
+  box-sizing: border-box;
+}
+
+.edge-blog-holder.edge-blog-type-masonry.edge-blog-masonry-full-width.edge-no-space {
+  padding: 0 0px;
+}
+
+.edge-blog-holder.edge-blog-type-masonry.edge-blog-masonry-full-width.edge-tiny-space {
+  padding: 0 10px;
+}
+
+.edge-blog-holder.edge-blog-type-masonry.edge-blog-masonry-full-width.edge-small-space {
+  padding: 0 20px;
+}
+
+.edge-blog-holder.edge-blog-type-masonry.edge-blog-masonry-full-width.edge-normal-space {
+  padding: 0 30px;
+}
+
+.edge-blog-holder.edge-blog-type-masonry.edge-blog-masonry-full-width.edge-medium-space {
+  padding: 0 40px;
+}
+
+.edge-blog-holder.edge-blog-type-masonry.edge-blog-masonry-full-width.edge-large-space {
+  padding: 0 50px;
+}
+
+.edge-blog-holder.edge-blog-type-masonry.edge-blog-masonry-full-width.edge-huge-space {
+  padding: 0 66px;
+}
+
+/* ==========================================================================
+   Blog Masonry general style - end
+   ========================================================================== */
+/* ==========================================================================
+   Blog pagination standard style - begin
+   ========================================================================== */
+.edge-blog-pagination-wp {
+  display: none;
+}
+
+.edge-blog-pagination {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  clear: both;
+  padding: 18px 0;
+}
+
+.edge-blog-pagination ul {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.edge-blog-pagination ul li {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 7px;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+}
+
+.edge-blog-pagination ul li a {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  color: #000;
+}
+
+.edge-blog-pagination ul li a.edge-pag-active, .edge-blog-pagination ul li a:hover {
+  color: rgba(0, 0, 0, 0.25);
+}
+
+.edge-blog-pagination ul li.edge-pag-prev, .edge-blog-pagination ul li.edge-pag-next, .edge-blog-pagination ul li.edge-pag-first {
+  top: -1px;
+  margin: 0 9px;
+}
+
+.edge-blog-pagination ul li.edge-pag-prev a span, .edge-blog-pagination ul li.edge-pag-next a span, .edge-blog-pagination ul li.edge-pag-first a span {
+  display: block;
+  line-height: inherit;
+  font-size: 18px;
+}
+
+.edge-blog-pagination ul li.edge-pag-prev a span:before, .edge-blog-pagination ul li.edge-pag-next a span:before, .edge-blog-pagination ul li.edge-pag-first a span:before {
+  display: block;
+  line-height: inherit;
+}
+
+/* ==========================================================================
+   Blog pagination standard style - end
+   ========================================================================== */
+/* ==========================================================================
+   Blog List shortcode pagination standard style - begin
+   ========================================================================== */
+.edge-blog-list-holder.edge-bl-pag-standard-shortcodes .edge-blog-list {
+  opacity: 1;
+  -webkit-transition: opacity 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
+}
+
+.edge-blog-list-holder.edge-bl-pag-standard-shortcodes.edge-bl-pag-standard-shortcodes-animate .edge-blog-list {
+  opacity: 0;
+}
+
+.edge-bl-standard-pagination {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 20px 0 0;
+  clear: both;
+}
+
+.edge-bl-standard-pagination ul {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.edge-bl-standard-pagination ul li {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 12px;
+  padding: 0;
+}
+
+.edge-bl-standard-pagination ul li a {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+}
+
+.edge-bl-standard-pagination ul li.edge-bl-pag-active a {
+  color: #000;
+}
+
+.edge-bl-standard-pagination ul li.edge-bl-pag-prev, .edge-bl-standard-pagination ul li.edge-bl-pag-next {
+  position: absolute;
+  top: 0;
+}
+
+.edge-bl-standard-pagination ul li.edge-bl-pag-prev a, .edge-bl-standard-pagination ul li.edge-bl-pag-next a {
+  font-size: 30px;
+  -webkit-transition: color 0.2s ease-out, opacity 0.2s ease-out;
+  -moz-transition: color 0.2s ease-out, opacity 0.2s ease-out;
+  transition: color 0.2s ease-out, opacity 0.2s ease-out;
+}
+
+.edge-bl-standard-pagination ul li.edge-bl-pag-prev a span, .edge-bl-standard-pagination ul li.edge-bl-pag-next a span {
+  display: block;
+  line-height: inherit;
+}
+
+.edge-bl-standard-pagination ul li.edge-bl-pag-prev a span:before, .edge-bl-standard-pagination ul li.edge-bl-pag-next a span:before {
+  display: block;
+  line-height: inherit;
+}
+
+.edge-bl-standard-pagination ul li.edge-bl-pag-prev {
+  left: 0;
+}
+
+.edge-bl-standard-pagination ul li.edge-bl-pag-prev a {
+  opacity: 0;
+}
+
+.edge-bl-standard-pagination ul li.edge-bl-pag-next {
+  right: 0;
+}
+
+.edge-bl-standard-pagination ul li.edge-bl-pag-next a {
+  opacity: 1;
+}
+
+/* ==========================================================================
+   Blog List shortcode pagination standard style - end
+   ========================================================================== */
+/* ==========================================================================
+   Blog pagination load more style - begin
+   ========================================================================== */
+.edge-blog-pag-load-more {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 40px 0 30px;
+  text-align: center;
+}
+
+/* ==========================================================================
+   Blog pagination load more style - end
+   ========================================================================== */
+/* ==========================================================================
+   Blog pagination loading element style - begin
+   ========================================================================== */
+.edge-blog-pag-loading {
+  position: relative;
+  display: none;
+  width: 100%;
+  margin: 40px 0 20px;
+  color: #000;
+  text-align: center;
+}
+
+.edge-blog-pag-loading.edge-standard-pag-trigger {
+  position: absolute;
+  top: 50px;
+  left: 0;
+}
+
+.edge-blog-pag-loading.edge-showing {
+  display: block;
+}
+
+.edge-blog-pag-loading > div {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 14px;
+  height: 14px;
+  margin: 0 3px;
+  background-color: #000;
+  border-radius: 100%;
+  -webkit-animation: bl-pag-bouncedelay 1.4s infinite ease-in-out both;
+  -moz-animation: bl-pag-bouncedelay 1.4s infinite ease-in-out both;
+  animation: bl-pag-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.edge-blog-pag-loading .edge-blog-pag-bounce1 {
+  -webkit-animation-delay: -0.32s;
+  -moz-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+.edge-blog-pag-loading .edge-blog-pag-bounce2 {
+  -webkit-animation-delay: -0.16s;
+  -moz-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+@-webkit-keyframes bl-pag-bouncedelay {
+  0%, 80%, 100% {
+    -webkit-transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+  }
+}
+
+@-moz-keyframes bl-pag-bouncedelay {
+  0%, 80%, 100% {
+    -moz-transform: scale(0);
+  }
+  40% {
+    -moz-transform: scale(1);
+  }
+}
+
+@keyframes bl-pag-bouncedelay {
+  0%, 80%, 100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+/* ==========================================================================
+   Blog pagination loading element style - end
+   ========================================================================== */
+/* ==========================================================================
+   Blog List - Masonry style - begin
+   ========================================================================== */
+.edge-blog-holder.edge-blog-masonry article {
+  margin: 0 0 20px;
+  padding: 0 0 30px;
+}
+
+/* ==========================================================================
+   Blog List - Masonry style - end
+   ========================================================================== */
+/* ==========================================================================
+   Blog List - Standard style - begin
+   ========================================================================== */
+.edge-blog-holder.edge-blog-standard {
+  margin-bottom: 35px;
+}
+
+.edge-blog-holder.edge-blog-standard article {
+  margin: 0 0 76px;
+  padding: 0;
+}
+
+.edge-blog-holder.edge-blog-standard article.edge-post-has-media .edge-post-heading {
+  margin-bottom: 37px;
+}
+
+.edge-blog-holder.edge-blog-standard article.format-link, .edge-blog-holder.edge-blog-standard article.format-quote {
+  margin: 0 0 86px;
+}
+
+.edge-blog-holder.edge-blog-standard .edge-post-title a:hover {
+  color: #130a02;
+}
+
+/* ==========================================================================
+   Blog List - Standard style - end
+   ========================================================================== */
+/* Single author box styles - begin
+	====================================================================== */
+.edge-author-description {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  padding: 0;
+  background-color: #000;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+.edge-author-description .edge-author-description-inner {
+  padding: 52px 0 36px;
+  min-height: 78px;
+  clear: both;
+}
+
+.edge-author-description .edge-author-description-content {
+  position: relative;
+  padding: 0 50px;
+}
+
+.edge-author-description .edge-author-description-image {
+  width: 131px;
+  float: left;
+}
+
+.edge-author-description .edge-author-description-image img {
+  display: block;
+}
+
+.edge-author-description .edge-author-description-text-holder {
+  position: relative;
+  padding: 2px 0 10px 158px;
+}
+
+.edge-author-description .edge-author-description-text-holder .edge-author-name {
+  color: #fff;
+  margin: 0;
+  line-height: 1em;
+}
+
+.edge-author-description .edge-author-description-text-holder .edge-author-name a {
+  display: block;
+}
+
+.edge-author-description .edge-author-description-text-holder .edge-author-name a:hover {
+  color: currentColor;
+}
+
+.edge-author-description .edge-author-description-text-holder .edge-author-email {
+  margin: 0;
+}
+
+.edge-author-description .edge-author-description-text-holder .edge-author-text {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.edge-author-description .edge-author-description-text-holder .edge-author-text > p {
+  margin: 11px 0;
+}
+
+.edge-author-description .edge-author-description-text-holder .edge-author-social-icons {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.edge-author-description .edge-author-description-text-holder .edge-author-social-icons a {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0;
+  margin: 0 15px 0 0;
+  font-size: 14px;
+  color: #fff;
+}
+
+.edge-author-description .edge-author-description-text-holder .edge-author-social-icons a:last-child {
+  margin: 0;
+}
+
+.edge-author-description .edge-author-description-text-holder .edge-author-social-icons a:hover {
+  color: currentColor;
+}
+
+@media only screen and (max-width: 768px) {
+  .edge-author-description .edge-author-description-image {
+    display: block;
+    width: 100%;
+    margin-bottom: 23px;
+  }
+  .edge-author-description .edge-author-description-text-holder {
+    display: block;
+    padding: 0;
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .edge-author-description .edge-author-description-inner {
+    padding: 30px 0 28px;
+  }
+  .edge-author-description .edge-author-description-content {
+    padding: 0 30px;
+  }
+}
+
+/* Single author box styles - end
+	====================================================================== */
+/* Single posts navigation styles - begin
+    ====================================================================== */
+.edge-blog-single-navigation {
+  position: relative;
+  display: table;
+  width: 100%;
+  vertical-align: middle;
+  padding: 0;
+  clear: both;
+  box-sizing: border-box;
+}
+
+.edge-blog-single-navigation .edge-blog-single-navigation-inner {
+  padding: 60px 0;
+}
+
+.edge-blog-single-navigation .edge-blog-single-prev,
+.edge-blog-single-navigation .edge-blog-single-next {
+  position: relative;
+  color: #000;
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.edge-blog-single-navigation .edge-blog-single-prev:after,
+.edge-blog-single-navigation .edge-blog-single-next:after {
+  position: absolute;
+  display: block;
+  content: " ";
+  bottom: -2px;
+  border-bottom: 1px solid #000;
+  width: 100%;
+}
+
+.edge-blog-single-navigation .edge-blog-single-prev .edge-blog-single-nav-label,
+.edge-blog-single-navigation .edge-blog-single-next .edge-blog-single-nav-label {
+  color: inherit;
+  font-size: 17px;
+}
+
+.edge-blog-single-navigation .edge-blog-single-prev .fa,
+.edge-blog-single-navigation .edge-blog-single-next .fa {
+  position: relative;
+  bottom: 1px;
+  font-size: 18px;
+}
+
+.edge-blog-single-navigation .edge-blog-single-prev:hover,
+.edge-blog-single-navigation .edge-blog-single-next:hover {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.edge-blog-single-navigation .edge-blog-single-prev {
+  float: left;
+}
+
+.edge-blog-single-navigation .edge-blog-single-prev .edge-blog-single-nav-label,
+.edge-blog-single-navigation .edge-blog-single-prev .fa {
+  display: inline-block;
+}
+
+.edge-blog-single-navigation .edge-blog-single-prev .edge-blog-single-nav-label {
+  margin-left: 7px;
+}
+
+.edge-blog-single-navigation .edge-blog-single-next {
+  float: right;
+}
+
+.edge-blog-single-navigation .edge-blog-single-next .edge-blog-single-nav-label,
+.edge-blog-single-navigation .edge-blog-single-next .fa {
+  display: inline-block;
+}
+
+.edge-blog-single-navigation .edge-blog-single-next .edge-blog-single-nav-label {
+  margin-right: 7px;
+}
+
+.edge-single-links-pages {
+  clear: both;
+  margin: 20px 0 5px;
+}
+
+.edge-single-links-pages .edge-single-links-pages-inner > a,
+.edge-single-links-pages .edge-single-links-pages-inner > span {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 15px 5px 0;
+}
+
+/* Single posts navigation styles - end
+    ====================================================================== */
+/* Related posts styles - begin
+	====================================================================== */
+.edge-related-posts-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.edge-related-posts-holder .edge-related-posts-holder-inner {
+  padding: 69px 0 0;
+}
+
+.edge-related-posts-holder .edge-related-posts-title {
+  margin: 0 0 40px;
+}
+
+.edge-related-posts-holder .edge-related-posts-title > * {
+  margin: 0;
+}
+
+.edge-related-posts-holder .edge-related-posts-inner {
+  margin: 0 -15px;
+}
+
+.edge-related-posts-holder .edge-related-post {
+  position: relative;
+  display: inline-block;
+  float: left;
+  width: 25%;
+  margin: 0 0 30px;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.edge-content-has-sidebar .edge-related-posts-holder .edge-related-post {
+  widtH: 33.33333333333333%;
+}
+
+.touch .edge-related-posts-holder .edge-related-post {
+  cursor: pointer;
+}
+
+.edge-related-posts-holder .edge-related-post:hover .edge-related-post-image a:after {
+  opacity: 1;
+}
+
+.edge-related-posts-holder .edge-related-post .edge-related-post-image {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.edge-related-posts-holder .edge-related-post .edge-related-post-image a {
+  position: relative;
+  display: block;
+}
+
+.edge-related-posts-holder .edge-related-post .edge-related-post-image a:after {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  content: '';
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.edge-related-posts-holder .edge-related-post .edge-related-post-image img {
+  display: block;
+}
+
+.edge-related-posts-holder .edge-related-post .edge-post-title {
+  margin: 19px 0 0;
+}
+
+.edge-related-posts-holder .edge-related-post .edge-post-title:first-child {
+  margin-top: 0;
+}
+
+.edge-related-posts-holder .edge-related-post .edge-post-info {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 4px 0 0;
+}
+
+.edge-related-posts-holder .edge-related-post .edge-post-info > div {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  float: left;
+  padding: 0 13px 0 0;
+  color: inherit;
+}
+
+.edge-related-posts-holder .edge-related-post .edge-post-info > div:after {
+  position: absolute;
+  top: 0;
+  right: 4px;
+  content: '/';
+}
+
+.edge-related-posts-holder .edge-related-post .edge-post-info > div:last-child {
+  padding: 0;
+}
+
+.edge-related-posts-holder .edge-related-post .edge-post-info > div:last-child:after {
+  display: none;
+}
+
+.edge-related-posts-holder .edge-related-post .edge-post-info > div.edge-post-info-author .edge-post-info-author-text {
+  margin: 0 3px 0 0;
+}
+
+.edge-related-posts-holder .edge-related-post .edge-post-info > div a {
+  color: inherit;
+  line-height: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/* Related posts styles - end
+	====================================================================== */
+/* ==========================================================================
+   Blog Single style - begin
+   ========================================================================== */
+.single-post .edge-content-inner > .edge-container > .edge-container-inner {
+  padding-bottom: 140px;
+}
+
+.edge-blog-holder.edge-blog-single {
+  color: #000;
+}
+
+.edge-blog-holder.edge-blog-single article {
+  margin: 0 0 30px;
+}
+
+.edge-blog-holder.edge-blog-single article .edge-post-heading {
+  margin-bottom: 37px;
+}
+
+.edge-blog-holder.edge-blog-single article .edge-post-text {
+  padding: 0 0 21px;
+}
+
+.edge-blog-holder.edge-blog-single article .edge-post-title {
+  margin: 3px 0 16px;
+}
+
+.edge-blog-holder.edge-blog-single article .edge-post-info-bottom {
+  padding-top: 36px;
+}
+
+.edge-blog-holder.edge-blog-single article.format-link .edge-post-title {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Blog Single style - end
+   ========================================================================== */
+/* ==========================================================================
+   Blog List shortcode global style - begin
+   ========================================================================== */
+.edge-blog-list-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  clear: both;
+}
+
+.edge-blog-list-holder .edge-blog-list {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.edge-blog-list-holder .edge-bl-item {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.edge-blog-list-holder .edge-bli-inner {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.edge-blog-list-holder .edge-bli-content {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.edge-blog-list-holder .edge-post-image {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 0 0 21px;
+}
+
+.edge-blog-list-holder .edge-post-image a:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.59);
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.edge-blog-list-holder .edge-post-image a img {
+  -webkit-transition: -webkit-transform 0.2s ease;
+  -moz-transition: -moz-transform 0.2s ease;
+  transition: transform 0.2s ease;
+}
+
+.edge-blog-list-holder .edge-post-image a {
+  display: block;
+  overflow: hidden;
+  box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.17);
+}
+
+.edge-blog-list-holder .edge-post-image a:hover:after {
+  opacity: .6;
+}
+
+.edge-blog-list-holder .edge-post-image a:after {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  content: '';
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.edge-blog-list-holder .edge-post-image a:hover:after {
+  opacity: 1;
+}
+
+.edge-blog-list-holder .edge-post-image a:hover img {
+  -webkit-transition: -webkit-transform 0.45s cubic-bezier(0.51, 1.78, 0.63, 1.21);
+  -moz-transition: -moz-transform 0.45s cubic-bezier(0.51, 1.78, 0.63, 1.21);
+  transition: transform 0.45s cubic-bezier(0.51, 1.78, 0.63, 1.21);
+  -webkit-transform: scale(1.07);
+  -moz-transform: scale(1.07);
+  transform: scale(1.07);
+}
+
+.edge-blog-list-holder .edge-post-image img {
+  display: block;
+}
+
+.edge-blog-list-holder .edge-post-image .edge-bl-date-wrap {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 52px;
+  height: 67px;
+  padding: 10px 0;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  box-sizing: border-box;
+  z-index: 5;
+}
+
+.edge-blog-list-holder .edge-post-image .edge-bl-date-wrap span {
+  display: block;
+}
+
+.edge-blog-list-holder .edge-post-image .edge-bl-date-wrap .edge-day {
+  font-family: "Oswald", sans-serif;
+  font-size: 32px;
+}
+
+.edge-blog-list-holder .edge-post-image .edge-bl-date-wrap .edge-month {
+  font-weight: 400;
+}
+
+.edge-blog-list-holder .edge-bli-info {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 0 0 8px;
+  clear: both;
+}
+
+.edge-blog-list-holder .edge-bli-info > div {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 13px;
+  line-height: 1.2;
+  float: left;
+  padding: 0 20px 5px 0;
+}
+
+.edge-blog-list-holder .edge-bli-info > div:last-child {
+  padding: 0 0 5px;
+}
+
+.edge-blog-list-holder .edge-bli-info > div a {
+  color: #000;
+}
+
+.edge-blog-list-holder .edge-bli-info > div a:hover {
+  color: #000;
+}
+
+.edge-blog-list-holder .edge-post-title {
+  margin: 0 0 6px;
+}
+
+.edge-blog-list-holder .edge-post-excerpt {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 20px 0 0;
+}
+
+.edge-blog-list-holder .edge-post-excerpt p {
+  margin: 0;
+}
+
+.edge-blog-list-holder .edge-btn {
+  position: relative;
+}
+
+/* ==========================================================================
+   Blog List shortcode global style - end
+   ========================================================================== */
+/* ==========================================================================
+   Blog List shortcode - Boxed type style - begin
+   ========================================================================== */
+.edge-blog-list-holder.edge-bl-boxed:not(.edge-bl-one-column) .edge-bl-item {
+  float: left;
+}
+
+.edge-blog-list-holder.edge-bl-boxed.edge-bl-two-columns .edge-bl-item {
+  width: 50%;
+}
+
+@media only screen and (min-width: 1025px) {
+  .edge-blog-list-holder.edge-bl-boxed.edge-bl-two-columns .edge-bl-item:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+.edge-blog-list-holder.edge-bl-boxed.edge-bl-three-columns .edge-bl-item {
+  width: 33.33333%;
+}
+
+@media only screen and (min-width: 1025px) {
+  .edge-blog-list-holder.edge-bl-boxed.edge-bl-three-columns .edge-bl-item:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+.edge-blog-list-holder.edge-bl-boxed.edge-bl-four-columns .edge-bl-item {
+  width: 25%;
+}
+
+@media only screen and (min-width: 1201px) {
+  .edge-blog-list-holder.edge-bl-boxed.edge-bl-four-columns .edge-bl-item:nth-child(4n+1) {
+    clear: both;
+  }
+}
+
+.edge-blog-list-holder.edge-bl-boxed.edge-bl-five-columns .edge-bl-item {
+  width: 20%;
+}
+
+@media only screen and (min-width: 1201px) {
+  .edge-blog-list-holder.edge-bl-boxed.edge-bl-five-columns .edge-bl-item:nth-child(5n+1) {
+    clear: both;
+  }
+}
+
+.edge-blog-list-holder.edge-bl-boxed .edge-bli-content {
+  padding: 40px 30px;
+  background-color: #f6f6f6;
+}
+
+.edge-blog-list-holder.edge-bl-boxed .edge-post-image {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Blog List shortcode - Boxed type style - end
+   ========================================================================== */
+/* ==========================================================================
+   Blog List shortcode - Boxed type style - begin
+   ========================================================================== */
+.edge-blog-list-holder.edge-bl-list .edge-bl-item {
+  float: none;
+  width: 100%;
+  margin: 0 0 40px;
+}
+
+.edge-blog-list-holder.edge-bl-list .edge-bli-inner-wrap {
+  display: table;
+  height: 100%;
+}
+
+.edge-blog-list-holder.edge-bl-list .edge-bli-content {
+  width: 45%;
+}
+
+.edge-blog-list-holder.edge-bl-list .edge-bli-content .edge-bli-inner {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+  padding: 28px 0;
+}
+
+.edge-blog-list-holder.edge-bl-list .edge-bli-content .edge-bli-inner .edge-post-title {
+  width: 70%;
+}
+
+.edge-blog-list-holder.edge-bl-list .edge-post-image {
+  float: left;
+  max-width: 440px;
+  margin: 0 41px 0 0;
+}
+
+.edge-blog-list-holder.edge-bl-list .edge-post-excerpt {
+  margin: 10px 0 10px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .edge-blog-list-holder.edge-bl-list .edge-bli-content {
+    position: relative;
+    width: auto;
+    padding: 0;
+    margin: 20px 0 0;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .edge-blog-list-holder.edge-bl-list .edge-bli-content .edge-bli-inner .edge-post-title {
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+   Blog List shortcode - Boxed type style - end
+   ========================================================================== */
+/* ==========================================================================
+   Blog List shortcode - Masonry type style - begin
+   ========================================================================== */
+.edge-blog-list-holder.edge-bl-masonry {
+  transition: none !important;
+  overflow: visible !important;
+}
+
+.edge-blog-list-holder.edge-bl-masonry .edge-blog-list {
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
+}
+
+.edge-blog-list-holder.edge-bl-masonry article {
+  box-sizing: border-box;
+}
+
+.edge-blog-list-holder.edge-bl-masonry article .edge-post-title {
+  text-transform: uppercase;
+}
+
+.edge-blog-list-holder.edge-bl-masonry article .edge-post-title a:hover {
+  color: #130a02;
+}
+
+.edge-blog-list-holder.edge-bl-masonry article.format-standard .edge-post-content, .edge-blog-list-holder.edge-bl-masonry article.format-audio .edge-post-content, .edge-blog-list-holder.edge-bl-masonry article.format-gallery .edge-post-content, .edge-blog-list-holder.edge-bl-masonry article.format-video .edge-post-content {
+  background-color: #fff;
+  box-shadow: 3px 4px 31.04px 0.96px rgba(0, 0, 0, 0.05);
+}
+
+.edge-blog-list-holder.edge-bl-masonry article.format-standard .edge-post-content .edge-post-text, .edge-blog-list-holder.edge-bl-masonry article.format-audio .edge-post-content .edge-post-text, .edge-blog-list-holder.edge-bl-masonry article.format-gallery .edge-post-content .edge-post-text, .edge-blog-list-holder.edge-bl-masonry article.format-video .edge-post-content .edge-post-text {
+  padding: 58px 44px 58px;
+}
+
+.edge-blog-list-holder.edge-bl-masonry article.format-standard .edge-post-content .edge-post-info-date, .edge-blog-list-holder.edge-bl-masonry article.format-audio .edge-post-content .edge-post-info-date, .edge-blog-list-holder.edge-bl-masonry article.format-gallery .edge-post-content .edge-post-info-date, .edge-blog-list-holder.edge-bl-masonry article.format-video .edge-post-content .edge-post-info-date {
+  font-size: 13px;
+}
+
+.edge-blog-list-holder.edge-bl-masonry article.format-standard .edge-post-content .edge-post-read-more-button, .edge-blog-list-holder.edge-bl-masonry article.format-audio .edge-post-content .edge-post-read-more-button, .edge-blog-list-holder.edge-bl-masonry article.format-gallery .edge-post-content .edge-post-read-more-button, .edge-blog-list-holder.edge-bl-masonry article.format-video .edge-post-content .edge-post-read-more-button {
+  margin-top: 45px;
+}
+
+.edge-blog-list-holder.edge-bl-masonry article.format-standard .edge-post-content .edge-post-read-more-button a, .edge-blog-list-holder.edge-bl-masonry article.format-audio .edge-post-content .edge-post-read-more-button a, .edge-blog-list-holder.edge-bl-masonry article.format-gallery .edge-post-content .edge-post-read-more-button a, .edge-blog-list-holder.edge-bl-masonry article.format-video .edge-post-content .edge-post-read-more-button a {
+  position: relative;
+  font-size: 17px;
+  color: #000;
+}
+
+.edge-blog-list-holder.edge-bl-masonry article.format-video .edge-video-play-button {
+  color: #fff;
+  font-size: 29px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  display: block;
+  width: 94px;
+  height: 94px;
+  border: 2px solid #fff;
+  text-align: center;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.edge-blog-list-holder.edge-bl-masonry article.format-video .edge-video-play-button > span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.edge-blog-list-holder.edge-bl-masonry article.format-video .edge-video-play-button:hover {
+  background-color: #fff;
+}
+
+.edge-blog-list-holder.edge-bl-masonry article.format-video .edge-video-play-button:hover > span {
+  color: #000;
+}
+
+.edge-blog-list-holder.edge-bl-masonry article.format-link .edge-post-link-holder {
+  width: 100%;
+  background-color: #000;
+  padding: 88px 0 90px;
+}
+
+.edge-blog-list-holder.edge-bl-masonry article.format-link .edge-post-link-holder .edge-link-title {
+  color: #fff;
+  text-align: center;
+}
+
+.edge-blog-list-holder.edge-bl-masonry article.format-link .edge-post-link-instagram, .edge-blog-list-holder.edge-bl-masonry article.format-link .edge-post-link-twitter {
+  position: relative;
+  display: inline-block;
+}
+
+.edge-blog-list-holder.edge-bl-masonry article.format-link .edge-post-link-instagram img {
+  display: block;
+}
+
+.edge-blog-list-holder.edge-bl-masonry article.format-link .edge-post-link-instagram:after {
+  content: "";
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.edge-blog-list-holder.edge-bl-masonry article.format-link .edge-instagram-post-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #fff;
+  font-size: 31px;
+  z-index: 2;
+  top: 13px;
+  right: 17px;
+}
+
+.edge-blog-list-holder.edge-bl-masonry article.format-link:hover .edge-post-link-instagram:after {
+  opacity: .6;
+}
+
+.edge-blog-list-holder.edge-bl-masonry article.format-quote .edge-post-quote-holder {
+  padding: 68px 53px 68px;
+  background-color: #000;
+  text-align: center;
+}
+
+.edge-blog-list-holder.edge-bl-masonry article.format-quote .edge-post-text-main {
+  position: relative;
+  display: table;
+  table-layout: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+.edge-blog-list-holder.edge-bl-masonry article.format-quote .edge-quote-title {
+  color: #fff;
+}
+
+.edge-blog-list-holder.edge-bl-masonry article.format-quote .edge-quote-author {
+  display: block;
+  text-transform: uppercase;
+  color: #fff;
+  margin-top: 19px;
+}
+
+.edge-blog-list-holder.edge-bl-masonry article.format-gallery .edge-post-image {
+  width: 100%;
+}
+
+.edge-blog-list-holder.edge-bl-masonry article.format-gallery .owl-carousel .owl-item {
+  z-index: 2;
+}
+
+.edge-blog-list-holder.edge-bl-masonry article.format-gallery .owl-carousel .owl-item.active {
+  z-index: 3;
+}
+
+.edge-blog-list-holder.edge-bl-masonry article.format-audio.has-post-thumbnail .edge-post-heading {
+  position: relative;
+}
+
+.edge-blog-list-holder.edge-bl-masonry article.format-audio.has-post-thumbnail .edge-blog-audio-holder {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.edge-blog-list-holder.edge-bl-masonry article.format-audio.has-post-thumbnail .edge-blog-audio-holder.edge-no-featured-image {
+  position: relative;
+}
+
+.edge-blog-list-holder.edge-bl-masonry article.format-audio .edge-post-image {
+  width: 100%;
+  max-width: inherit;
+}
+
+.edge-blog-list-holder.edge-bl-masonry article.format-audio .edge-post-image img {
+  width: 100%;
+}
+
+.edge-blog-list-holder.edge-bl-masonry article.format-audio .edge-blog-audio-holder iframe {
+  display: block;
+  vertical-align: middle;
+}
+
+.edge-blog-list-holder.edge-bl-masonry article.format-audio .edge-blog-audio-holder .mejs-container, .edge-blog-list-holder.edge-bl-masonry article.format-audio .edge-blog-audio-holder .mejs-embed, .edge-blog-list-holder.edge-bl-masonry article.format-audio .edge-blog-audio-holder .mejs-embed body, .edge-blog-list-holder.edge-bl-masonry article.format-audio .edge-blog-audio-holder .mejs-container .mejs-controls {
+  background: none;
+}
+
+.edge-blog-list-holder.edge-bl-masonry article.format-audio .edge-blog-audio-holder .mejs-container {
+  background-color: #000;
+}
+
+.edge-blog-list-holder.edge-bl-masonry article.format-audio .edge-blog-audio-holder .mejs-container,
+.edge-blog-list-holder.edge-bl-masonry article.format-audio .edge-blog-audio-holder .mejs-container .mejs-controls {
+  height: 38px !important;
+}
+
+.edge-blog-list-holder.edge-bl-masonry article.format-audio .edge-blog-audio-holder .mejs-container .mejs-controls {
+  padding: 0 10px 0 4px;
+  box-sizing: border-box;
+}
+
+.edge-blog-list-holder.edge-bl-masonry article.format-audio .edge-blog-audio-holder .mejs-container .mejs-controls > .mejs-playpause-button {
+  width: 39px;
+}
+
+.edge-blog-list-holder.edge-bl-masonry article.format-audio .edge-blog-audio-holder .mejs-container .mejs-controls > .mejs-volume-button {
+  width: 30px;
+}
+
+.edge-blog-list-holder.edge-bl-masonry article.format-audio .edge-blog-audio-holder .mejs-container .mejs-controls > .mejs-playpause-button,
+.edge-blog-list-holder.edge-bl-masonry article.format-audio .edge-blog-audio-holder .mejs-container .mejs-controls > .mejs-volume-button {
+  height: 38px;
+}
+
+.edge-blog-list-holder.edge-bl-masonry article.format-audio .edge-blog-audio-holder .mejs-container .mejs-controls > .mejs-playpause-button button,
+.edge-blog-list-holder.edge-bl-masonry article.format-audio .edge-blog-audio-holder .mejs-container .mejs-controls > .mejs-volume-button button {
+  position: relative;
+  height: 100%;
+  background: none;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  border: 0;
+  outline: none;
+}
+
+.edge-blog-list-holder.edge-bl-masonry article.format-audio .edge-blog-audio-holder .mejs-container .mejs-controls > .mejs-playpause-button.mejs-play button,
+.edge-blog-list-holder.edge-bl-masonry article.format-audio .edge-blog-audio-holder .mejs-container .mejs-controls > .mejs-volume-button.mejs-play button {
+  width: 39px;
+  background-image: url("../img/audio/play.png");
+}
+
+.edge-blog-list-holder.edge-bl-masonry article.format-audio .edge-blog-audio-holder .mejs-container .mejs-controls > .mejs-playpause-button.mejs-pause button,
+.edge-blog-list-holder.edge-bl-masonry article.format-audio .edge-blog-audio-holder .mejs-container .mejs-controls > .mejs-volume-button.mejs-pause button {
+  width: 39px;
+  background-image: url("../img/audio/pause.png");
+}
+
+.edge-blog-list-holder.edge-bl-masonry article.format-audio .edge-blog-audio-holder .mejs-container .mejs-controls > .mejs-playpause-button.mejs-stop button,
+.edge-blog-list-holder.edge-bl-masonry article.format-audio .edge-blog-audio-holder .mejs-container .mejs-controls > .mejs-volume-button.mejs-stop button {
+  width: 39px;
+  background-image: url("../img/audio/stop.png");
+}
+
+.edge-blog-list-holder.edge-bl-masonry article.format-audio .edge-blog-audio-holder .mejs-container .mejs-controls > .mejs-playpause-button.mejs-mute button,
+.edge-blog-list-holder.edge-bl-masonry article.format-audio .edge-blog-audio-holder .mejs-container .mejs-controls > .mejs-volume-button.mejs-mute button {
+  width: 30px;
+  background-image: url("../img/audio/sound.png");
+}
+
+.edge-blog-list-holder.edge-bl-masonry article.format-audio .edge-blog-audio-holder .mejs-container .mejs-controls > .mejs-playpause-button.mejs-unmute button,
+.edge-blog-list-holder.edge-bl-masonry article.format-audio .edge-blog-audio-holder .mejs-container .mejs-controls > .mejs-volume-button.mejs-unmute button {
+  width: 30px;
+  background-image: url("../img/audio/mute.png");
+}
+
+.edge-blog-list-holder.edge-bl-masonry article.format-audio .edge-blog-audio-holder .mejs-container .mejs-controls > .mejs-time {
+  height: 100%;
+  padding: 0;
+  font-family: inherit;
+  font-size: 13px;
+  color: #fff;
+  line-height: 36px;
+}
+
+.edge-blog-list-holder.edge-bl-masonry article.format-audio .edge-blog-audio-holder .mejs-container .mejs-controls > .mejs-time-rail {
+  height: 100%;
+  padding: 0;
+  font-family: inherit;
+}
+
+.edge-blog-list-holder.edge-bl-masonry article.format-audio .edge-blog-audio-holder .mejs-container .mejs-controls > .mejs-time-rail .mejs-time-total {
+  height: 5px;
+  margin: 15px 0;
+  background: none;
+  background-color: #fff;
+}
+
+.edge-blog-list-holder.edge-bl-masonry article.format-audio .edge-blog-audio-holder .mejs-container .mejs-controls > .mejs-time-rail .mejs-time-total .mejs-time-current {
+  height: 5px;
+  background-color: #000;
+}
+
+.edge-blog-list-holder.edge-bl-masonry article.format-audio .edge-blog-audio-holder .mejs-container .mejs-controls > .mejs-time-rail .mejs-time-total .mejs-time-buffering,
+.edge-blog-list-holder.edge-bl-masonry article.format-audio .edge-blog-audio-holder .mejs-container .mejs-controls > .mejs-time-rail .mejs-time-total .mejs-time-hovered {
+  height: 5px;
+  z-index: 9999;
+}
+
+.edge-blog-list-holder.edge-bl-masonry article.format-audio .edge-blog-audio-holder .mejs-container .mejs-controls > .mejs-time-rail .mejs-time-total .mejs-time-hovered {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.edge-blog-list-holder.edge-bl-masonry article.format-audio .edge-blog-audio-holder .mejs-container .mejs-controls > .mejs-time-rail .mejs-time-total .mejs-time-float {
+  top: -16px;
+  border: 0;
+  color: #fff;
+}
+
+.edge-blog-list-holder.edge-bl-masonry article.format-audio .edge-blog-audio-holder .mejs-container .mejs-controls > .mejs-time-rail .mejs-time-total .mejs-time-handle-content {
+  display: none;
+}
+
+.edge-blog-list-holder.edge-bl-masonry article.format-audio .edge-blog-audio-holder .mejs-container .mejs-controls > .mejs-time-rail .mejs-time-total .mejs-time-float-corner {
+  top: 11px;
+}
+
+.edge-blog-list-holder.edge-bl-masonry article.format-audio .edge-blog-audio-holder .mejs-container .mejs-controls > .mejs-time-rail .mejs-time-total .mejs-time-loaded,
+.edge-blog-list-holder.edge-bl-masonry article.format-audio .edge-blog-audio-holder .mejs-container .mejs-controls > .mejs-time-rail .mejs-time-total .mejs-time-float {
+  background: none;
+}
+
+.edge-blog-list-holder.edge-bl-masonry article.format-audio .edge-blog-audio-holder .mejs-container .mejs-controls > a.mejs-horizontal-volume-slider {
+  height: 38px;
+}
+
+.edge-blog-list-holder.edge-bl-masonry article.format-audio .edge-blog-audio-holder .mejs-container .mejs-controls > a.mejs-horizontal-volume-slider .mejs-horizontal-volume-total,
+.edge-blog-list-holder.edge-bl-masonry article.format-audio .edge-blog-audio-holder .mejs-container .mejs-controls > a.mejs-horizontal-volume-slider .mejs-horizontal-volume-current {
+  height: 5px;
+  background: none;
+}
+
+.edge-blog-list-holder.edge-bl-masonry article.format-audio .edge-blog-audio-holder .mejs-container .mejs-controls > a.mejs-horizontal-volume-slider .mejs-horizontal-volume-total {
+  top: 15px;
+  background-color: #fff;
+}
+
+.edge-blog-list-holder.edge-bl-masonry article.format-audio .edge-blog-audio-holder .mejs-container .mejs-controls > a.mejs-horizontal-volume-slider .mejs-horizontal-volume-current {
+  background-color: #000;
+}
+
+.edge-blog-list-holder.edge-bl-masonry article.format-video .edge-self-hosted-video {
+  max-width: 100%;
+}
+
+.edge-blog-list-holder.edge-bl-masonry article .edge-post-link-twitter {
+  background-color: #fff;
+  box-shadow: 3px 4px 31.04px 0.96px rgba(0, 0, 0, 0.05);
+  padding: 66px 30px;
+  text-align: center;
+}
+
+.edge-blog-list-holder.edge-bl-masonry article .edge-post-link-twitter .edge-post-link-twitter-author {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.edge-blog-list-holder.edge-bl-masonry article .edge-post-link-twitter .edge-post-title {
+  margin-top: 30px;
+}
+
+.edge-blog-list-holder.edge-bl-masonry article .edge-post-link-twitter .edge-post-link-twitter-text {
+  margin-top: 23px;
+}
+
+.edge-blog-list-holder.edge-bl-masonry article .edge-post-link-twitter .edge-post-info-date {
+  font-size: 13px;
+  margin-top: 29px;
+}
+
+.edge-blog-list-holder.edge-bl-masonry article .edge-post-link-twitter .edge-twitter-post-icon {
+  color: #4094de;
+  font-size: 28px;
+  position: absolute;
+  top: 26px;
+  right: 18px;
+}
+
+.edge-blog-list-holder.edge-bl-masonry .edge-bl-grid-sizer {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.edge-blog-list-holder.edge-bl-masonry .edge-bl-grid-gutter {
+  width: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.edge-blog-list-holder.edge-bl-masonry.edge-bl-two-columns article,
+.edge-blog-list-holder.edge-bl-masonry.edge-bl-two-columns .edge-bl-grid-sizer {
+  width: 50%;
+}
+
+.edge-blog-list-holder.edge-bl-masonry.edge-bl-three-columns article,
+.edge-blog-list-holder.edge-bl-masonry.edge-bl-three-columns .edge-bl-grid-sizer {
+  width: 33.33333%;
+}
+
+.edge-blog-list-holder.edge-bl-masonry.edge-bl-four-columns article,
+.edge-blog-list-holder.edge-bl-masonry.edge-bl-four-columns .edge-bl-grid-sizer {
+  width: 25%;
+}
+
+.edge-blog-list-holder.edge-bl-masonry.edge-bl-five-columns article,
+.edge-blog-list-holder.edge-bl-masonry.edge-bl-five-columns .edge-bl-grid-sizer {
+  width: 20%;
+}
+
+/* ==========================================================================
+   Blog List shortcode - Masonry type style - end
+   ========================================================================== */
+/* ==========================================================================
+   Blog List shortcode - Minimal type style - begin
+   ========================================================================== */
+.edge-blog-list-holder.edge-bl-minimal .edge-post-info-date {
+  display: block;
+  margin: 0 0 12px;
+  line-height: 1;
+}
+
+.edge-blog-list-holder.edge-bl-minimal .edge-post-info-date a {
+  font-size: 13px;
+  color: #000;
+}
+
+.edge-blog-list-holder.edge-bl-minimal .edge-post-info-date a:hover {
+  color: #000;
+}
+
+/* ==========================================================================
+   Blog List shortcode - Minimal type style - end
+   ========================================================================== */
+/* ==========================================================================
+   Blog List shortcode - Simple type style - begin
+   ========================================================================== */
+.edge-blog-list-holder.edge-bl-simple .edge-post-image {
+  display: table-cell;
+  vertical-align: top;
+  width: 84px;
+}
+
+.edge-blog-list-holder.edge-bl-simple .edge-bli-content {
+  display: table-cell;
+  vertical-align: top;
+  width: auto;
+  padding-left: 25px;
+}
+
+.edge-blog-list-holder.edge-bl-simple .edge-bli-content .edge-post-info-date {
+  display: block;
+  margin: 7px 0 0;
+  line-height: 1;
+}
+
+.edge-blog-list-holder.edge-bl-simple .edge-bli-content .edge-post-info-date a {
+  font-size: 13px;
+  color: #000;
+}
+
+.edge-blog-list-holder.edge-bl-simple .edge-bli-content .edge-post-info-date a:hover {
+  color: #000;
+}
+
+/* ==========================================================================
+   Blog List shortcode - Simple type style - end
+   ========================================================================== */
+/* ==========================================================================
+   Blog List shortcode - Standard type style - begin
+   ========================================================================== */
+.edge-blog-list-holder.edge-bl-standard:not(.edge-bl-one-column) .edge-bl-item {
+  float: left;
+}
+
+.edge-blog-list-holder.edge-bl-standard.edge-bl-two-columns .edge-bl-item {
+  width: 50%;
+}
+
+@media only screen and (min-width: 1025px) {
+  .edge-blog-list-holder.edge-bl-standard.edge-bl-two-columns .edge-bl-item:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+.edge-blog-list-holder.edge-bl-standard.edge-bl-three-columns .edge-bl-item {
+  width: 33.33333%;
+}
+
+@media only screen and (min-width: 1025px) {
+  .edge-blog-list-holder.edge-bl-standard.edge-bl-three-columns .edge-bl-item:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+.edge-blog-list-holder.edge-bl-standard.edge-bl-four-columns .edge-bl-item {
+  width: 25%;
+}
+
+@media only screen and (min-width: 1281px) {
+  .edge-blog-list-holder.edge-bl-standard.edge-bl-four-columns .edge-bl-item:nth-child(4n+1) {
+    clear: both;
+  }
+}
+
+.edge-blog-list-holder.edge-bl-standard.edge-bl-five-columns .edge-bl-item {
+  width: 20%;
+}
+
+@media only screen and (min-width: 1281px) {
+  .edge-blog-list-holder.edge-bl-standard.edge-bl-five-columns .edge-bl-item:nth-child(5n+1) {
+    clear: both;
+  }
+}
+
+/* ==========================================================================
+   Blog List shortcode - Standard type style - end
+   ========================================================================== */
+/* ==========================================================================
+   Blog List loading element style - begin
+   ========================================================================== */
+.edge-bl-loading {
+  position: relative;
+  display: none;
+  width: 100%;
+  margin: 40px 0 20px;
+  text-align: center;
+}
+
+.edge-bl-loading.edge-showing {
+  display: block;
+}
+
+.edge-bl-loading > div {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 14px;
+  height: 14px;
+  margin: 0 3px;
+  background-color: #000;
+  border-radius: 100%;
+  -webkit-animation: bl-bouncedelay 1.4s infinite ease-in-out both;
+  -moz-animation: bl-bouncedelay 1.4s infinite ease-in-out both;
+  animation: bl-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.edge-bl-loading .edge-bl-loading-bounce1 {
+  -webkit-animation-delay: -0.32s;
+  -moz-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+.edge-bl-loading .edge-bl-loading-bounce2 {
+  -webkit-animation-delay: -0.16s;
+  -moz-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+@-webkit-keyframes bl-bouncedelay {
+  0%, 80%, 100% {
+    -webkit-transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+  }
+}
+
+@-moz-keyframes bl-bouncedelay {
+  0%, 80%, 100% {
+    -moz-transform: scale(0);
+  }
+  40% {
+    -moz-transform: scale(1);
+  }
+}
+
+@keyframes bl-bouncedelay {
+  0%, 80%, 100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+/* ==========================================================================
+   Blog List loading element style - end
+   ========================================================================== */
+/* ==========================================================================
+   Blog styles - end
+   ========================================================================== */
+
+/*# sourceMappingURL=blog-map.css.map */

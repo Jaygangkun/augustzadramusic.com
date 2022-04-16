@@ -1,0 +1,230 @@
+/* ==========================================================================
+   Header responsive styles - begin
+   ========================================================================== */
+/* common mixins - start */
+/* common mixins - end */
+/* mixins styles - start */
+/* mixins styles - end */
+/* ==========================================================================
+   Header responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1024px) {
+  .edge-page-header {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   Header responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Fixed header responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1200px) {
+  .edge-boxed .edge-page-header .edge-fixed-wrapper.fixed {
+    width: 1000px;
+  }
+}
+
+/* ==========================================================================
+   Fixed header responsive style - end
+   ========================================================================== */
+/*==========================================================================
+# Fullscreen menu resposnsive style - begin
+========================================================================== */
+@media only screen and (max-width: 680px) {
+  nav.edge-fullscreen-menu > ul > li > a {
+    font-size: 40px;
+  }
+  nav.edge-fullscreen-menu ul li ul a {
+    font-size: 20px;
+  }
+}
+
+/*==========================================================================
+# Fullscreen menu resposnsive style - end
+========================================================================== */
+/* ==========================================================================
+   Header Vertical - Closed responsive style - begin
+   ========================================================================== */
+@media only screen and (min-width: 1025px) {
+  .error404.edge-header-vertical-closed .edge-content {
+    margin: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edge-header-vertical-closed .edge-vertical-menu-area {
+    display: none;
+  }
+  .edge-header-vertical-closed .edge-content,
+  .edge-header-vertical-closed footer {
+    padding-left: 0;
+  }
+}
+
+/* ==========================================================================
+   Header Vertical - Closed responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Header Vertical responsive style - begin
+   ========================================================================== */
+@media only screen and (min-width: 1025px) {
+  .error404.edge-header-vertical .edge-content {
+    margin: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  .edge-header-vertical .edge-vertical-menu {
+    margin: 20% 0 31px;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .edge-header-vertical .edge-vertical-menu {
+    margin: 20% 0 31px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edge-header-vertical .edge-vertical-menu-area {
+    display: none;
+  }
+  .edge-header-vertical .edge-content,
+  .edge-header-vertical footer {
+    padding-left: 0;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .edge-header-vertical .edge-grid,
+  .edge-header-vertical .edge-container-inner,
+  .edge-header-vertical .edge-row-grid-section {
+    width: 900px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .edge-header-vertical .edge-grid,
+  .edge-header-vertical .edge-container-inner,
+  .edge-header-vertical .edge-row-grid-section {
+    width: 768px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edge-header-vertical .edge-grid,
+  .edge-header-vertical .edge-container-inner,
+  .edge-header-vertical .edge-row-grid-section {
+    width: 768px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edge-header-vertical .edge-grid,
+  .edge-header-vertical .edge-container-inner,
+  .edge-header-vertical .edge-row-grid-section {
+    width: 600px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .edge-header-vertical .edge-grid,
+  .edge-header-vertical .edge-container-inner,
+  .edge-header-vertical .edge-row-grid-section {
+    width: 420px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .edge-header-vertical .edge-grid,
+  .edge-header-vertical .edge-container-inner,
+  .edge-header-vertical .edge-row-grid-section {
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .edge-header-vertical .edge-grid,
+  .edge-header-vertical .edge-container-inner,
+  .edge-header-vertical .edge-row-grid-section {
+    width: 90%;
+  }
+}
+
+/* ==========================================================================
+   Header Vertical responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Mobile header responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1024px) {
+  .edge-mobile-header {
+    display: block;
+  }
+}
+
+/* ==========================================================================
+   Mobile header responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Sticky header responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1200px) {
+  .edge-boxed .edge-page-header .edge-sticky-header {
+    width: 1000px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edge-boxed.edge-sticky-up-mobile-header .mobile-header-appear .edge-mobile-header-inner {
+    width: 818px;
+    left: auto;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edge-boxed.edge-sticky-up-mobile-header .mobile-header-appear .edge-mobile-header-inner {
+    width: 650px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .edge-boxed.edge-sticky-up-mobile-header .mobile-header-appear .edge-mobile-header-inner {
+    width: 470px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .edge-boxed.edge-sticky-up-mobile-header .mobile-header-appear .edge-mobile-header-inner {
+    width: 350px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .edge-boxed.edge-sticky-up-mobile-header .mobile-header-appear .edge-mobile-header-inner {
+    width: 92%;
+  }
+}
+
+/* ==========================================================================
+   Sticky header responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Top header responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1024px) {
+  .edge-top-bar {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   Top header responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Header responsive styles - end
+   ========================================================================== */
+
+/*# sourceMappingURL=header-map-responsive.css.map */

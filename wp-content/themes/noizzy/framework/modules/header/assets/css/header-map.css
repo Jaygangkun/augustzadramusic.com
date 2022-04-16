@@ -1,0 +1,2969 @@
+/* ==========================================================================
+   Header styles - begin
+   ========================================================================== */
+/* common mixins - start */
+/* common mixins - end */
+/* mixins styles - start */
+/* mixins styles - end */
+/* ==========================================================================
+   Header styles - begin
+   ========================================================================== */
+.edge-page-header div [id*="monster"],
+.edge-top-bar div [id*="monster"],
+.edge-sticky-header div [id*="monster"],
+.edge-mobile-header div [id*="monster"] {
+  display: none;
+}
+
+.edge-page-header {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  z-index: 110;
+  box-sizing: border-box;
+  /* ==========================================================================
+    #General header layout - start
+    ========================================================================== */
+  /* ==========================================================================
+    #General header layout - end
+    ========================================================================== */
+  /* ==========================================================================
+    #Logo area styles - start
+    ========================================================================== */
+  /* ==========================================================================
+    #Logo area styles - end
+    ========================================================================== */
+  /* ==========================================================================
+    #Menu area styles - start
+    ========================================================================== */
+  /* ==========================================================================
+    #Menu area styles - end
+    ========================================================================== */
+  /* ==========================================================================
+    #Specific styles - start
+    ========================================================================== */
+  /* ==========================================================================
+    #Specific styles - end
+    ========================================================================== */
+}
+
+.edge-page-header a img {
+  display: block;
+}
+
+.edge-page-header p {
+  margin: 0;
+}
+
+.edge-page-header .edge-vertical-align-containers {
+  padding: 0 40px;
+}
+
+.edge-paspartu-enabled .edge-page-header .edge-vertical-align-containers {
+  padding: 0;
+}
+
+.edge-page-header .edge-grid {
+  height: 100%;
+}
+
+.edge-page-header .edge-grid .edge-vertical-align-containers {
+  padding: 0;
+  -webkit-transition: background-color 0.3s ease;
+  -moz-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+.edge-page-header .edge-logo-area {
+  position: relative;
+  height: 90px;
+  overflow: hidden;
+  background-color: #170e03;
+}
+
+.edge-page-header .edge-logo-area .edge-logo-wrapper a {
+  max-height: 90px;
+}
+
+.edge-page-header .edge-menu-area {
+  position: relative;
+  height: 125px;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.edge-boxed .edge-page-header .edge-menu-area {
+  padding: 0;
+}
+
+.edge-page-header .edge-menu-area .edge-logo-wrapper a {
+  max-height: 125px;
+}
+
+.edge-page-header .edge-menu-area .widget {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.edge-logo-area-border-disable .edge-page-header .edge-logo-area {
+  border: none;
+}
+
+.edge-logo-area-in-grid-border-disable .edge-page-header .edge-logo-area .edge-grid .edge-vertical-align-containers {
+  border: none;
+}
+
+.edge-header-logo-area-in-grid-padding .edge-page-header .edge-logo-area .edge-vertical-align-containers {
+  padding: 0 25px;
+}
+
+.edge-menu-area-shadow-disable .edge-page-header .edge-menu-area {
+  box-shadow: none;
+}
+
+.edge-menu-area-shadow-disable .edge-page-header .edge-menu-area .edge-grid .edge-vertical-align-containers {
+  box-shadow: none;
+}
+
+.edge-menu-area-border-disable .edge-page-header .edge-menu-area {
+  border: none;
+}
+
+.edge-menu-area-in-grid-border-disable .edge-page-header .edge-menu-area .edge-grid .edge-vertical-align-containers {
+  border: none;
+}
+
+.edge-header-logo-area-in-grid-padding .edge-page-header .edge-menu-area .edge-vertical-align-containers {
+  padding: 0 25px;
+}
+
+/* ==========================================================================
+#Light header - begin
+========================================================================== */
+.edge-light-header .edge-page-header > div:not(.fixed):not(.edge-sticky-header) .edge-logo-wrapper .edge-light-logo {
+  opacity: 1;
+}
+
+.edge-light-header .edge-page-header > div:not(.fixed):not(.edge-sticky-header) .edge-logo-wrapper .edge-normal-logo,
+.edge-light-header .edge-page-header > div:not(.fixed):not(.edge-sticky-header) .edge-logo-wrapper .edge-dark-logo {
+  opacity: 0;
+}
+
+.edge-light-header .edge-page-header > div:not(.fixed):not(.edge-sticky-header) .edge-menu-area {
+  color: #fff !important;
+}
+
+.edge-light-header .edge-page-header > div:not(.fixed):not(.edge-sticky-header) .edge-menu-area .widget {
+  color: #fff !important;
+}
+
+.edge-light-header .edge-page-header > div:not(.fixed):not(.edge-sticky-header) .edge-menu-area .widget p,
+.edge-light-header .edge-page-header > div:not(.fixed):not(.edge-sticky-header) .edge-menu-area .widget a,
+.edge-light-header .edge-page-header > div:not(.fixed):not(.edge-sticky-header) .edge-menu-area .widget span,
+.edge-light-header .edge-page-header > div:not(.fixed):not(.edge-sticky-header) .edge-menu-area .widget i,
+.edge-light-header .edge-page-header > div:not(.fixed):not(.edge-sticky-header) .edge-menu-area .widget .widgettitle {
+  color: #fff !important;
+}
+
+.edge-light-header .edge-page-header > div:not(.fixed):not(.edge-sticky-header) .edge-menu-area .widget a:hover {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.edge-light-header .edge-page-header > div:not(.fixed):not(.edge-sticky-header).edge-menu-area {
+  color: #fff !important;
+}
+
+.edge-light-header .edge-page-header > div:not(.fixed):not(.edge-sticky-header).edge-menu-area .widget {
+  color: #fff !important;
+}
+
+.edge-light-header .edge-page-header > div:not(.fixed):not(.edge-sticky-header).edge-menu-area .widget p,
+.edge-light-header .edge-page-header > div:not(.fixed):not(.edge-sticky-header).edge-menu-area .widget a,
+.edge-light-header .edge-page-header > div:not(.fixed):not(.edge-sticky-header).edge-menu-area .widget span,
+.edge-light-header .edge-page-header > div:not(.fixed):not(.edge-sticky-header).edge-menu-area .widget i,
+.edge-light-header .edge-page-header > div:not(.fixed):not(.edge-sticky-header).edge-menu-area .widget .widgettitle {
+  color: #fff !important;
+}
+
+.edge-light-header .edge-page-header > div:not(.fixed):not(.edge-sticky-header).edge-menu-area .widget a:hover {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* ==========================================================================
+#Light header - end
+========================================================================== */
+/* ==========================================================================
+#Dark header - begin
+========================================================================== */
+.edge-dark-header .edge-page-header > div:not(.fixed):not(.edge-sticky-header) .edge-logo-wrapper .edge-dark-logo {
+  opacity: 1;
+}
+
+.edge-dark-header .edge-page-header > div:not(.fixed):not(.edge-sticky-header) .edge-logo-wrapper .edge-normal-logo,
+.edge-dark-header .edge-page-header > div:not(.fixed):not(.edge-sticky-header) .edge-logo-wrapper .edge-light-logo {
+  opacity: 0;
+}
+
+.edge-dark-header .edge-page-header > div:not(.fixed):not(.edge-sticky-header) .edge-menu-area {
+  color: #333 !important;
+}
+
+.edge-dark-header .edge-page-header > div:not(.fixed):not(.edge-sticky-header) .edge-menu-area .widget {
+  color: #333 !important;
+}
+
+.edge-dark-header .edge-page-header > div:not(.fixed):not(.edge-sticky-header) .edge-menu-area .widget p,
+.edge-dark-header .edge-page-header > div:not(.fixed):not(.edge-sticky-header) .edge-menu-area .widget a,
+.edge-dark-header .edge-page-header > div:not(.fixed):not(.edge-sticky-header) .edge-menu-area .widget span,
+.edge-dark-header .edge-page-header > div:not(.fixed):not(.edge-sticky-header) .edge-menu-area .widget i,
+.edge-dark-header .edge-page-header > div:not(.fixed):not(.edge-sticky-header) .edge-menu-area .widget .widgettitle {
+  color: #333 !important;
+}
+
+.edge-dark-header .edge-page-header > div:not(.fixed):not(.edge-sticky-header) .edge-menu-area .widget a:hover {
+  color: rgba(51, 51, 51, 0.8) !important;
+}
+
+.edge-dark-header .edge-page-header > div:not(.fixed):not(.edge-sticky-header).edge-menu-area {
+  color: #333 !important;
+}
+
+.edge-dark-header .edge-page-header > div:not(.fixed):not(.edge-sticky-header).edge-menu-area .widget {
+  color: #333 !important;
+}
+
+.edge-dark-header .edge-page-header > div:not(.fixed):not(.edge-sticky-header).edge-menu-area .widget p,
+.edge-dark-header .edge-page-header > div:not(.fixed):not(.edge-sticky-header).edge-menu-area .widget a,
+.edge-dark-header .edge-page-header > div:not(.fixed):not(.edge-sticky-header).edge-menu-area .widget span,
+.edge-dark-header .edge-page-header > div:not(.fixed):not(.edge-sticky-header).edge-menu-area .widget i,
+.edge-dark-header .edge-page-header > div:not(.fixed):not(.edge-sticky-header).edge-menu-area .widget .widgettitle {
+  color: #333 !important;
+}
+
+.edge-dark-header .edge-page-header > div:not(.fixed):not(.edge-sticky-header).edge-menu-area .widget a:hover {
+  color: rgba(51, 51, 51, 0.8) !important;
+}
+
+/* ==========================================================================
+#Dark header - end
+========================================================================== */
+/* ==========================================================================
+   Header end - end
+   ========================================================================== */
+/* ==========================================================================
+   Header logo styles - begin
+   ========================================================================== */
+.edge-logo-wrapper {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.edge-logo-wrapper a {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+.edge-logo-wrapper a img {
+  height: 100%;
+  width: auto;
+  -webkit-transition: opacity 0.2s ease;
+  -moz-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;
+}
+
+.edge-logo-wrapper a img.edge-normal-logo {
+  opacity: 1;
+}
+
+.edge-logo-wrapper a img.edge-dark-logo {
+  opacity: 0;
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+.edge-logo-wrapper a img.edge-light-logo {
+  opacity: 0;
+  -webkit-transform: translateY(-200%);
+  -moz-transform: translateY(-200%);
+  transform: translateY(-200%);
+}
+
+/* ==========================================================================
+   Header logo styles - end
+   ========================================================================== */
+/* ==========================================================================
+   Header main menu style - begin
+   ========================================================================== */
+.edge-main-menu {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  height: 100%;
+  width: auto;
+}
+
+.edge-main-menu ul {
+  list-style: none outside none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.edge-main-menu ul li {
+  position: relative;
+  display: inline-block;
+  float: left;
+  padding: 0;
+  margin: 0;
+}
+
+.edge-main-menu ul li a {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 29px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.edge-main-menu ul li a i:before {
+  margin: 0 7px 0 0;
+}
+
+.edge-main-menu ul li a .menu_icon_wrapper {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.edge-main-menu ul li a .edge-menu-featured-icon {
+  position: relative;
+  top: -4px;
+  left: 5px;
+  color: currentColor;
+  font-size: 10px;
+  margin: 0;
+}
+
+.edge-main-menu ul li a .edge-menu-featured-icon:before {
+  margin: 0;
+}
+
+.edge-main-menu > ul {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.edge-main-menu > ul > li {
+  float: left;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.edge-main-menu > ul > li > a {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  height: 100%;
+  padding: 0 24px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  box-sizing: border-box;
+  text-transform: uppercase;
+}
+
+.edge-main-menu > ul > li > a > span.item_outer {
+  position: relative;
+  display: block;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.edge-main-menu > ul > li > a > span.item_outer:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: currentColor;
+  -webkit-transition: width 0.3s ease;
+  -moz-transition: width 0.3s ease;
+  transition: width 0.3s ease;
+}
+
+.edge-main-menu > ul > li > a > span.item_outer .item_text {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.edge-main-menu > ul > li > a:hover > span.item_outer:after {
+  width: 100%;
+}
+
+.edge-main-menu > ul > li.edge-active-item > a > span.item_outer:after {
+  width: 100%;
+}
+
+.edge-main-menu > ul > li.has_sub > a .edge-menu-arrow {
+  display: none;
+}
+
+.edge-main-menu > ul > li.edge-active-item > a,
+.edge-main-menu > ul > li > a:hover {
+  color: #000;
+}
+
+.edge-light-header .edge-page-header > div:not(.edge-sticky-header):not(.fixed) .edge-main-menu > ul > li > a,
+.edge-light-sticky-header .edge-page-header > div.edge-sticky-header .edge-main-menu > ul > li > a {
+  color: #fff;
+}
+
+.edge-light-header .edge-page-header > div:not(.edge-sticky-header):not(.fixed) .edge-main-menu > ul > li > a:hover,
+.edge-light-sticky-header .edge-page-header > div.edge-sticky-header .edge-main-menu > ul > li > a:hover {
+  color: #fff;
+}
+
+.edge-light-header .edge-page-header > div:not(.edge-sticky-header):not(.fixed) .edge-main-menu > ul > li > a > span.item_outer:after,
+.edge-light-sticky-header .edge-page-header > div.edge-sticky-header .edge-main-menu > ul > li > a > span.item_outer:after {
+  background-color: #fff;
+}
+
+.edge-light-header .edge-page-header > div:not(.edge-sticky-header):not(.fixed) .edge-main-menu > ul > li.edge-active-item > a,
+.edge-light-sticky-header .edge-page-header > div.edge-sticky-header .edge-main-menu > ul > li.edge-active-item > a {
+  color: #fff;
+}
+
+.edge-light-header .edge-page-header > div:not(.edge-sticky-header):not(.fixed) .edge-main-menu > ul > li.edge-active-item > a > span.item_outer:after,
+.edge-light-sticky-header .edge-page-header > div.edge-sticky-header .edge-main-menu > ul > li.edge-active-item > a > span.item_outer:after {
+  background-color: #fff;
+}
+
+.edge-dark-header .edge-page-header > div:not(.edge-sticky-header):not(.fixed) .edge-main-menu > ul > li > a,
+.edge-dark-sticky-header .edge-page-header > div.edge-sticky-header .edge-main-menu > ul > li > a {
+  color: #333;
+}
+
+.edge-dark-header .edge-page-header > div:not(.edge-sticky-header):not(.fixed) .edge-main-menu > ul > li > a:hover,
+.edge-dark-sticky-header .edge-page-header > div.edge-sticky-header .edge-main-menu > ul > li > a:hover {
+  color: #333;
+}
+
+.edge-dark-header .edge-page-header > div:not(.edge-sticky-header):not(.fixed) .edge-main-menu > ul > li.edge-active-item > a,
+.edge-dark-sticky-header .edge-page-header > div.edge-sticky-header .edge-main-menu > ul > li.edge-active-item > a {
+  color: #333;
+}
+
+.edge-dark-header .edge-page-header > div:not(.edge-sticky-header):not(.fixed) .edge-main-menu > ul > li.edge-active-item > a > span.item_outer:after,
+.edge-dark-sticky-header .edge-page-header > div.edge-sticky-header .edge-main-menu > ul > li.edge-active-item > a > span.item_outer:after {
+  background-color: #333;
+}
+
+/* Narrow drop down styles
+   ========================================================================== */
+.edge-drop-down .second {
+  position: absolute;
+  display: block;
+  left: -14px;
+  top: 100%;
+  visibility: hidden;
+  overflow: hidden;
+  opacity: 0;
+  z-index: 10;
+  -webkit-transition: top 0.15s ease-out;
+  -moz-transition: top 0.15s ease-out;
+  transition: top 0.15s ease-out;
+}
+
+.edge-drop-down .second.edge-drop-down-start {
+  visibility: visible;
+  overflow: visible;
+  opacity: 1;
+  -webkit-transition: opacity 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
+}
+
+.edge-drop-down .second.right {
+  right: -12px;
+  left: auto;
+}
+
+.edge-drop-down .second .inner {
+  position: relative;
+  display: block;
+  padding: 0;
+  margin: 0;
+  z-index: 997;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.03);
+}
+
+.edge-drop-down .second .inner ul li {
+  display: block;
+  float: none;
+  height: auto;
+}
+
+.edge-drop-down .second .inner ul li .widget {
+  width: 100%;
+  margin-top: 9px;
+}
+
+.edge-drop-down .second .inner ul li a {
+  display: block;
+  float: none;
+  margin: 0;
+  color: #fff;
+  padding: 4px 39px;
+}
+
+.edge-drop-down .second .inner ul li a .item_outer {
+  position: relative;
+  display: block;
+  padding: 0 30px 0 0;
+  box-sizing: border-box;
+  -webkit-transition: padding 0.2s ease-in-out;
+  -moz-transition: padding 0.2s ease-in-out;
+  transition: padding 0.2s ease-in-out;
+}
+
+.edge-drop-down .second .inner ul li a .item_text {
+  position: relative;
+}
+
+.edge-drop-down .second .inner ul li a .item_text:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #fff;
+  -webkit-transition: width 0.3s ease;
+  -moz-transition: width 0.3s ease;
+  transition: width 0.3s ease;
+}
+
+.edge-drop-down .second .inner ul li a:hover {
+  color: #fff;
+}
+
+.edge-drop-down .second .inner ul li a:hover .item_text:after {
+  width: 100%;
+}
+
+.edge-drop-down .second .inner ul li a:hover .item_outer:after {
+  color: #fff;
+}
+
+.edge-drop-down .second .inner ul li.current-menu-ancestor > a .item_text:after,
+.edge-drop-down .second .inner ul li.current-menu-item > a .item_text:after {
+  width: 100%;
+}
+
+.edge-drop-down .second .inner ul li.current-menu-ancestor > a .item_outer:after,
+.edge-drop-down .second .inner ul li.current-menu-item > a .item_outer:after {
+  color: #fff;
+}
+
+.edge-drop-down .second .inner ul li.sub > a .item_outer:after {
+  color: #fff;
+  position: absolute;
+  display: inline-block;
+  vertical-align: middle;
+  top: 1px;
+  right: 0;
+  content: '\f101';
+  font-family: 'FontAwesome';
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.edge-drop-down .second .inner ul.right li a .item_outer {
+  padding: 0 0 0 30px;
+}
+
+.edge-drop-down .second .inner ul.right li.sub > a .item_outer:after {
+  right: auto;
+  left: 0;
+  content: "\f100";
+}
+
+.edge-drop-down .second .inner ul.right li a {
+  text-align: right;
+}
+
+.edge-drop-down .second .inner ul.right li ul {
+  left: -100%;
+}
+
+.edge-drop-down li.left_position .second {
+  left: 0;
+}
+
+.edge-drop-down li.right_position .second {
+  left: auto;
+  right: 0;
+}
+
+.edge-drop-down > ul > li:hover > .second {
+  z-index: 20;
+}
+
+.edge-drop-down .narrow .second .inner ul {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #000;
+  padding: 26px 0;
+}
+
+.edge-drop-down .narrow .second .inner ul li {
+  width: 264px;
+}
+
+.edge-drop-down .narrow .second .inner ul li ul {
+  position: absolute;
+  left: 100%;
+  top: -26px;
+  height: auto;
+  opacity: 0;
+  overflow: hidden;
+  z-index: 10;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.03);
+  -webkit-transform: translateZ(0);
+  -webkit-transition: opacity 0.4s ease-out;
+  -moz-transition: opacity 0.4s ease-out;
+  transition: opacity 0.4s ease-out;
+}
+
+.edge-drop-down .narrow .second .inner ul li:hover ul {
+  z-index: 20;
+  opacity: 1;
+}
+
+.edge-drop-down .narrow .second .inner ul.right li ul {
+  left: -100%;
+}
+
+/* Wide drop down styles
+   ========================================================================== */
+.edge-drop-down .wide .second .inner {
+  background-color: #000;
+  text-align: center;
+}
+
+.edge-drop-down .wide .second .inner ul li a {
+  padding: 3px 0;
+}
+
+.edge-drop-down .wide .second .inner ul li ul {
+  position: relative;
+  display: block;
+  top: 0;
+  left: 0;
+  visibility: visible;
+}
+
+.edge-drop-down .wide .second .inner ul li ul li:last-child a {
+  padding-bottom: 0;
+}
+
+.edge-drop-down .wide .second .inner > ul {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 34px 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.edge-wide-dropdown-menu-content-in-grid .edge-drop-down .wide .second .inner > ul {
+  width: 1100px;
+}
+
+@media only screen and (min-width: 1400px) {
+  .edge-grid-1300.edge-wide-dropdown-menu-content-in-grid .edge-drop-down .wide .second .inner > ul {
+    width: 1300px;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .edge-grid-1200.edge-wide-dropdown-menu-content-in-grid .edge-drop-down .wide .second .inner > ul {
+    width: 1200px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .edge-grid-1000.edge-wide-dropdown-menu-content-in-grid .edge-drop-down .wide .second .inner > ul {
+    width: 1000px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .edge-grid-800.edge-wide-dropdown-menu-content-in-grid .edge-drop-down .wide .second .inner > ul {
+    width: 800px;
+  }
+}
+
+.edge-drop-down .wide .second .inner > ul > li {
+  float: left;
+  width: 25%;
+  margin: 0;
+  padding: 0 26px;
+  box-sizing: border-box;
+}
+
+.edge-drop-down .wide .second .inner > ul > li:nth-child(4n+1) {
+  clear: both;
+  border-left: 0;
+}
+
+.edge-drop-down .wide .second .inner > ul > li > a {
+  padding: 0;
+  margin: 4px 0 19px;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 1.1em;
+}
+
+.edge-drop-down .wide .second .inner > ul > li > a.no_link {
+  cursor: default;
+}
+
+.edge-drop-down .wide .second .inner > ul > li > a.no_link:hover {
+  color: #fff;
+}
+
+.edge-drop-down .wide .second .inner > ul > li > a .item_outer {
+  padding: 0;
+  overflow: inherit;
+}
+
+.edge-drop-down .wide .second .inner > ul > li > a .item_outer:before, .edge-drop-down .wide .second .inner > ul > li > a .item_outer:after {
+  display: none;
+}
+
+.edge-drop-down .wide .second .inner > ul > li > a .item_text:after {
+  display: none;
+}
+
+.edge-drop-down .wide .second .inner > ul > li.current-menu-ancestor > a,
+.edge-drop-down .wide .second .inner > ul > li.current-menu-item > a {
+  color: #000;
+}
+
+.edge-drop-down .wide .second .inner > ul > li.current-menu-ancestor > a.no_link,
+.edge-drop-down .wide .second .inner > ul > li.current-menu-item > a.no_link {
+  color: #fff;
+}
+
+.edge-drop-down .wide.left_position .second .inner > ul, .edge-drop-down .wide.right_position .second .inner > ul {
+  width: auto;
+  white-space: nowrap;
+}
+
+.edge-drop-down .wide.left_position .second .inner > ul > li, .edge-drop-down .wide.right_position .second .inner > ul > li {
+  float: none;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.edge-drop-down .wide.left_position .second .inner > ul > li:nth-child(4n+1), .edge-drop-down .wide.right_position .second .inner > ul > li:nth-child(4n+1) {
+  border-left: none;
+}
+
+.edge-drop-down .wide.left_position .second ul li, .edge-drop-down .wide.right_position .second ul li {
+  width: 200px;
+}
+
+/* ==========================================================================
+   Header main menu style - end
+   ========================================================================== */
+/* ==========================================================================
+   Fixed header style - begin
+   ========================================================================== */
+.edge-page-header .edge-fixed-wrapper.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+}
+
+.admin-bar .edge-page-header .edge-fixed-wrapper.fixed {
+  top: 32px;
+}
+
+.edge-page-header .edge-fixed-wrapper.fixed .edge-menu-area {
+  background-color: #fff;
+}
+
+/* ==========================================================================
+   Fixed header style - end
+   ========================================================================== */
+/*==========================================================================
+# Fullscreen menu style - begin
+========================================================================== */
+.edge-dark-header .edge-fullscreen-menu ul li a {
+  color: #333 !important;
+}
+
+.edge-dark-header .edge-fullscreen-menu ul li a:hover {
+  color: rgba(51, 51, 51, 0.8) !important;
+}
+
+.edge-dark-header .edge-fullscreen-menu ul li a:hover span:after {
+  background-color: currentColor;
+}
+
+.edge-dark-header .edge-page-header > div:not(.edge-sticky-header):not(.fixed) .edge-fullscreen-menu-opener {
+  color: #333;
+}
+
+.edge-dark-header .edge-page-header > div:not(.edge-sticky-header):not(.fixed) .edge-fullscreen-menu-opener:hover, .edge-dark-header .edge-page-header > div:not(.edge-sticky-header):not(.fixed) .edge-fullscreen-menu-opener.edge-fm-opened {
+  color: #000;
+}
+
+.edge-light-header .edge-fullscreen-menu ul li a {
+  color: #fff !important;
+}
+
+.edge-light-header .edge-fullscreen-menu ul li a:hover {
+  color: #fff !important;
+}
+
+.edge-light-header .edge-fullscreen-menu ul li a:hover span:after {
+  background-color: currentColor;
+}
+
+.edge-light-header .edge-page-header > div:not(.edge-sticky-header):not(.fixed) .edge-fullscreen-menu-opener {
+  color: #fff;
+}
+
+.edge-light-header .edge-page-header > div:not(.edge-sticky-header):not(.fixed) .edge-fullscreen-menu-opener:hover, .edge-light-header .edge-page-header > div:not(.edge-sticky-header):not(.fixed) .edge-fullscreen-menu-opener.edge-fm-opened {
+  color: #000;
+}
+
+.edge-light-header .edge-page-header > div:not(.edge-sticky-header):not(.fixed) .edge-fullscreen-menu-opener .edge-menu-opener-icon circle:first-child {
+  stroke: #fff;
+}
+
+.edge-light-header .edge-page-header > div:not(.edge-sticky-header):not(.fixed) .edge-fullscreen-menu-opener .edge-menu-opener-icon circle:last-child {
+  fill: #fff;
+}
+
+.edge-fullscreen-menu-opener {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  color: #fff;
+}
+
+.edge-fullscreen-menu-opener .edge-fullscreen-menu-opener-icon {
+  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -moz-transition: -moz-transform 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: transform 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.edge-fullscreen-menu-opener:hover {
+  color: #fff;
+}
+
+.edge-fullscreen-menu-opener:hover .edge-fullscreen-menu-opener-icon {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.edge-fullscreen-menu-opener .edge-fullscreen-menu-opener-icon {
+  opacity: 1;
+  position: relative;
+}
+
+.edge-fullscreen-menu-opener .edge-fullscreen-menu-close-icon {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  opacity: 0;
+  color: #fff;
+}
+
+.edge-fullscreen-menu-opener.edge-fm-opened .edge-fullscreen-menu-opener-icon {
+  opacity: 0;
+}
+
+.edge-fullscreen-menu-opener.edge-fm-opened .edge-fullscreen-menu-close-icon {
+  opacity: 1;
+}
+
+.edge-fullscreen-menu-opener.edge-fullscreen-menu-opener-icon-pack {
+  font-size: 38px;
+}
+
+.edge-fullscreen-menu-opener.edge-fullscreen-menu-opener-icon-pack * {
+  display: inline-block;
+  line-height: inherit;
+}
+
+.edge-fullscreen-menu-opener.edge-fullscreen-menu-opener-icon-pack *:before {
+  display: inline-block;
+  line-height: inherit;
+}
+
+.edge-fullscreen-menu-opener.edge-fullscreen-menu-opener-svg-path span > * {
+  overflow: visible;
+  stroke: transparent;
+  margin-top: -5px;
+  vertical-align: middle;
+  transform-origin: left;
+  will-change: transform;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.edge-fullscreen-menu-opener.edge-fullscreen-menu-opener-svg-path span > *:hover rect {
+  -webkit-transform: scale(1.3, 1);
+  -moz-transform: scale(1.3, 1);
+  transform: scale(1.3, 1);
+}
+
+.edge-fullscreen-menu-opener.edge-fullscreen-menu-opener-svg-path span rect {
+  display: block;
+}
+
+.edge-fullscreen-menu-opener.edge-fullscreen-menu-opener-svg-path span rect:nth-of-type(1) {
+  -webkit-transition: -webkit-transform 0.2s ease 0s;
+  -moz-transition: -moz-transform 0.2s ease 0s;
+  transition: transform 0.2s ease 0s;
+}
+
+.edge-fullscreen-menu-opener.edge-fullscreen-menu-opener-svg-path span rect:nth-of-type(2) {
+  -webkit-transition: -webkit-transform 0.2s ease 0.05s;
+  -moz-transition: -moz-transform 0.2s ease 0.05s;
+  transition: transform 0.2s ease 0.05s;
+}
+
+.edge-fullscreen-menu-opener.edge-fullscreen-menu-opener-svg-path span rect:nth-of-type(3) {
+  -webkit-transition: -webkit-transform 0.2s ease 0.1s;
+  -moz-transition: -moz-transform 0.2s ease 0.1s;
+  transition: transform 0.2s ease 0.1s;
+}
+
+.edge-fullscreen-menu-opener.edge-fullscreen-menu-opener-svg-path span > *,
+.edge-fullscreen-menu-opener.edge-fullscreen-menu-opener-svg-path span path {
+  fill: currentColor;
+  stroke: transparent;
+}
+
+.edge-fullscreen-menu-opened .edge-page-header,
+.edge-fullscreen-menu-opened .edge-top-bar {
+  visibility: hidden;
+}
+
+.edge-fullscreen-menu-opened .edge-fullscreen-menu-opener,
+.edge-fullscreen-menu-opened .edge-logo-wrapper {
+  visibility: visible;
+}
+
+.edge-fullscreen-menu-opened .edge-fullscreen-menu-holder-outer {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.edge-fullscreen-menu-opened .edge-logo-wrapper a img.edge-normal-logo {
+  opacity: 0;
+}
+
+.edge-fullscreen-menu-opened .edge-logo-wrapper a img.edge-light-logo {
+  opacity: 1;
+}
+
+.edge-fullscreen-menu-holder-outer {
+  position: fixed;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden !important;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 105;
+  /* this has to be between header z-index and content z-index */
+}
+
+.edge-fullscreen-menu-holder {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  display: table;
+  background-repeat: repeat;
+  background-position: 0 0;
+}
+
+.edge-fullscreen-menu-holder-inner {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 50px 0;
+}
+
+.touch .edge-fullscreen-menu-holder-outer {
+  display: none;
+}
+
+.touch .edge-fullscreen-menu-opened .edge-fullscreen-menu-holder-outer {
+  display: block;
+}
+
+nav.edge-fullscreen-menu {
+  position: relative;
+  top: 0;
+  margin: 0 auto;
+  text-align: left;
+}
+
+nav.edge-fullscreen-menu ul {
+  position: relative;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav.edge-fullscreen-menu ul li {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav.edge-fullscreen-menu ul li.current-menu-ancestor > a,
+nav.edge-fullscreen-menu ul li.current-menu-item > a {
+  color: #000;
+}
+
+nav.edge-fullscreen-menu ul li.current-menu-ancestor > a > span:after,
+nav.edge-fullscreen-menu ul li.current-menu-item > a > span:after {
+  width: 100%;
+  background-color: currentColor;
+}
+
+nav.edge-fullscreen-menu ul li a {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 5px 0;
+  font-family: "Oswald", sans-serif;
+  font-size: 40px;
+  line-height: 1.1em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+nav.edge-fullscreen-menu ul li a span {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+
+nav.edge-fullscreen-menu ul li a > span:after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  -webkit-transition: width 0.3s ease;
+  -moz-transition: width 0.3s ease;
+  transition: width 0.3s ease;
+}
+
+nav.edge-fullscreen-menu ul li a.current, nav.edge-fullscreen-menu ul li a:hover {
+  color: #000;
+}
+
+nav.edge-fullscreen-menu ul li a.current > span:after, nav.edge-fullscreen-menu ul li a:hover > span:after {
+  width: 100%;
+}
+
+nav.edge-fullscreen-menu ul li a .edge-fullscreen-menu-arrow {
+  display: none;
+}
+
+nav.edge-fullscreen-menu ul li ul {
+  padding: 7px 0;
+}
+
+nav.edge-fullscreen-menu ul li ul.sub_menu {
+  display: none;
+}
+
+nav.edge-fullscreen-menu ul li ul li ul li a {
+  font-size: 40px;
+}
+
+nav.edge-fullscreen-menu > ul {
+  display: block;
+}
+
+nav.edge-fullscreen-menu > ul > li > a {
+  font-size: 67px;
+  font-weight: 700;
+}
+
+nav.edge-fullscreen-menu > ul > li > a span:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: currentColor;
+  -webkit-transition: width 0.3s ease;
+  -moz-transition: width 0.3s ease;
+  transition: width 0.3s ease;
+}
+
+nav.edge-fullscreen-menu > ul > li.edge-active-item > a {
+  color: #000;
+}
+
+nav.edge-fullscreen-menu > ul > li.edge-active-item > a > span:after {
+  width: 100%;
+}
+
+.edge-fullscreen-below-menu-widget-holder {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.edge-fullscreen-above-menu-widget-holder {
+  text-align: center;
+}
+
+/* Fullscreen general style - end
+========================================================================== */
+/* Fullscreen fade animations general - begin
+========================================================================== */
+@-webkit-keyframes fade_out {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@-moz-keyframes fade_out {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes fade_out {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes fade_in {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@-moz-keyframes fade_in {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes fade_in {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.edge-fade-push-text-right .edge-fullscreen-menu-holder-outer,
+.edge-fade-push-text-top .edge-fullscreen-menu-holder-outer,
+.edge-fade-text-scaledown .edge-fullscreen-menu-holder-outer {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+  overflow: hidden !important;
+  z-index: 105;
+  opacity: 0;
+}
+
+.edge-fullscreen-fade-out .edge-fullscreen-menu-holder-outer {
+  -webkit-animation: fade_out .25s linear both;
+  -moz-animation: fade_out .25s linear both;
+  animation: fade_out .25s linear both;
+}
+
+.edge-fullscreen-menu-opened.edge-fullscreen-fade-in .edge-fullscreen-menu-holder-outer {
+  -webkit-animation: fade_in .25s linear both;
+  -moz-animation: fade_in .25s linear both;
+  animation: fade_in .25s linear both;
+}
+
+/* Fullscreen fade animations general - end
+========================================================================== */
+/* Fullscreen animation push text right - begin
+========================================================================== */
+@-webkit-keyframes push_text_right {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-60px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+}
+
+@-moz-keyframes push_text_right {
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(-60px);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: translateX(0);
+  }
+}
+
+@keyframes push_text_right {
+  0% {
+    opacity: 0;
+    transform: translateX(0px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes push_nav_right {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-60px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+}
+
+@-moz-keyframes push_nav_right {
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(-60px);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: translateX(0);
+  }
+}
+
+@keyframes push_nav_right {
+  0% {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.edge-fullscreen-menu-opened.edge-fade-push-text-right .edge-fullscreen-menu-holder-outer nav > ul > li > a,
+.edge-fullscreen-menu-opened.edge-fade-push-text-right .edge-fullscreen-menu-holder-outer .edge-fullscreen-below-menu-widget-holder > div,
+.edge-fullscreen-menu-opened.edge-fade-push-text-right .edge-fullscreen-menu-holder-outer .edge-fullscreen-above-menu-widget-holder > div {
+  -webkit-animation: push_text_right 0.4s cubic-bezier(0.175, 0.885, 0.32, 1) both;
+  -moz-animation: push_text_right 0.4s cubic-bezier(0.175, 0.885, 0.32, 1) both;
+  animation: push_text_right 0.4s cubic-bezier(0.175, 0.885, 0.32, 1) both;
+}
+
+.edge-fade-push-text-right.edge-push-nav-right .edge-fullscreen-menu-holder-outer nav,
+.edge-fade-push-text-right.edge-push-nav-right .edge-fullscreen-menu-holder-outer .edge-fullscreen-below-menu-widget-holder,
+.edge-fade-push-text-right.edge-push-nav-right .edge-fullscreen-menu-holder-outer .edge-fullscreen-above-menu-widget-holder {
+  -webkit-transition: all 0.75s ease-out;
+  -moz-transition: all 0.75s ease-out;
+  transition: all 0.75s ease-out;
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  transform: translateX(0px);
+}
+
+/* Fullscreen animation push text right - end
+========================================================================== */
+/* Fullscreen animation push text top - begin
+========================================================================== */
+@-webkit-keyframes push_text_top {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(60px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+
+@-moz-keyframes push_text_top {
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(60px);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+  }
+}
+
+@keyframes push_text_top {
+  0% {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.edge-fullscreen-menu-opened.edge-fade-push-text-top .edge-fullscreen-menu-holder-outer nav > ul > li > a,
+.edge-fullscreen-menu-opened.edge-fade-push-text-top .edge-fullscreen-menu-holder-outer .edge-fullscreen-below-menu-widget-holder > div,
+.edge-fullscreen-menu-opened.edge-fade-push-text-top .edge-fullscreen-menu-holder-outer .edge-fullscreen-above-menu-widget-holder > div {
+  -webkit-animation: push_text_top 0.4s ease-out both 0.5s;
+  -moz-animation: push_text_top 0.4s ease-out both 0.5s;
+  animation: push_text_top 0.4s ease-out both 0.5s;
+}
+
+.edge-fade-push-text-top.edge-push-text-top .edge-fullscreen-menu-holder-outer nav,
+.edge-fade-push-text-top.edge-push-text-top .edge-fullscreen-menu-holder-outer .edge-fullscreen-below-menu-widget-holder,
+.edge-fade-push-text-top.edge-push-text-top .edge-fullscreen-menu-holder-outer .edge-fullscreen-above-menu-widget-holder {
+  -webkit-transform: translateY(-30px);
+  -moz-transform: translateY(-30px);
+  transform: translateY(-30px);
+  -webkit-transition: all 0.75s ease-out;
+  -moz-transition: all 0.75s ease-out;
+  transition: all 0.75s ease-out;
+}
+
+/* Fullscreen animation push text top - end
+========================================================================== */
+/* Fullscreen animation fade text scaledown - begin
+========================================================================== */
+.edge-fullscreen-menu-opened.edge-fade-text-scaledown .edge-fullscreen-menu-holder-outer nav,
+.edge-fullscreen-menu-opened.edge-fade-text-scaledown .edge-fullscreen-menu-holder-outer .edge-fullscreen-below-menu-widget-holder,
+.edge-fullscreen-menu-opened.edge-fade-text-scaledown .edge-fullscreen-menu-holder-outer .edge-fullscreen-above-menu-widget-holder {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.25s linear 0.1s;
+  -moz-transition: all 0.25s linear 0.1s;
+  transition: all 0.25s linear 0.1s;
+}
+
+.edge-fade-text-scaledown .edge-fullscreen-menu-holder-outer nav,
+.edge-fade-text-scaledown .edge-fullscreen-menu-holder-outer .edge-fullscreen-below-menu-widget-holder,
+.edge-fade-text-scaledown .edge-fullscreen-menu-holder-outer .edge-fullscreen-above-menu-widget-holder {
+  opacity: 0;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition: all 0.25s linear 0.1s;
+  -moz-transition: all 0.25s linear 0.1s;
+  transition: all 0.25s linear 0.1s;
+}
+
+/* Fullscreen animation fade text scaledown - end
+========================================================================== */
+/* ==========================================================================
+# Fullscreen menu style - end
+==========================================================================*/
+/* ==========================================================================
+   Header Minimal style - begin
+   ========================================================================== */
+.edge-header-minimal .edge-page-header .edge-menu-area .edge-position-right-inner {
+  height: auto;
+}
+
+.edge-header-minimal .edge-page-header .edge-position-left:before,
+.edge-header-minimal .edge-page-header .edge-position-right:before {
+  content: "";
+}
+
+.edge-header-minimal .edge-page-header .edge-sticky-header .edge-position-left-inner {
+  height: auto;
+}
+
+.edge-header-minimal .edge-page-header .edge-sticky-header .edge-vertical-align-containers .edge-position-right .edge-position-right-inner {
+  height: auto;
+}
+
+/* ==========================================================================
+   Header Minimal style - end
+   ========================================================================== */
+/* ==========================================================================
+   Header Standard style - begin
+   ========================================================================== */
+.edge-header-standard .edge-vertical-align-containers {
+  padding: 0 50px;
+}
+
+.edge-header-standard .edge-menu-area.edge-menu-left .edge-main-menu {
+  width: auto;
+  padding: 0 0 0 20px;
+}
+
+.edge-header-standard .edge-menu-area.edge-menu-left .edge-vertical-align-containers .edge-position-left-inner {
+  height: 100%;
+}
+
+.edge-header-standard .edge-menu-area.edge-menu-left .edge-vertical-align-containers .edge-position-left:before,
+.edge-header-standard .edge-menu-area.edge-menu-left .edge-vertical-align-containers .edge-position-right:before {
+  display: none;
+}
+
+.edge-header-standard .edge-menu-area.edge-menu-left .edge-vertical-align-containers .edge-position-right-inner {
+  display: -webkit-flex;
+  /* Safari */
+  -webkit-align-items: center;
+  /* Safari 7.0+ */
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.edge-header-standard .edge-menu-area.edge-menu-center .edge-vertical-align-containers .edge-position-center-inner {
+  height: 100%;
+}
+
+.edge-header-standard .edge-menu-area.edge-menu-center .edge-vertical-align-containers .edge-position-right:before {
+  display: none;
+}
+
+.edge-header-standard .edge-menu-area.edge-menu-center .edge-vertical-align-containers .edge-position-right-inner {
+  display: -webkit-flex;
+  /* Safari */
+  -webkit-align-items: center;
+  /* Safari 7.0+ */
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.edge-header-standard .edge-menu-area.edge-menu-right .edge-main-menu {
+  width: auto;
+}
+
+.edge-header-standard .edge-menu-area.edge-menu-right .edge-vertical-align-containers .edge-position-right-inner {
+  height: 100%;
+}
+
+/* ==========================================================================
+   Header Standard style - end
+   ========================================================================== */
+/* ==========================================================================
+   Header Vertical - Closed style - begin
+   ========================================================================== */
+/* ==========================================================================
+   Header Vertical - Closed navigation style - begin
+   ========================================================================== */
+.edge-header-vertical-closed .edge-vertical-alignment-center .edge-vertical-menu-outer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: table;
+  padding: 100px 0 150px;
+  box-sizing: border-box;
+}
+
+.edge-header-vertical-closed .edge-vertical-alignment-center .edge-vertical-menu {
+  display: table-cell;
+  height: auto;
+  min-height: 0;
+  vertical-align: middle;
+}
+
+.edge-header-vertical-closed .edge-vertical-menu {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 108px 0 31px;
+  padding: 0;
+  z-index: 100;
+}
+
+.edge-header-vertical-closed .edge-vertical-menu ul {
+  position: relative;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.edge-header-vertical-closed .edge-vertical-menu ul li {
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.edge-header-vertical-closed .edge-vertical-menu ul li a {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 1px 0;
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.edge-header-vertical-closed .edge-vertical-menu ul li a:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.edge-header-vertical-closed .edge-vertical-menu ul li a:hover .edge-menu-arrow {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.edge-header-vertical-closed .edge-vertical-menu ul li a .item_outer {
+  position: relative;
+  display: block;
+  padding: 0 15px 0 0;
+  box-sizing: border-box;
+}
+
+.edge-header-vertical-closed .edge-vertical-menu ul li a .edge-menu-arrow {
+  display: none;
+  position: absolute;
+  top: 1px;
+  right: 0;
+  font-size: inherit;
+  line-height: inherit;
+  margin: 0;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  -moz-transition: -moz-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+}
+
+.edge-header-vertical-closed .edge-vertical-menu ul li a .edge-menu-featured-icon {
+  position: relative;
+  top: -4px;
+  left: 3px;
+  color: #000;
+  font-size: 12px;
+  margin: 0;
+}
+
+.edge-header-vertical-closed .edge-vertical-menu ul li a .menu_icon:not(.blank):not(.null) {
+  padding: 0 5px 0 0;
+}
+
+.edge-header-vertical-closed .edge-vertical-menu ul li.edge-active-item > a,
+.edge-header-vertical-closed .edge-vertical-menu ul li.current_page_item > a,
+.edge-header-vertical-closed .edge-vertical-menu ul li.current-menu-item > a,
+.edge-header-vertical-closed .edge-vertical-menu ul li.current-menu-ancestor > a {
+  color: #000;
+}
+
+.edge-header-vertical-closed .edge-vertical-menu ul li.edge-active-item > a .edge-menu-arrow,
+.edge-header-vertical-closed .edge-vertical-menu ul li.current_page_item > a .edge-menu-arrow,
+.edge-header-vertical-closed .edge-vertical-menu ul li.current-menu-item > a .edge-menu-arrow,
+.edge-header-vertical-closed .edge-vertical-menu ul li.current-menu-ancestor > a .edge-menu-arrow {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.edge-header-vertical-closed .edge-vertical-menu ul li ul {
+  padding: 3px 0;
+}
+
+.edge-header-vertical-closed .edge-vertical-menu ul li ul li.sub > a .item_outer {
+  position: relative;
+  display: block;
+}
+
+.edge-header-vertical-closed .edge-vertical-menu ul li ul li.sub.current_page_item > a .item_outer:after,
+.edge-header-vertical-closed .edge-vertical-menu ul li ul li.sub.current-menu-ancestor > a .item_outer:after {
+  content: "\f107";
+}
+
+.edge-header-vertical-closed .edge-vertical-menu ul li .second {
+  display: none;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.edge-header-vertical-closed .edge-vertical-menu ul li .second .inner {
+  position: relative;
+  display: block;
+  padding: 0;
+  z-index: 997;
+}
+
+.edge-header-vertical-closed .edge-vertical-menu > ul > li > a {
+  padding: 11px 0;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.edge-header-vertical-closed .edge-vertical-menu > ul > li > a span.item_text {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.edge-header-vertical-closed .edge-vertical-menu > ul > li > a span.item_text:after {
+  content: '';
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: currentColor;
+  -webkit-transition: width 0.3s ease;
+  -moz-transition: width 0.3s ease;
+  transition: width 0.3s ease;
+}
+
+.edge-header-vertical-closed .edge-vertical-menu > ul > li > a:hover > span.item_outer span.item_text:after {
+  width: 100%;
+}
+
+.edge-header-vertical-closed .edge-vertical-menu > ul > li.edge-active-item > a > span.item_outer span.item_text:after,
+.edge-header-vertical-closed .edge-vertical-menu > ul > li.open > a > span.item_outer span.item_text:after {
+  width: 100%;
+}
+
+.edge-light-header.edge-header-vertical-closed .edge-vertical-menu ul li a {
+  color: #fff !important;
+}
+
+.edge-light-header.edge-header-vertical-closed .edge-vertical-menu ul li a:hover {
+  color: #fff !important;
+}
+
+.edge-light-header.edge-header-vertical-closed .edge-vertical-menu ul li ul li.current_page_item > a,
+.edge-light-header.edge-header-vertical-closed .edge-vertical-menu ul li ul li.current-menu-item > a,
+.edge-light-header.edge-header-vertical-closed .edge-vertical-menu ul li ul li.current-menu-ancestor > a {
+  color: #fff !important;
+}
+
+.edge-light-header.edge-header-vertical-closed .edge-vertical-menu > ul > li.edge-active-item > a,
+.edge-light-header.edge-header-vertical-closed .edge-vertical-menu > ul > li.current-menu-ancestor > a {
+  color: #fff !important;
+}
+
+.edge-dark-header.edge-header-vertical-closed .edge-vertical-menu ul li a {
+  color: #333 !important;
+}
+
+.edge-dark-header.edge-header-vertical-closed .edge-vertical-menu ul li a:hover {
+  color: rgba(51, 51, 51, 0.8) !important;
+}
+
+.edge-dark-header.edge-header-vertical-closed .edge-vertical-menu ul li ul li.current_page_item > a,
+.edge-dark-header.edge-header-vertical-closed .edge-vertical-menu ul li ul li.current-menu-item > a,
+.edge-dark-header.edge-header-vertical-closed .edge-vertical-menu ul li ul li.current-menu-ancestor > a {
+  color: rgba(51, 51, 51, 0.8) !important;
+}
+
+.edge-dark-header.edge-header-vertical-closed .edge-vertical-menu > ul > li.edge-active-item > a,
+.edge-dark-header.edge-header-vertical-closed .edge-vertical-menu > ul > li.current-menu-ancestor > a {
+  color: rgba(51, 51, 51, 0.8) !important;
+}
+
+/* ==========================================================================
+   Header Vertical - Closed navigation style - end
+   ========================================================================== */
+/* ==========================================================================
+   Header Vertical - Closed widget style - begin
+   ========================================================================== */
+.edge-header-vertical-closed .edge-vertical-area-widget-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 10px 0 0;
+  z-index: 100;
+}
+
+.edge-header-vertical-closed .edge-vertical-alignment-center .edge-vertical-area-widget-holder {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* ==========================================================================
+   Header Vertical - Closed widget style - end
+   ========================================================================== */
+.edge-header-vertical-closed .edge-content,
+.edge-header-vertical-closed footer {
+  padding-left: 95px;
+  box-sizing: border-box;
+}
+
+.edge-header-vertical-closed .edge-vertical-menu-area {
+  position: fixed;
+  top: 0;
+  left: calc(95px - 312px);
+  height: 100%;
+  width: 312px;
+  padding: 50px 40px 30px;
+  background-color: #000;
+  box-sizing: border-box;
+  outline: none;
+  z-index: 101;
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: left 0.15s ease-out;
+  -moz-transition: left 0.15s ease-out;
+  transition: left 0.15s ease-out;
+}
+
+.edge-header-vertical-closed .edge-vertical-menu-area.edge-with-scroll {
+  overflow: hidden;
+}
+
+.edge-header-vertical-closed .edge-vertical-menu-area.edge-vertical-alignment-top {
+  padding: 0;
+}
+
+.edge-header-vertical-closed .edge-vertical-menu-area .edge-vertical-area-opener {
+  position: fixed;
+  left: 22px;
+  top: 51.5%;
+  /*same as padding of vertical menu area */
+  display: inline-block;
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  z-index: 1000;
+  transform-origin: top center;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -moz-transition: -moz-transform 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: transform 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.edge-header-vertical-closed .edge-vertical-menu-area .edge-vertical-area-opener:hover {
+  -webkit-transform: scale(1.2) translateY(-50%);
+  -moz-transform: scale(1.2) translateY(-50%);
+  transform: scale(1.2) translateY(-50%);
+}
+
+.edge-header-vertical-closed .edge-vertical-menu-area .edge-vertical-area-opener .edge-menu-opener-icon circle:first-child {
+  stroke: #fff;
+}
+
+.edge-header-vertical-closed .edge-vertical-menu-area .edge-vertical-area-opener .edge-menu-opener-icon circle:last-child {
+  fill: #fff;
+}
+
+.edge-header-vertical-closed .edge-vertical-menu-area .edge-vertical-area-opener.edge-vertical-area-opener-svg-path span {
+  position: relative;
+}
+
+.edge-header-vertical-closed .edge-vertical-menu-area .edge-vertical-area-opener.edge-vertical-area-opener-svg-path span > * {
+  vertical-align: middle;
+}
+
+.edge-header-vertical-closed .edge-vertical-menu-area .edge-vertical-area-opener.edge-vertical-area-opener-svg-path span > *,
+.edge-header-vertical-closed .edge-vertical-menu-area .edge-vertical-area-opener.edge-vertical-area-opener-svg-path span path {
+  fill: currentColor;
+  stroke: currentColor;
+}
+
+.edge-header-vertical-closed .edge-vertical-menu-area .edge-vertical-area-opener.edge-vertical-area-opener-predefined .edge-hm-lines {
+  position: relative;
+  display: block;
+  width: 23px;
+  height: 17px;
+  margin: 0 auto;
+}
+
+.edge-header-vertical-closed .edge-vertical-menu-area .edge-vertical-area-opener.edge-vertical-area-opener-predefined .edge-hm-lines .edge-hm-line {
+  position: absolute;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-color: currentColor;
+  border-radius: 12px;
+  -webkit-transition: width 0.3s ease;
+  -moz-transition: width 0.3s ease;
+  transition: width 0.3s ease;
+}
+
+.edge-header-vertical-closed .edge-vertical-menu-area .edge-vertical-area-opener.edge-vertical-area-opener-predefined .edge-hm-lines .edge-hm-line.edge-line-1 {
+  top: 0;
+}
+
+.edge-header-vertical-closed .edge-vertical-menu-area .edge-vertical-area-opener.edge-vertical-area-opener-predefined .edge-hm-lines .edge-hm-line.edge-line-2 {
+  top: 7px;
+}
+
+.edge-header-vertical-closed .edge-vertical-menu-area .edge-vertical-area-opener.edge-vertical-area-opener-predefined .edge-hm-lines .edge-hm-line.edge-line-3 {
+  bottom: 0;
+}
+
+.edge-header-vertical-closed .edge-vertical-menu-area .edge-vertical-area-opener.edge-vertical-area-opener-predefined .edge-vertical-area-opener-icon {
+  display: block;
+  padding: 26px 0;
+}
+
+.edge-header-vertical-closed .edge-vertical-menu-area .edge-vertical-area-opener.edge-vertical-area-opener-predefined .edge-vertical-area-close-icon {
+  font-size: 32px;
+  color: #fff;
+}
+
+.edge-header-vertical-closed .edge-vertical-menu-area .edge-vertical-area-opener.edge-vertical-area-opener-predefined .edge-vertical-area-close-icon span {
+  display: block;
+  line-height: inherit;
+}
+
+.edge-header-vertical-closed .edge-vertical-menu-area .edge-vertical-area-opener.edge-vertical-area-opener-predefined .edge-vertical-area-close-icon span:before {
+  display: inline-block;
+  line-height: inherit;
+}
+
+.edge-header-vertical-closed .edge-vertical-menu-area .edge-vertical-area-opener .edge-vertical-area-opener-icon {
+  visibility: visible;
+}
+
+.edge-header-vertical-closed .edge-vertical-menu-area .edge-vertical-area-opener .edge-vertical-area-close-icon {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  font-size: 23px;
+  visibility: hidden;
+}
+
+.edge-header-vertical-closed .edge-vertical-menu-area #edge-vert-close {
+  position: fixed;
+  left: 0;
+  top: 50%;
+  /*same as padding of vertical menu area */
+  display: inline-block;
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  z-index: 1000;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.edge-header-vertical-closed .edge-vertical-menu-area .edge-vertical-menu {
+  opacity: 0;
+  -webkit-transition: opacity 0.15s ease-out;
+  -moz-transition: opacity 0.15s ease-out;
+  transition: opacity 0.15s ease-out;
+}
+
+.edge-header-vertical-closed .edge-vertical-menu-area.active {
+  left: 0;
+  padding: 55px 50px 10px;
+}
+
+.edge-header-vertical-closed .edge-vertical-menu-area.active .edge-vertical-area-opener {
+  display: none;
+}
+
+.edge-header-vertical-closed .edge-vertical-menu-area.active .edge-vertical-area-opener .edge-vertical-area-opener-icon {
+  visibility: hidden;
+}
+
+.edge-header-vertical-closed .edge-vertical-menu-area.active .edge-vertical-area-opener .edge-vertical-area-close-icon {
+  visibility: visible;
+}
+
+.edge-header-vertical-closed .edge-vertical-menu-area.active .edge-vertical-menu {
+  opacity: 1;
+}
+
+.edge-header-vertical-closed .edge-vertical-menu-area.active .edge-logo-wrapper {
+  position: relative;
+  display: block;
+}
+
+.edge-header-vertical-closed .edge-vertical-menu-area.active .edge-logo-wrapper img {
+  margin: initial;
+}
+
+.edge-header-vertical-closed .edge-vertical-menu-area-inner {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.edge-header-vertical-closed.admin-bar .edge-vertical-menu-area {
+  top: 32px;
+}
+
+.edge-header-vertical-closed .edge-logo-wrapper {
+  position: absolute;
+  top: 46px;
+  right: 0;
+  width: 95px;
+  z-index: 100;
+}
+
+.edge-header-vertical-closed .edge-logo-wrapper a {
+  display: block;
+  position: relative;
+  height: 100%;
+}
+
+.edge-header-vertical-closed .edge-logo-wrapper img {
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  max-height: 100%;
+  -webkit-transition: opacity 0.3s ease;
+  -moz-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.edge-header-vertical-closed .edge-vertical-area-background {
+  position: fixed;
+  top: 0;
+  left: calc(95px - 312px);
+  width: 312px;
+  height: 100%;
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-color: #070707;
+  background-size: cover;
+  z-index: 0;
+  opacity: 1;
+  -webkit-transition: opacity 0.5s ease, background-color 0.5s ease, left 0.15s ease;
+  -moz-transition: opacity 0.5s ease, background-color 0.5s ease, left 0.15s ease;
+  transition: opacity 0.5s ease, background-color 0.5s ease, left 0.15s ease;
+}
+
+.edge-header-vertical-closed .active .edge-vertical-area-background {
+  left: 0;
+}
+
+.edge-header-vertical-closed .edge-vertical-area-bottom-logo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 95px;
+  text-align: center;
+  z-index: 1000;
+  -webkit-transition: left 0.15s ease-in-out;
+  -moz-transition: left 0.15s ease-in-out;
+  transition: left 0.15s ease-in-out;
+}
+
+.edge-header-vertical-closed .edge-vertical-area-bottom-logo .edge-vertical-area-bottom-logo-inner {
+  width: 100%;
+  padding: 0 10px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.edge-header-vertical-closed .edge-vertical-area-bottom-logo.active {
+  left: -95px;
+}
+
+.edge-header-vertical-closed .widget {
+  margin-bottom: 10px;
+}
+
+.edge-header-vertical-closed .widget.edge-social-icons-group-widget {
+  text-align: center;
+}
+
+.edge-header-vertical-closed .widget.edge-social-icons-group-widget .edge-social-icon-widget-holder {
+  display: block;
+  margin: 0 auto 35px auto;
+  color: #fff;
+  font-size: 27px;
+}
+
+.edge-header-vertical-closed .widget.edge-social-icons-group-widget .edge-social-icon-widget-holder:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* ==========================================================================
+   Header Vertical - Closed style - end
+   ========================================================================== */
+/* ==========================================================================
+   Header Vertical style - begin
+   ========================================================================== */
+/* ==========================================================================
+   Header Vertical navigation style - begin
+   ========================================================================== */
+.edge-header-vertical .edge-vertical-alignment-center .edge-vertical-menu-outer {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 100px 0;
+}
+
+.edge-header-vertical .edge-vertical-alignment-center .edge-vertical-menu {
+  display: table;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+}
+
+.edge-header-vertical .edge-vertical-alignment-center .edge-vertical-menu > ul {
+  display: table-cell;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.edge-header-vertical .edge-vertical-menu-outer {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.edge-header-vertical .edge-vertical-menu {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 108px 0 31px;
+  padding: 0;
+  z-index: 100;
+}
+
+.edge-header-vertical .edge-vertical-menu ul {
+  position: relative;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.edge-header-vertical .edge-vertical-menu ul li {
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.edge-header-vertical .edge-vertical-menu ul li a {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 1px 0;
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.edge-header-vertical .edge-vertical-menu ul li a .item_text {
+  position: relative;
+}
+
+.edge-header-vertical .edge-vertical-menu ul li a .item_text:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #fff;
+  -webkit-transition: width 0.3s ease;
+  -moz-transition: width 0.3s ease;
+  transition: width 0.3s ease;
+}
+
+.edge-header-vertical .edge-vertical-menu ul li a:hover {
+  color: #000;
+}
+
+.edge-header-vertical .edge-vertical-menu ul li a:hover .item_text:after {
+  width: 100%;
+}
+
+.edge-header-vertical .edge-vertical-menu ul li a .item_outer {
+  position: relative;
+  display: block;
+  padding: 0 15px 0 0;
+  box-sizing: border-box;
+}
+
+.edge-header-vertical .edge-vertical-menu ul li a .edge-menu-arrow {
+  display: none;
+}
+
+.edge-header-vertical .edge-vertical-menu ul li a .edge-menu-featured-icon {
+  position: relative;
+  top: -4px;
+  left: 3px;
+  color: #000;
+  font-size: 12px;
+  margin: 0;
+}
+
+.edge-header-vertical .edge-vertical-menu ul li a .menu_icon:not(.blank):not(.null) {
+  padding: 0 5px 0 0;
+}
+
+.edge-header-vertical .edge-vertical-menu ul li.edge-active-item > a,
+.edge-header-vertical .edge-vertical-menu ul li.current_page_item > a,
+.edge-header-vertical .edge-vertical-menu ul li.current-menu-item > a,
+.edge-header-vertical .edge-vertical-menu ul li.current-menu-ancestor > a {
+  color: #000;
+}
+
+.edge-header-vertical .edge-vertical-menu ul li.edge-active-item > a .item_text:after,
+.edge-header-vertical .edge-vertical-menu ul li.current_page_item > a .item_text:after,
+.edge-header-vertical .edge-vertical-menu ul li.current-menu-item > a .item_text:after,
+.edge-header-vertical .edge-vertical-menu ul li.current-menu-ancestor > a .item_text:after {
+  width: 100%;
+}
+
+.edge-header-vertical .edge-vertical-menu ul li ul {
+  padding: 0 0 7px;
+}
+
+.edge-header-vertical .edge-vertical-menu ul li ul > li:first-child a {
+  padding-top: 0;
+}
+
+.edge-header-vertical .edge-vertical-menu ul li .second {
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.edge-header-vertical .edge-vertical-menu ul li .second .inner {
+  position: relative;
+  display: block;
+  padding: 0;
+  z-index: 997;
+}
+
+.edge-header-vertical .edge-vertical-menu > ul > li > a {
+  padding: 11px 0;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.edge-header-vertical .edge-vertical-menu > ul > li > a span.item_text {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.edge-header-vertical .edge-vertical-menu > ul > li > a span.item_text:after {
+  content: '';
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: currentColor;
+  -webkit-transition: width 0.3s ease;
+  -moz-transition: width 0.3s ease;
+  transition: width 0.3s ease;
+}
+
+.edge-header-vertical .edge-vertical-menu > ul > li > a:hover > span.item_outer span.item_text:after {
+  width: 100%;
+}
+
+.edge-header-vertical .edge-vertical-menu > ul > li.edge-active-item > a > span.item_outer span.item_text:after,
+.edge-header-vertical .edge-vertical-menu > ul > li.open > a > span.item_outer span.item_text:after {
+  width: 100%;
+}
+
+.edge-header-vertical .edge-vertical-menu.edge-vertical-dropdown-below ul li .second {
+  display: none;
+}
+
+.edge-header-vertical .edge-vertical-menu.edge-vertical-dropdown-side .second {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.edge-header-vertical .edge-vertical-menu.edge-vertical-dropdown-side .second ul {
+  position: absolute;
+  top: -23px;
+  left: calc(100% + 45px);
+  width: 254px;
+  background-color: #fff;
+  padding: 25px 20px;
+  margin-left: 50px;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.edge-header-vertical .edge-vertical-menu.edge-vertical-dropdown-side .second ul * {
+  visibility: inherit;
+  -webkit-transition: visibility 0.2s ease;
+  -moz-transition: visibility 0.2s ease;
+  transition: visibility 0.2s ease;
+}
+
+.edge-header-vertical .edge-vertical-menu.edge-vertical-dropdown-side .second ul.edge-float-open {
+  margin-left: 0px;
+  opacity: 1;
+  visibility: visible;
+  z-index: 900;
+}
+
+.edge-header-vertical .edge-vertical-menu.edge-vertical-dropdown-side .second ul ul {
+  top: -25px;
+  left: calc(100% + 20px);
+  visibility: hidden;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.edge-light-header.edge-header-vertical .edge-vertical-menu ul li a {
+  color: #fff !important;
+}
+
+.edge-light-header.edge-header-vertical .edge-vertical-menu ul li a:hover {
+  color: #fff !important;
+}
+
+.edge-light-header.edge-header-vertical .edge-vertical-menu ul li ul li.current_page_item > a,
+.edge-light-header.edge-header-vertical .edge-vertical-menu ul li ul li.current-menu-item > a,
+.edge-light-header.edge-header-vertical .edge-vertical-menu ul li ul li.current-menu-ancestor > a {
+  color: #fff !important;
+}
+
+.edge-light-header.edge-header-vertical .edge-vertical-menu > ul > li.edge-active-item > a,
+.edge-light-header.edge-header-vertical .edge-vertical-menu > ul > li.current-menu-ancestor > a {
+  color: #fff !important;
+}
+
+.edge-dark-header.edge-header-vertical .edge-vertical-menu ul li a {
+  color: #333 !important;
+}
+
+.edge-dark-header.edge-header-vertical .edge-vertical-menu ul li a:hover {
+  color: rgba(51, 51, 51, 0.8) !important;
+}
+
+.edge-dark-header.edge-header-vertical .edge-vertical-menu ul li ul li.current_page_item > a,
+.edge-dark-header.edge-header-vertical .edge-vertical-menu ul li ul li.current-menu-item > a,
+.edge-dark-header.edge-header-vertical .edge-vertical-menu ul li ul li.current-menu-ancestor > a {
+  color: rgba(51, 51, 51, 0.8) !important;
+}
+
+.edge-dark-header.edge-header-vertical .edge-vertical-menu > ul > li.edge-active-item > a,
+.edge-dark-header.edge-header-vertical .edge-vertical-menu > ul > li.current-menu-ancestor > a {
+  color: rgba(51, 51, 51, 0.8) !important;
+}
+
+/* ==========================================================================
+   Header Vertical navigation style - end
+   ========================================================================== */
+.edge-header-vertical .edge-vertical-area-widget-holder {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 0 0 30px;
+  z-index: 100;
+}
+
+.edge-header-vertical .edge-vertical-area-widget-holder .widget {
+  color: #fff;
+}
+
+.edge-header-vertical .edge-vertical-area-widget-holder .widget a {
+  color: #fff;
+}
+
+.edge-header-vertical .edge-vertical-area-widget-holder .widget a:hover {
+  color: #000;
+}
+
+.edge-header-vertical .edge-vertical-area-widget-holder .widget:last-child {
+  margin-bottom: 0;
+}
+
+.edge-header-vertical .edge-vertical-area-widget-holder .widget.edge-social-icons-group-widget .edge-social-icon-widget-holder {
+  margin: 0 29px 0 0;
+}
+
+.edge-header-vertical .edge-vertical-alignment-center .edge-vertical-area-widget-holder {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.edge-header-vertical.admin-bar .edge-vertical-menu-area {
+  top: 32px;
+  height: calc(100% - 32px);
+}
+
+.edge-header-vertical .edge-content,
+.edge-header-vertical footer {
+  padding-left: 310px;
+  box-sizing: border-box;
+}
+
+.edge-header-vertical .edge-vertical-menu-area {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 310px;
+  height: 100%;
+  padding: 3.5% 50px 10px;
+  background-color: transparent;
+  outline: none;
+  z-index: 101;
+  -webkit-backface-visibility: hidden;
+  box-sizing: border-box;
+}
+
+.edge-header-vertical .edge-vertical-menu-area.edge-with-scroll {
+  overflow: hidden;
+}
+
+.edge-header-vertical .edge-vertical-menu-area-inner {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.edge-header-vertical .edge-vertical-menu-area-inner.edge-vertical-align-left {
+  text-align: left;
+}
+
+.edge-header-vertical .edge-vertical-menu-area-inner.edge-vertical-align-center {
+  text-align: center;
+}
+
+.edge-header-vertical .edge-vertical-menu-area-inner.edge-vertical-align-center .edge-logo-wrapper img {
+  margin: 0 auto;
+}
+
+.edge-header-vertical .edge-logo-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  z-index: 100;
+}
+
+.edge-header-vertical .edge-logo-wrapper a {
+  display: block;
+  position: relative;
+  height: 100%;
+}
+
+.edge-header-vertical .edge-logo-wrapper img {
+  display: block;
+  height: auto;
+  max-height: 100%;
+  -webkit-transition: opacity 0.3s ease;
+  -moz-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.edge-header-vertical .edge-vertical-area-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 310px;
+  height: 100%;
+  background-color: #070707;
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 0;
+  opacity: 1;
+  -webkit-transition: opacity 0.5s ease, background-color 0.5s ease;
+  -moz-transition: opacity 0.5s ease, background-color 0.5s ease;
+  transition: opacity 0.5s ease, background-color 0.5s ease;
+}
+
+.edge-header-vertical.edge-header-vertical-shadow-disable .edge-vertical-area-background {
+  box-shadow: none;
+}
+
+.edge-header-vertical.edge-header-vertical-border-disable .edge-vertical-area-background {
+  border: none;
+}
+
+.edge-light-header .edge-vertical-menu-area .edge-logo-wrapper .edge-light-logo {
+  opacity: 1;
+}
+
+.edge-light-header .edge-vertical-menu-area .edge-logo-wrapper .edge-normal-logo,
+.edge-light-header .edge-vertical-menu-area .edge-logo-wrapper .edge-dark-logo {
+  opacity: 0;
+}
+
+.edge-dark-header .edge-vertical-menu-area .edge-logo-wrapper .edge-dark-logo {
+  opacity: 1;
+}
+
+.edge-dark-header .edge-vertical-menu-area .edge-logo-wrapper .edge-normal-logo,
+.edge-dark-header .edge-vertical-menu-area .edge-logo-wrapper .edge-light-logo {
+  opacity: 0;
+}
+
+/* ==========================================================================
+   Header Vertical style - end
+   ========================================================================== */
+/* ==========================================================================
+   Mobile header style - begin
+   ========================================================================== */
+.edge-mobile-header {
+  position: relative;
+  display: none;
+  z-index: 110;
+  /* #General mobile header styles
+    ========================================================================== */
+  /* #End of general mobile header styles
+   ========================================================================== */
+  /* #Mobile logo styles
+    ========================================================================== */
+  /* #End of mobile logo styles
+    ========================================================================== */
+  /* #Mobile menu opener styles
+    ========================================================================== */
+  /* #End of mobile menu opener styles
+    ========================================================================== */
+  /* #Mobile menu navigation styles
+    ========================================================================== */
+  /* #End of mobile menu navigation styles
+	========================================================================== */
+}
+
+.edge-mobile-header .edge-mobile-header-inner {
+  position: relative;
+  height: 70px;
+  background-color: #170e03;
+  box-sizing: border-box;
+}
+
+.edge-mobile-header .edge-mobile-header-inner .edge-mobile-header-holder {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+}
+
+.edge-mobile-header .edge-grid {
+  height: 100%;
+}
+
+.edge-mobile-header .edge-vertical-align-containers {
+  padding: 0;
+}
+
+.edge-mobile-header .edge-mobile-logo-wrapper a {
+  display: block;
+}
+
+.edge-mobile-header .edge-mobile-logo-wrapper img {
+  display: block;
+  height: 100%;
+  width: auto;
+  image-rendering: crisp-edges;
+}
+
+.edge-mobile-header .edge-mobile-menu-opener {
+  position: relative;
+  height: 100%;
+  float: left;
+  z-index: 2;
+}
+
+.edge-mobile-header .edge-mobile-menu-opener a {
+  display: table;
+  height: 100%;
+  padding-right: 10px;
+  color: #fff;
+}
+
+.edge-mobile-header .edge-mobile-menu-opener a:hover {
+  color: #000;
+}
+
+.edge-mobile-header .edge-mobile-menu-opener a > * {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  line-height: 1em;
+}
+
+.edge-mobile-header .edge-mobile-menu-opener a .edge-mobile-menu-text {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  padding-left: 5px;
+}
+
+.edge-mobile-header .edge-mobile-menu-opener.edge-mobile-menu-opened a {
+  color: #fff;
+}
+
+.edge-mobile-header .edge-mobile-menu-opener.edge-mobile-menu-opener-icon-pack .edge-mobile-menu-icon {
+  font-size: 38px;
+}
+
+.edge-mobile-header .edge-mobile-menu-opener.edge-mobile-menu-opener-icon-pack .edge-mobile-menu-icon * {
+  display: block;
+  line-height: inherit;
+}
+
+.edge-mobile-header .edge-mobile-menu-opener.edge-mobile-menu-opener-icon-pack .edge-mobile-menu-icon *:before {
+  display: block;
+  line-height: inherit;
+}
+
+.edge-mobile-header .edge-mobile-menu-opener.edge-mobile-menu-opener-svg-path .edge-mobile-menu-icon > * {
+  vertical-align: middle;
+}
+
+.edge-mobile-header .edge-mobile-menu-opener.edge-mobile-menu-opener-svg-path .edge-mobile-menu-icon > *,
+.edge-mobile-header .edge-mobile-menu-opener.edge-mobile-menu-opener-svg-path .edge-mobile-menu-icon path {
+  fill: currentColor;
+  stroke: currentColor;
+}
+
+.edge-mobile-header .edge-mobile-nav {
+  display: none;
+  background-color: #170e03;
+  border-bottom: 1px solid transparent;
+}
+
+.edge-mobile-header .edge-mobile-nav ul {
+  padding: 9px 0 9px;
+  margin: 0;
+  list-style-type: none;
+}
+
+.edge-mobile-header .edge-mobile-nav ul li {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  -webkit-transform: translateZ(0);
+}
+
+.edge-mobile-header .edge-mobile-nav ul li a, .edge-mobile-header .edge-mobile-nav ul li h6 {
+  position: relative;
+  display: block;
+  padding: 9px 0;
+  border-bottom: 1px solid transparent;
+  font-family: "Oswald", sans-serif;
+  margin: 0;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.edge-mobile-header .edge-mobile-nav ul li a:hover, .edge-mobile-header .edge-mobile-nav ul li h6:hover {
+  color: #fff;
+}
+
+.edge-mobile-header .edge-mobile-nav ul li a > span {
+  position: relative;
+}
+
+.edge-mobile-header .edge-mobile-nav ul li a > span:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: currentColor;
+  -webkit-transition: width 0.3s ease;
+  -moz-transition: width 0.3s ease;
+  transition: width 0.3s ease;
+}
+
+.edge-mobile-header .edge-mobile-nav ul li a:hover > span:after {
+  width: 100%;
+  color: currentColor;
+}
+
+.edge-mobile-header .edge-mobile-nav ul li.current-menu-ancestor > a > span:after,
+.edge-mobile-header .edge-mobile-nav ul li.current-menu-item > a > span:after {
+  width: 100%;
+  color: currentColor;
+}
+
+.edge-mobile-header .edge-mobile-nav ul ul {
+  display: none;
+  margin-left: 15px;
+}
+
+.edge-mobile-header .edge-mobile-nav ul ul li.current-menu-ancestor > a,
+.edge-mobile-header .edge-mobile-nav ul ul li.current-menu-item > a,
+.edge-mobile-header .edge-mobile-nav ul ul li.current-menu-ancestor > h6,
+.edge-mobile-header .edge-mobile-nav ul ul li.current-menu-item > h6 {
+  color: #fff;
+}
+
+.edge-mobile-header .edge-mobile-nav ul ul li a, .edge-mobile-header .edge-mobile-nav ul ul li h6 {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.edge-mobile-header .edge-mobile-nav .edge-grid > ul > li > a,
+.edge-mobile-header .edge-mobile-nav .edge-grid > ul > li > h6 {
+  padding-left: 4px;
+  font-size: 16px;
+  line-height: 29px;
+}
+
+.edge-mobile-header .edge-mobile-nav .edge-grid > ul > li.edge-active-item > a,
+.edge-mobile-header .edge-mobile-nav .edge-grid > ul > li.edge-active-item > h6 {
+  color: #fff;
+}
+
+.edge-mobile-header .edge-mobile-nav .edge-grid > ul > li.edge-opened > .mobile_arrow > .edge-sub-arrow {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.edge-mobile-header .edge-mobile-nav .mobile_arrow {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: auto;
+  padding: 9px 12px 9px 0;
+  font-size: 15px;
+  line-height: inherit;
+  text-align: right;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+.edge-mobile-header .edge-mobile-nav .mobile_arrow:hover {
+  cursor: pointer;
+}
+
+.edge-mobile-header .edge-mobile-nav .mobile_arrow .edge-sub-arrow {
+  line-height: 1;
+  -webkit-transition: transform 0.2s ease-in-out;
+  -moz-transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+}
+
+.edge-mobile-header .edge-mobile-nav .mobile_arrow .fa-angle-double-down {
+  display: none;
+}
+
+.edge-mobile-header .edge-mobile-nav li.edge-opened > .mobile_arrow > .edge-sub-arrow {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.edge-mobile-header .edge-mobile-nav > ul > li:last-child > a,
+.edge-mobile-header .edge-mobile-nav > .edge-grid > ul > li:last-child > a {
+  border-bottom: none;
+}
+
+/* ==========================================================================
+   Mobile header style - end
+   ========================================================================== */
+/* ==========================================================================
+   Sticky Mobile header style - begin
+   ========================================================================== */
+.edge-sticky-up-mobile-header .edge-animate-mobile-header .edge-mobile-header-inner {
+  width: 100%;
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  transform: translateY(-100%);
+  -webkit-transition: -webkit-transform 0.4s ease-in-out, left 0.2s ease, right 0.2s ease;
+  -moz-transition: -moz-transform 0.4s ease-in-out, left 0.2s ease, right 0.2s ease;
+  transition: transform 0.4s ease-in-out, left 0.2s ease, right 0.2s ease;
+}
+
+.edge-sticky-up-mobile-header .mobile-header-appear .edge-mobile-header-inner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  transform: translateY(0);
+}
+
+/* ==========================================================================
+   Sticky Mobile header style - end
+   ========================================================================== */
+/* ==========================================================================
+   Sticky header style - begin
+   ========================================================================== */
+.edge-sticky-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 71px;
+  width: 100%;
+  z-index: 100;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  transform: translateY(-100%);
+  -webkit-transition: -webkit-transform 0.6s ease;
+  -moz-transition: -moz-transform 0.6s ease;
+  transition: transform 0.6s ease;
+}
+
+.edge-sticky-header .edge-grid {
+  height: 100% !important;
+}
+
+.edge-sticky-header.header-appear {
+  transform: translateY(0%);
+}
+
+.admin-bar .edge-sticky-header.header-appear {
+  top: 32px;
+}
+
+.edge-sticky-header .edge-sticky-holder {
+  position: relative;
+  height: 100%;
+  z-index: 2;
+  background-color: #070707;
+  border-bottom: 1px solid #070707;
+  box-sizing: border-box;
+}
+
+.edge-sticky-header .edge-sticky-holder .edge-logo-wrapper a {
+  max-height: 71px;
+}
+
+.edge-sticky-header .edge-sticky-holder .edge-vertical-align-containers {
+  padding: 0 50px;
+}
+
+.edge-sticky-header .edge-sticky-holder .edge-main-menu li a {
+  color: #fff;
+}
+
+.edge-sticky-header .edge-sticky-holder.edge-menu-left .edge-main-menu {
+  width: auto;
+  padding: 0 0 0 20px;
+}
+
+.edge-sticky-header .edge-sticky-holder.edge-menu-left .edge-vertical-align-containers .edge-position-left-inner {
+  height: 100%;
+}
+
+.edge-sticky-header .edge-sticky-holder.edge-menu-left .edge-vertical-align-containers .edge-position-right:before {
+  display: none;
+}
+
+.edge-sticky-header .edge-sticky-holder.edge-menu-left .edge-vertical-align-containers .edge-position-right-inner {
+  display: -webkit-flex;
+  /* Safari */
+  -webkit-align-items: center;
+  /* Safari 7.0+ */
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.edge-sticky-header .edge-sticky-holder.edge-menu-center .edge-vertical-align-containers .edge-position-center-inner {
+  height: 100%;
+}
+
+.edge-sticky-header .edge-sticky-holder.edge-menu-center .edge-vertical-align-containers .edge-position-right:before {
+  display: none;
+}
+
+.edge-sticky-header .edge-sticky-holder.edge-menu-center .edge-vertical-align-containers .edge-position-right-inner {
+  display: -webkit-flex;
+  /* Safari */
+  -webkit-align-items: center;
+  /* Safari 7.0+ */
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.edge-sticky-header .edge-sticky-holder.edge-menu-right .edge-main-menu {
+  width: auto;
+}
+
+.edge-sticky-header .edge-sticky-holder.edge-menu-right .edge-vertical-align-containers .edge-position-right-inner {
+  height: 100%;
+}
+
+.edge-sticky-header .widget {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+}
+
+/* ==========================================================================
+   Sticky header style - end
+   ========================================================================== */
+/* ==========================================================================
+   Top header style - begin
+   ========================================================================== */
+.edge-top-bar {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  height: 46px;
+  color: #fff;
+  font-size: 12px;
+  line-height: 1;
+  background-color: #000;
+  z-index: 111;
+  box-sizing: border-box;
+}
+
+.edge-top-bar > .edge-vertical-align-containers {
+  padding: 0 40px;
+}
+
+.edge-top-bar .edge-vertical-align-containers .edge-position-left:before,
+.edge-top-bar .edge-vertical-align-containers .edge-position-right:before {
+  display: none;
+}
+
+.edge-top-bar .edge-vertical-align-containers .edge-position-left-inner,
+.edge-top-bar .edge-vertical-align-containers .edge-position-right-inner {
+  display: -webkit-flex;
+  /* Safari */
+  -webkit-align-items: center;
+  /* Safari 7.0+ */
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.edge-top-bar .edge-grid {
+  height: 100%;
+}
+
+.edge-top-bar .edge-grid .edge-vertical-align-containers {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.edge-top-bar-in-grid-padding .edge-top-bar .edge-grid .edge-vertical-align-containers {
+  padding: 0 40px;
+}
+
+.edge-top-bar .widget {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Top header style - end
+   ========================================================================== */
+/* ==========================================================================
+   Header styles - end
+   ========================================================================== */
+
+/*# sourceMappingURL=header-map.css.map */

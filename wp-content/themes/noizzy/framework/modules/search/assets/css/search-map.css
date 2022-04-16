@@ -1,0 +1,667 @@
+/* ==========================================================================
+   Search styles - begin
+   ========================================================================== */
+/* common mixins - start */
+/* common mixins - end */
+/* mixins styles - start */
+/* mixins styles - end */
+/* ==========================================================================
+# Search opener - begin
+========================================================================== */
+.edge-search-opener {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 19px;
+  line-height: 1;
+  margin: 0 10px 3px;
+}
+
+.edge-search-opener:hover {
+  color: #000;
+}
+
+.edge-search-opener .edge-search-opener-wrapper > * {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: inherit;
+}
+
+.edge-search-opener .edge-search-opener-wrapper > *:before {
+  display: block;
+  line-height: inherit;
+}
+
+.edge-search-opener.edge-search-opener-svg-path .edge-search-opener-wrapper > * {
+  vertical-align: middle;
+}
+
+.edge-search-opener.edge-search-opener-svg-path .edge-search-opener-wrapper > *,
+.edge-search-opener.edge-search-opener-svg-path .edge-search-opener-wrapper path {
+  fill: currentColor;
+  stroke: currentColor;
+}
+
+.edge-light-header .edge-page-header > div:not(.edge-sticky-header):not(.fixed) .edge-search-opener,
+.edge-light-header .edge-top-bar .edge-search-opener {
+  color: #fff !important;
+}
+
+.edge-light-header .edge-page-header > div:not(.edge-sticky-header):not(.fixed) .edge-search-opener:hover,
+.edge-light-header .edge-top-bar .edge-search-opener:hover {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.edge-dark-header .edge-page-header > div:not(.edge-sticky-header):not(.fixed) .edge-search-opener,
+.edge-dark-header .edge-top-bar .edge-search-opener {
+  color: #333 !important;
+}
+
+.edge-dark-header .edge-page-header > div:not(.edge-sticky-header):not(.fixed) .edge-search-opener:hover,
+.edge-dark-header .edge-top-bar .edge-search-opener:hover {
+  color: rgba(51, 51, 51, 0.8) !important;
+}
+
+/* ==========================================================================
+# Search opener - end
+========================================================================== */
+/* ==========================================================================
+# Search template style - begin
+========================================================================== */
+.edge-search-page-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 0 0 80px;
+}
+
+.edge-search-page-holder .edge-search-page-form {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 0 0 30px;
+}
+
+.edge-search-page-holder .edge-search-page-form .edge-search-title {
+  margin: 0 0 20px;
+}
+
+.edge-search-page-holder .edge-search-page-form .edge-search-label {
+  display: block;
+  font-size: 13px;
+}
+
+.edge-search-page-holder .edge-search-page-form .edge-form-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 0 0 10px;
+  clear: both;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.edge-search-page-holder .edge-search-page-form .edge-form-holder .edge-column-left {
+  display: table-cell;
+  vertical-align: top;
+}
+
+.edge-search-page-holder .edge-search-page-form .edge-form-holder .edge-column-right {
+  display: table-cell;
+  width: 1%;
+  text-align: left;
+  vertical-align: top;
+}
+
+.edge-search-page-holder .edge-search-page-form .edge-form-holder .edge-search-field {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  margin: 0;
+  padding: 0 20px 0 3px;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+  border: none;
+  outline: 0;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  box-sizing: border-box;
+}
+
+.edge-search-page-holder .edge-search-page-form .edge-form-holder .edge-search-field::-webkit-input-placeholder {
+  color: inherit;
+}
+
+.edge-search-page-holder .edge-search-page-form .edge-form-holder .edge-search-field:-moz-placeholder {
+  color: inherit;
+  opacity: 1;
+}
+
+.edge-search-page-holder .edge-search-page-form .edge-form-holder .edge-search-field::-moz-placeholder {
+  color: inherit;
+  opacity: 1;
+}
+
+.edge-search-page-holder .edge-search-page-form .edge-form-holder .edge-search-field:-ms-input-placeholder {
+  color: inherit;
+}
+
+.edge-search-page-holder .edge-search-page-form .edge-form-holder .edge-search-submit {
+  position: relative;
+  display: inline-block;
+  width: auto;
+  height: 40px;
+  line-height: 40px;
+  padding: 0;
+  font-size: 19px;
+  color: #000;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  vertical-align: middle;
+  -webkit-transition: color 0.2s ease-in-out;
+  -moz-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+.edge-search-page-holder .edge-search-page-form .edge-form-holder .edge-search-submit:hover {
+  color: #000;
+}
+
+.edge-search-page-holder article {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  padding: 30px 0;
+  margin: 0;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.edge-search-page-holder article.sticky .edge-post-title a {
+  color: #000;
+}
+
+.edge-search-page-holder article.page .edge-post-title-area .edge-post-info > div.edge-post-info-category {
+  display: none;
+}
+
+.edge-search-page-holder article .edge-post-content {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.edge-search-page-holder article .edge-post-image {
+  display: block;
+  float: left;
+  width: 130px;
+}
+
+.edge-search-page-holder article .edge-post-image a, .edge-search-page-holder article .edge-post-image img {
+  display: block;
+}
+
+.edge-search-page-holder article .edge-post-title-area {
+  min-height: 130px;
+  padding: 0 0 0 150px;
+}
+
+.edge-search-page-holder article .edge-post-title-area.edge-no-thumbnail {
+  padding: 0;
+  min-height: inherit;
+}
+
+.edge-search-page-holder article .edge-post-title-area .edge-post-title-area-inner {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.edge-search-page-holder article .edge-post-title-area .edge-post-title-area-inner .edge-post-title {
+  margin: 0;
+}
+
+.edge-search-page-holder article .edge-post-title-area .edge-post-title-area-inner .edge-post-excerpt {
+  margin: 7px 0 0;
+}
+
+.edge-search-page-holder .edge-blog-pagination {
+  margin: 50px 0 0;
+}
+
+/* ==========================================================================
+# Search template style - end
+========================================================================== */
+/* ==========================================================================
+# Search covers header - start
+========================================================================== */
+.edge-search-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: none;
+  font-size: 15px;
+  background-color: #000;
+  z-index: 115;
+}
+
+.edge-search-cover .edge-container,
+.edge-search-cover .edge-container-inner {
+  height: 100%;
+}
+
+.edge-fixed-header-appear .edge-search-cover,
+.edge-sticky-header-appear .edge-search-cover,
+.edge-mobile-header.mobile-header-appear .edge-search-cover {
+  position: fixed;
+}
+
+.edge-fixed-header-appear.admin-bar .edge-search-cover,
+.edge-sticky-header-appear.admin-bar .edge-search-cover,
+.admin-bar .edge-mobile-header.mobile-header-appear .edge-search-cover {
+  top: 32px;
+}
+
+.edge-search-cover .edge-form-holder-outer {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.edge-search-cover .edge-form-holder {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0 47px 7px;
+}
+
+.edge-search-cover .edge-form-holder-inner {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.edge-search-cover .edge-container-inner .edge-form-holder {
+  padding: 0;
+}
+
+.edge-search-cover .edge-container-inner .edge-search-close {
+  right: 0;
+}
+
+.edge-search-cover .edge-search-field-icon {
+  position: relative;
+  float: left;
+  color: #fff;
+  margin-right: 20px;
+  top: 3px;
+}
+
+.edge-search-cover input.edge_search_field {
+  display: inline-block;
+  vertical-align: middle;
+  width: 90%;
+  margin: 0;
+  padding: 0;
+  float: left;
+  font-family: inherit;
+  color: #fff;
+  font-size: inherit;
+  font-weight: inherit;
+  background-color: transparent;
+  border: 0;
+  box-shadow: none;
+  outline: none;
+  outline-offset: 0;
+  border-radius: 0;
+}
+
+.edge-search-cover input.edge_search_field:focus {
+  color: inherit;
+}
+
+.edge-search-cover input.edge_search_field::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.edge-search-cover input.edge_search_field:-moz-placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+.edge-search-cover input.edge_search_field::-moz-placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+.edge-search-cover input.edge_search_field:-ms-input-placeholder {
+  color: #fff;
+}
+
+.edge-search-cover input[type="submit"] {
+  border: 0 none;
+  clip: rect(0px, 0px, 0px, 0px);
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  visibility: hidden;
+}
+
+.edge-search-cover .edge-search-close {
+  position: absolute;
+  right: 57px;
+  top: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  color: #fff;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.edge-search-cover .edge-search-close:hover {
+  color: #000;
+}
+
+.edge-search-cover .edge-search-close.edge-search-close-icon-pack {
+  font-size: 19px;
+  line-height: 1em;
+}
+
+.edge-search-cover .edge-search-close.edge-search-close-icon-pack * {
+  display: block;
+  line-height: inherit;
+}
+
+.edge-search-cover .edge-search-close.edge-search-close-icon-pack *:before {
+  display: block;
+  line-height: inherit;
+}
+
+.edge-search-cover .edge-search-close.edge-search-close-svg-path > * {
+  vertical-align: middle;
+}
+
+.edge-search-cover .edge-search-close.edge-search-close-svg-path > *,
+.edge-search-cover .edge-search-close.edge-search-close-svg-path path {
+  fill: currentColor;
+  stroke: currentColor;
+}
+
+.edge-search-cover.disabled input,
+.edge-search-cover.disabled input:focus {
+  font-weight: normal;
+}
+
+/* ==========================================================================
+# Search covers header - end
+========================================================================== */
+/* ==========================================================================
+# Fullscreen search - start
+========================================================================== */
+/* Fullscreen search general style - start
+========================================================================== */
+.edge-fullscreen-search-holder {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 105;
+  opacity: 0;
+}
+
+.edge-fullscreen-search-holder .edge-fullscreen-search-table {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.edge-fullscreen-search-holder .edge-fullscreen-search-cell {
+  position: relative;
+  display: table-cell;
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.edge-fullscreen-search-holder .edge-form-holder-inner {
+  position: relative;
+  width: 70%;
+  max-width: 1022px;
+  margin: auto;
+}
+
+.edge-fullscreen-search-holder .edge-form-holder-inner .edge-line {
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  border-bottom: 1px solid #e8e8e8;
+  -webkit-transition: all 0.3s 0.2s;
+  -moz-transition: all 0.3s 0.2s;
+  transition: all 0.3s 0.2s;
+}
+
+.edge-fullscreen-search-opened .edge-fullscreen-search-holder .edge-form-holder-inner .edge-line {
+  width: 100%;
+  -webkit-transition: width 0.5s ease 0.6s;
+  -moz-transition: width 0.5s ease 0.6s;
+  transition: width 0.5s ease 0.6s;
+}
+
+.edge-fullscreen-search-holder .edge-field-holder {
+  display: block;
+  position: relative;
+}
+
+.edge-fullscreen-search-holder input.edge-search-field {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0 60px 4px 14px;
+  font-family: "Oswald", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 2em;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  outline: none;
+  text-transform: uppercase;
+}
+
+.edge-fullscreen-search-holder .edge-search-submit {
+  position: absolute;
+  right: 11px;
+  bottom: 0;
+  width: auto;
+  color: #000;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  opacity: 0;
+  cursor: pointer;
+  -webkit-transition: all 0.3s 0.2s;
+  -moz-transition: all 0.3s 0.2s;
+  transition: all 0.3s 0.2s;
+}
+
+.edge-fullscreen-search-holder .edge-search-submit:hover {
+  color: #000;
+}
+
+.edge-fullscreen-search-opened .edge-fullscreen-search-holder .edge-search-submit {
+  opacity: 1;
+  -webkit-transition: color 0.2s ease, opacity 0.2s ease-out 1.1s, bottom 0.4s ease-out 0.9s;
+  -moz-transition: color 0.2s ease, opacity 0.2s ease-out 1.1s, bottom 0.4s ease-out 0.9s;
+  transition: color 0.2s ease, opacity 0.2s ease-out 1.1s, bottom 0.4s ease-out 0.9s;
+}
+
+.edge-fullscreen-search-holder .edge-search-submit.edge-search-submit-icon-pack {
+  font-size: 36px;
+  color: #fff;
+  padding-bottom: 4px;
+  line-height: 1.7em;
+}
+
+.edge-fullscreen-search-holder .edge-search-submit.edge-search-submit-svg-path > *,
+.edge-fullscreen-search-holder .edge-search-submit.edge-search-submit-svg-path path {
+  fill: currentColor;
+  stroke: currentColor;
+}
+
+.edge-fullscreen-search-holder .edge-search-close {
+  position: absolute;
+  top: 50px;
+  right: 105px;
+  color: #fff;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1;
+  -webkit-transition: transform 0.23s;
+  -moz-transition: transform 0.23s;
+  transition: transform 0.23s;
+}
+
+.admin-bar .edge-fullscreen-search-holder .edge-search-close {
+  top: 50px;
+}
+
+.edge-fullscreen-search-holder .edge-search-close:hover {
+  color: #fff;
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+.edge-fullscreen-search-holder .edge-search-close.edge-search-close-icon-pack {
+  font-size: 25px;
+  line-height: 1em;
+}
+
+.edge-fullscreen-search-holder .edge-search-close.edge-search-close-icon-pack * {
+  display: block;
+  line-height: inherit;
+}
+
+.edge-fullscreen-search-holder .edge-search-close.edge-search-close-icon-pack *:before {
+  display: block;
+  line-height: inherit;
+}
+
+.edge-fullscreen-search-holder .edge-search-close.edge-search-close-svg-path > * {
+  vertical-align: middle;
+}
+
+.edge-fullscreen-search-holder .edge-search-close.edge-search-close-svg-path > *,
+.edge-fullscreen-search-holder .edge-search-close.edge-search-close-svg-path path {
+  fill: currentColor;
+  stroke: currentColor;
+}
+
+/* Fullscreen search general style - end
+========================================================================== */
+/* Fullscreen search fade style - start
+========================================================================== */
+.edge-search-fade .edge-fullscreen-search-holder {
+  visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  opacity: 0;
+  z-index: 112;
+  box-sizing: border-box;
+}
+
+.edge-search-fade .edge-fullscreen-search-holder .edge-fullscreen-search-table {
+  background-color: #070707;
+}
+
+.edge-search-fade-out.edge-search-fade .edge-fullscreen-search-holder {
+  -webkit-animation: search_fade_out 0.2s ease-out both;
+  -moz-animation: search_fade_out 0.2s ease-out both;
+  animation: search_fade_out 0.2s ease-out both;
+}
+
+.edge-search-fade-in.edge-search-fade .edge-fullscreen-search-holder.edge-animate {
+  -webkit-animation: search_fade_in 0.3s ease both;
+  -moz-animation: search_fade_in 0.3s ease both;
+  animation: search_fade_in 0.3s ease both;
+}
+
+.edge-search-fade .edge-fullscreen-search-holder.edge-animate .edge-search-close {
+  opacity: 1;
+  visibility: visible;
+}
+
+@-webkit-keyframes search_fade_out {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes search_fade_out {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes search_fade_in {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes search_fade_in {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+/* Fullscreen search fade style - end
+========================================================================== */
+/* ==========================================================================
+# Fullscreen search - end
+========================================================================== */
+/* ==========================================================================
+   Search styles - end
+   ========================================================================== */
+
+/*# sourceMappingURL=search-map.css.map */

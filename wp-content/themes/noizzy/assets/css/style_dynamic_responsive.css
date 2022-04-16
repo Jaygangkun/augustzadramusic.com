@@ -1,0 +1,11 @@
+@media only screen and (max-width: 1024px){
+.edge-content .edge-content-inner > .edge-container > .edge-container-inner, .edge-content .edge-content-inner > .edge-full-width > .edge-full-width-inner { padding: 100pc 0 100px;}}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+h1 { font-size: 67px;line-height: 67px;letter-spacing: 0px;}h2 { font-size: 60px;line-height: 60px;letter-spacing: 0px;}h3 { font-size: 40px;}}
+
+@media only screen and (min-width: 681px) and (max-width: 768px){
+h1 { font-size: 57px;line-height: 60px;letter-spacing: 0px;}h2 { font-size: 52px;line-height: 52px;letter-spacing: 0px;}h3 { font-size: 40px;}}
+
+@media only screen and (max-width: 680px){
+h1 { font-size: 50px;line-height: 52px;letter-spacing: 0px;}h2 { font-size: 45px;line-height: 50px;letter-spacing: 0px;}h3 { font-size: 27px;}}

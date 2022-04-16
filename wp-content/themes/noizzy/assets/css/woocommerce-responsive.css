@@ -1,0 +1,792 @@
+/* ==========================================================================
+   WooCommerce Responsive styles - begin
+   ========================================================================== */
+/* common mixins - start */
+/* common mixins - end */
+/* mixins styles - start */
+/* mixins styles - end */
+/*------------------------------------------------------------------
+ * This is main woocommerce responsive css file for theme. It is broken into following sections:
+ * 1.  Global Responsive
+ * 2.  Single Product Responsive
+ * 3.  WooCommerce Product Lists and Shortcodes Responsive
+ * 4.  Cart Responsive
+ * 5.  Checkout Responsive
+ * 6.  My Account Responsive
+ * 7.  Shortcodes Responsive
+ * 8.  Widgets Responsive
+-------------------------------------------------------------------*/
+/* ==========================================================================
+   WooCommerce Cart page responsive styles - begin
+   ========================================================================== */
+@media only screen and (max-width: 768px) {
+  .edge-woocommerce-page table.cart td.actions .coupon input[type="text"] {
+    width: 180px;
+    margin: 0 17px 0 0;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .edge-woocommerce-page table.cart tr th, .edge-woocommerce-page table.cart tr td {
+    font-size: 12px;
+  }
+  .edge-woocommerce-page table.cart tr.cart_item td.product-thumbnail {
+    width: auto;
+    padding-right: 0;
+  }
+  .edge-woocommerce-page table.cart tr.cart_item td.product-thumbnail img {
+    display: none;
+  }
+  .edge-woocommerce-page table.cart thead tr th {
+    font-size: 14px;
+  }
+  .edge-woocommerce-page table.cart td.actions .coupon {
+    margin: 0 0 20px;
+  }
+  .edge-woocommerce-page table.cart td.actions .coupon input[type="text"] {
+    width: 160px;
+    margin: 0 10px 20px 0;
+  }
+  .edge-woocommerce-page table.cart td.actions .coupon,
+  .edge-woocommerce-page table.cart td.actions > input {
+    float: none;
+    display: block;
+  }
+  .edge-woocommerce-page .edge-content .edge-quantity-buttons .edge-quantity-input .edge-quantity-input,
+  .edge-woocommerce-page .edge-content .edge-quantity-buttons .edge-quantity-input .edge-quantity-plus,
+  .edge-woocommerce-page .edge-content .edge-quantity-buttons .edge-quantity-input .edge-quantity-minus, .edge-woocommerce-page div.woocommerce .edge-quantity-buttons .edge-quantity-input,
+  .edge-woocommerce-page div.woocommerce .edge-quantity-buttons .edge-quantity-plus,
+  .edge-woocommerce-page div.woocommerce .edge-quantity-buttons .edge-quantity-minus {
+    font-size: 12px;
+  }
+}
+
+/* ==========================================================================
+   WooCommerce Cart page responsive styles - end
+   ========================================================================== */
+/* ==========================================================================
+   WooCommerce Checkout page responsive styles - begin
+   ========================================================================== */
+@media only screen and (max-width: 768px) {
+  .edge-woocommerce-page .woocommerce-checkout .col-1,
+  .edge-woocommerce-page .woocommerce-checkout .col-2 {
+    width: 100%;
+  }
+  .edge-woocommerce-page .woocommerce-checkout .col-1 {
+    margin: 0 0 25px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .edge-woocommerce-page .woocommerce-checkout .col-1 .form-row,
+  .edge-woocommerce-page .woocommerce-checkout .col-2 .form-row {
+    width: 100%;
+    margin: 0;
+    float: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .edge-woocommerce-page .woocommerce-checkout .woocommerce-checkout-payment ul li.payment_method_paypal label img {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   WooCommerce Checkout page responsive styles - end
+   ========================================================================== */
+/* ==========================================================================
+   WooCommerce Checkout page - Order Received responsive styles - begin
+   ========================================================================== */
+@media only screen and (max-width: 768px) {
+  .edge-woocommerce-page.woocommerce-order-received .woocommerce .col2-set.addresses .col-1,
+  .edge-woocommerce-page.woocommerce-order-received .woocommerce .col2-set.addresses .col-2 {
+    width: 100%;
+  }
+  .edge-woocommerce-page.woocommerce-order-received .woocommerce .col2-set.addresses .col-1 {
+    margin: 0 0 25px;
+  }
+}
+
+/* ==========================================================================
+   WooCommerce Checkout page - Order Received responsive styles - end
+   ========================================================================== */
+/* ==========================================================================
+   WooCommerce Buttons responsive styles - begin
+   ========================================================================== */
+/* ==========================================================================
+   WooCommerce Buttons responsive styles - end
+   ========================================================================== */
+/* ==========================================================================
+   WooCommerce Onsale and Out of Stock responsive styles - begin
+   ========================================================================== */
+@media only screen and (max-width: 1024px) {
+  .edge-woo-single-page .edge-single-product-content .edge-out-of-stock,
+  .edge-woo-single-page .edge-single-product-content .edge-new-product {
+    right: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edge-woo-single-page.edge-woo-single-thumb-on-left-side .edge-single-product-content .edge-onsale {
+    left: 10px;
+  }
+}
+
+/* ==========================================================================
+   WooCommerce Onsale and Out of Stock responsive styles - end
+   ========================================================================== */
+/* ==========================================================================
+   WooCommerce Message Responsive styles - begin
+   ========================================================================== */
+@media only screen and (max-width: 768px) {
+  .edge-woocommerce-page .woocommerce-message,
+  .edge-woocommerce-page .woocommerce-info,
+  .edge-woocommerce-page .woocommerce-error {
+    padding: 40px 25px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .edge-woocommerce-page .woocommerce-message,
+  .edge-woocommerce-page .woocommerce-info,
+  .edge-woocommerce-page .woocommerce-error {
+    padding: 14px 20px;
+    line-height: 2em;
+  }
+  .edge-woocommerce-page .woocommerce-message a,
+  .edge-woocommerce-page .woocommerce-info a,
+  .edge-woocommerce-page .woocommerce-error a {
+    float: none;
+  }
+  .edge-woocommerce-page .woocommerce-message .woocommerce-Button,
+  .edge-woocommerce-page .woocommerce-message .button,
+  .edge-woocommerce-page .woocommerce-info .woocommerce-Button,
+  .edge-woocommerce-page .woocommerce-info .button,
+  .edge-woocommerce-page .woocommerce-error .woocommerce-Button,
+  .edge-woocommerce-page .woocommerce-error .button {
+    float: none;
+    position: relative !important;
+    display: block;
+    text-align: center;
+    margin-bottom: 15px !important;
+    left: auto;
+    right: auto;
+    top: auto;
+    -webkit-transform: none;
+    -moz-transform: none;
+    transform: none;
+  }
+}
+
+/* ==========================================================================
+   WooCommerce Message Responsive styles - end
+   ========================================================================== */
+/* ==========================================================================
+   WooCommerce Result and Ordering Responsive styles - begin
+   ========================================================================== */
+@media only screen and (max-width: 680px) {
+  .edge-woocommerce-page .woocommerce-result-count,
+  .edge-woocommerce-page .woocommerce-ordering {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .edge-woocommerce-page .woocommerce-ordering {
+    text-align: initial;
+  }
+  .edge-woocommerce-page .woocommerce-ordering .orderby {
+    display: block;
+  }
+}
+
+/* ==========================================================================
+   WooCommerce Result and Ordering Responsive styles - end
+   ========================================================================== */
+/* ==========================================================================
+   WooCommerce MyAccount page responsive styles - begin
+   ========================================================================== */
+@media only screen and (max-width: 1024px) {
+  .edge-woocommerce-page.woocommerce-account .woocommerce-MyAccount-navigation {
+    width: 28%;
+  }
+  .edge-woocommerce-page.woocommerce-account .woocommerce-MyAccount-content {
+    width: 72%;
+    padding: 0 0 0 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edge-woocommerce-page.woocommerce-account .woocommerce-MyAccount-navigation,
+  .edge-woocommerce-page.woocommerce-account .woocommerce-MyAccount-content {
+    float: none;
+    width: 100%;
+    padding: 0;
+  }
+  .edge-woocommerce-page.woocommerce-account .woocommerce-MyAccount-navigation ul {
+    border-right: none;
+  }
+  .edge-woocommerce-page.woocommerce-account .woocommerce-MyAccount-navigation ul li:not(:last-child) {
+    margin: 0 0 14px;
+  }
+  .edge-woocommerce-page.woocommerce-account .woocommerce-MyAccount-content {
+    margin: 40px 0 0;
+  }
+  .edge-woocommerce-page.woocommerce-account .woocommerce .col2-set.addresses .col-1,
+  .edge-woocommerce-page.woocommerce-account .woocommerce .col2-set.addresses .col-2 {
+    width: 100%;
+  }
+  .edge-woocommerce-page.woocommerce-account .woocommerce .col2-set.addresses .col-1 {
+    margin: 0 0 25px;
+  }
+}
+
+/* ==========================================================================
+   WooCommerce MyAccount page responsive styles - end
+   ========================================================================== */
+/* ==========================================================================
+   WooCommerce Product List page responsive styles - begin
+   ========================================================================== */
+@media only screen and (max-width: 1440px) {
+  .woocommerce.columns-6 > .products > .product {
+    width: 20%;
+  }
+}
+
+@media only screen and (max-width: 1440px) and (min-width: 1201px) {
+  .woocommerce.columns-6 > .products > .product:nth-child(5n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .woocommerce.columns-5 > .products > .product {
+    width: 25%;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {
+  .woocommerce.columns-5 > .products > .product:nth-child(4n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .woocommerce.columns-6 > .products > .product {
+    width: 25%;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {
+  .woocommerce.columns-6 > .products > .product:nth-child(4n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edge-woocommerce-columns-2 .edge-pl-main-holder > .products > .product, .edge-woocommerce-columns-2
+  .related.products > .products > .product, .edge-woocommerce-columns-2
+  .upsells.products > .products > .product, .edge-woocommerce-columns-2
+  .cross-sells > .products > .product {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .edge-woocommerce-columns-2 .edge-pl-main-holder > .products > .product:nth-child(2n+1), .edge-woocommerce-columns-2
+  .related.products > .products > .product:nth-child(2n+1), .edge-woocommerce-columns-2
+  .upsells.products > .products > .product:nth-child(2n+1), .edge-woocommerce-columns-2
+  .cross-sells > .products > .product:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edge-woocommerce-columns-3 .edge-pl-main-holder > .products > .product, .edge-woocommerce-columns-3
+  .related.products > .products > .product, .edge-woocommerce-columns-3
+  .upsells.products > .products > .product, .edge-woocommerce-columns-3
+  .cross-sells > .products > .product {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .edge-woocommerce-columns-3 .edge-pl-main-holder > .products > .product:nth-child(2n+1), .edge-woocommerce-columns-3
+  .related.products > .products > .product:nth-child(2n+1), .edge-woocommerce-columns-3
+  .upsells.products > .products > .product:nth-child(2n+1), .edge-woocommerce-columns-3
+  .cross-sells > .products > .product:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edge-woocommerce-columns-4 .edge-pl-main-holder > .products > .product, .edge-woocommerce-columns-4
+  .related.products > .products > .product, .edge-woocommerce-columns-4
+  .upsells.products > .products > .product, .edge-woocommerce-columns-4
+  .cross-sells > .products > .product {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .edge-woocommerce-columns-4 .edge-pl-main-holder > .products > .product:nth-child(2n+1), .edge-woocommerce-columns-4
+  .related.products > .products > .product:nth-child(2n+1), .edge-woocommerce-columns-4
+  .upsells.products > .products > .product:nth-child(2n+1), .edge-woocommerce-columns-4
+  .cross-sells > .products > .product:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .woocommerce.columns-2 > .products > .product {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .woocommerce.columns-2 > .products > .product:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .woocommerce.columns-3 > .products > .product {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .woocommerce.columns-3 > .products > .product:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .woocommerce.columns-4 > .products > .product {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .woocommerce.columns-4 > .products > .product:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .woocommerce.columns-5 > .products > .product {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .woocommerce.columns-5 > .products > .product:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .woocommerce.columns-6 > .products > .product {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .woocommerce.columns-6 > .products > .product:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .edge-woocommerce-columns-2 .edge-pl-main-holder > .products > .product, .edge-woocommerce-columns-2
+  .related.products > .products > .product, .edge-woocommerce-columns-2
+  .upsells.products > .products > .product, .edge-woocommerce-columns-2
+  .cross-sells > .products > .product {
+    width: 100%;
+  }
+  .edge-woocommerce-columns-3 .edge-pl-main-holder > .products > .product, .edge-woocommerce-columns-3
+  .related.products > .products > .product, .edge-woocommerce-columns-3
+  .upsells.products > .products > .product, .edge-woocommerce-columns-3
+  .cross-sells > .products > .product {
+    width: 100%;
+  }
+  .edge-woocommerce-columns-4 .edge-pl-main-holder > .products > .product, .edge-woocommerce-columns-4
+  .related.products > .products > .product, .edge-woocommerce-columns-4
+  .upsells.products > .products > .product, .edge-woocommerce-columns-4
+  .cross-sells > .products > .product {
+    width: 100%;
+  }
+  .woocommerce.columns-2 > .products > .product {
+    width: 100%;
+  }
+  .woocommerce.columns-3 > .products > .product {
+    width: 100%;
+  }
+  .woocommerce.columns-4 > .products > .product {
+    width: 100%;
+  }
+  .woocommerce.columns-5 > .products > .product {
+    width: 100%;
+  }
+  .woocommerce.columns-6 > .products > .product {
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+   WooCommerce Product List page responsive styles - end
+   ========================================================================== */
+/* Woocommerce Product Page shortcode responsive style - begin
+========================================================================== */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+  div.woocommerce > .single-product .woocommerce-tabs ul.tabs > li a {
+    padding: 12px 7px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  div.woocommerce > .single-product .woocommerce-tabs ul.tabs > li a {
+    padding: 13px 10px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  div.woocommerce > .single-product .images.woocommerce-product-gallery--columns-4 .woocommerce-product-gallery__image:not(:first-child) {
+    width: 50%;
+  }
+}
+
+/* Woocommerce Product Page shortcode responsive style - end
+========================================================================== */
+/* ==========================================================================
+   WooCommerce Single Product Page Responsive styles - begin
+   ========================================================================== */
+@media only screen and (max-width: 1366px) {
+  .edge-woo-single-page .price ins .amount {
+    font-size: 18px;
+  }
+  .edge-woo-single-page ul.products > .product .price del {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+  .edge-woo-single-page .woocommerce-tabs ul.tabs > li a {
+    padding: 12px 7px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edge-woo-single-page .edge-single-product-content .images,
+  .edge-woo-single-page .edge-single-product-content .edge-single-product-summary {
+    float: none;
+    width: 100%;
+    padding: 0;
+  }
+  .edge-woo-single-page .edge-single-product-content .images .woocommerce-product-gallery__trigger {
+    right: 10px;
+  }
+  .edge-woo-single-page .edge-single-product-content .edge-single-product-summary {
+    margin: 30px 0 0;
+  }
+  .edge-woo-single-page .woocommerce-tabs ul.tabs > li:first-child a {
+    padding-left: 0;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .edge-woo-single-page.edge-woo-single-thumb-on-left-side .edge-single-product-content .images.woocommerce-product-gallery--columns-4 .woocommerce-product-gallery__image:not(:first-child) {
+    width: 50%;
+  }
+  .edge-woo-single-page .edge-single-product-content .images.woocommerce-product-gallery--columns-4 .woocommerce-product-gallery__image:not(:first-child) {
+    width: 50%;
+  }
+  .edge-woocommerce-page .edge-content .variations .reset_variations {
+    display: block;
+    margin: 10px 0 0;
+  }
+}
+
+/* ==========================================================================
+   WooCommerce Single Product Page Responsive styles - end
+   ========================================================================== */
+/* ==========================================================================
+   WooCommerce Dropdown Cart Responsive styles - begin
+   ========================================================================== */
+@media only screen and (max-width: 768px) {
+  .edge-shopping-cart-dropdown ul {
+    margin: 20px;
+  }
+}
+
+/* ==========================================================================
+   WooCommerce Dropdown Cart Responsive styles - end
+   ========================================================================== */
+/* ==========================================================================
+   Product List shortcode responsive styles - begin
+   ========================================================================== */
+@media only screen and (max-width: 1440px) {
+  .edge-pl-holder.edge-standard-layout.edge-six-columns .edge-pli {
+    width: 20%;
+  }
+}
+
+@media only screen and (max-width: 1440px) and (min-width: 1201px) {
+  .edge-pl-holder.edge-standard-layout.edge-six-columns .edge-pli:nth-child(6n+1) {
+    clear: none;
+  }
+  .edge-pl-holder.edge-standard-layout.edge-six-columns .edge-pli:nth-child(5n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .edge-pl-holder.edge-masonry-layout.edge-five-columns .edge-pli,
+  .edge-pl-holder.edge-masonry-layout.edge-five-columns .edge-pl-sizer {
+    width: 25%;
+  }
+  .edge-pl-holder.edge-masonry-layout.edge-five-columns .edge-pli.edge-woo-image-large-width,
+  .edge-pl-holder.edge-masonry-layout.edge-five-columns .edge-pli.edge-woo-image-large-width-height {
+    width: 50%;
+  }
+  .edge-pl-holder.edge-masonry-layout.edge-six-columns .edge-pli,
+  .edge-pl-holder.edge-masonry-layout.edge-six-columns .edge-pl-sizer {
+    width: 25%;
+  }
+  .edge-pl-holder.edge-masonry-layout.edge-six-columns .edge-pli.edge-woo-image-large-width,
+  .edge-pl-holder.edge-masonry-layout.edge-six-columns .edge-pli.edge-woo-image-large-width-height {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .edge-pl-holder.edge-standard-layout.edge-five-columns .edge-pli {
+    width: 25%;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {
+  .edge-pl-holder.edge-standard-layout.edge-five-columns .edge-pli:nth-child(5n+1) {
+    clear: none;
+  }
+  .edge-pl-holder.edge-standard-layout.edge-five-columns .edge-pli:nth-child(4n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .edge-pl-holder.edge-standard-layout.edge-six-columns .edge-pli {
+    width: 25%;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {
+  .edge-pl-holder.edge-standard-layout.edge-six-columns .edge-pli:nth-child(6n+1) {
+    clear: none;
+  }
+  .edge-pl-holder.edge-standard-layout.edge-six-columns .edge-pli:nth-child(4n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .edge-pl-holder.edge-masonry-layout.edge-two-columns .edge-pli,
+  .edge-pl-holder.edge-masonry-layout.edge-two-columns .edge-pl-sizer {
+    width: 50%;
+  }
+  .edge-pl-holder.edge-masonry-layout.edge-two-columns .edge-pli.edge-woo-image-large-width,
+  .edge-pl-holder.edge-masonry-layout.edge-two-columns .edge-pli.edge-woo-image-large-width-height {
+    width: 100%;
+  }
+  .edge-pl-holder.edge-masonry-layout.edge-three-columns .edge-pli,
+  .edge-pl-holder.edge-masonry-layout.edge-three-columns .edge-pl-sizer {
+    width: 33.33333%;
+  }
+  .edge-pl-holder.edge-masonry-layout.edge-three-columns .edge-pli.edge-woo-image-large-width,
+  .edge-pl-holder.edge-masonry-layout.edge-three-columns .edge-pli.edge-woo-image-large-width-height {
+    width: 66.66667%;
+  }
+  .edge-pl-holder.edge-masonry-layout.edge-four-columns .edge-pli,
+  .edge-pl-holder.edge-masonry-layout.edge-four-columns .edge-pl-sizer {
+    width: 25%;
+  }
+  .edge-pl-holder.edge-masonry-layout.edge-four-columns .edge-pli.edge-woo-image-large-width,
+  .edge-pl-holder.edge-masonry-layout.edge-four-columns .edge-pli.edge-woo-image-large-width-height {
+    width: 50%;
+  }
+  .edge-pl-holder.edge-masonry-layout.edge-five-columns .edge-pli,
+  .edge-pl-holder.edge-masonry-layout.edge-five-columns .edge-pl-sizer {
+    width: 25%;
+  }
+  .edge-pl-holder.edge-masonry-layout.edge-five-columns .edge-pli.edge-woo-image-large-width,
+  .edge-pl-holder.edge-masonry-layout.edge-five-columns .edge-pli.edge-woo-image-large-width-height {
+    width: 50%;
+  }
+  .edge-pl-holder.edge-masonry-layout.edge-six-columns .edge-pli,
+  .edge-pl-holder.edge-masonry-layout.edge-six-columns .edge-pl-sizer {
+    width: 25%;
+  }
+  .edge-pl-holder.edge-masonry-layout.edge-six-columns .edge-pli.edge-woo-image-large-width,
+  .edge-pl-holder.edge-masonry-layout.edge-six-columns .edge-pli.edge-woo-image-large-width-height {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edge-pl-holder.edge-standard-layout.edge-two-columns .edge-pli {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .edge-pl-holder.edge-standard-layout.edge-two-columns .edge-pli:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edge-pl-holder.edge-standard-layout.edge-three-columns .edge-pli {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .edge-pl-holder.edge-standard-layout.edge-three-columns .edge-pli:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edge-pl-holder.edge-standard-layout.edge-four-columns .edge-pli {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .edge-pl-holder.edge-standard-layout.edge-four-columns .edge-pli:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edge-pl-holder.edge-standard-layout.edge-five-columns .edge-pli {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .edge-pl-holder.edge-standard-layout.edge-five-columns .edge-pli:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edge-pl-holder.edge-standard-layout.edge-six-columns .edge-pli {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .edge-pl-holder.edge-standard-layout.edge-six-columns .edge-pli:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .edge-pl-holder.edge-masonry-layout.edge-two-columns .edge-pli,
+  .edge-pl-holder.edge-masonry-layout.edge-two-columns .edge-pl-sizer {
+    width: 50%;
+  }
+  .edge-pl-holder.edge-masonry-layout.edge-two-columns .edge-pli.edge-woo-image-large-width,
+  .edge-pl-holder.edge-masonry-layout.edge-two-columns .edge-pli.edge-woo-image-large-width-height {
+    width: 100%;
+  }
+  .edge-pl-holder.edge-masonry-layout.edge-three-columns .edge-pli,
+  .edge-pl-holder.edge-masonry-layout.edge-three-columns .edge-pl-sizer {
+    width: 50%;
+  }
+  .edge-pl-holder.edge-masonry-layout.edge-three-columns .edge-pli.edge-woo-image-large-width,
+  .edge-pl-holder.edge-masonry-layout.edge-three-columns .edge-pli.edge-woo-image-large-width-height {
+    width: 100%;
+  }
+  .edge-pl-holder.edge-masonry-layout.edge-four-columns .edge-pli,
+  .edge-pl-holder.edge-masonry-layout.edge-four-columns .edge-pl-sizer {
+    width: 50%;
+  }
+  .edge-pl-holder.edge-masonry-layout.edge-four-columns .edge-pli.edge-woo-image-large-width,
+  .edge-pl-holder.edge-masonry-layout.edge-four-columns .edge-pli.edge-woo-image-large-width-height {
+    width: 100%;
+  }
+  .edge-pl-holder.edge-masonry-layout.edge-five-columns .edge-pli,
+  .edge-pl-holder.edge-masonry-layout.edge-five-columns .edge-pl-sizer {
+    width: 50%;
+  }
+  .edge-pl-holder.edge-masonry-layout.edge-five-columns .edge-pli.edge-woo-image-large-width,
+  .edge-pl-holder.edge-masonry-layout.edge-five-columns .edge-pli.edge-woo-image-large-width-height {
+    width: 100%;
+  }
+  .edge-pl-holder.edge-masonry-layout.edge-six-columns .edge-pli,
+  .edge-pl-holder.edge-masonry-layout.edge-six-columns .edge-pl-sizer {
+    width: 50%;
+  }
+  .edge-pl-holder.edge-masonry-layout.edge-six-columns .edge-pli.edge-woo-image-large-width,
+  .edge-pl-holder.edge-masonry-layout.edge-six-columns .edge-pli.edge-woo-image-large-width-height {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .edge-pl-holder.edge-standard-layout.edge-two-columns .edge-pli {
+    width: 100%;
+  }
+  .edge-pl-holder.edge-standard-layout.edge-three-columns .edge-pli {
+    width: 100%;
+  }
+  .edge-pl-holder.edge-standard-layout.edge-four-columns .edge-pli {
+    width: 100%;
+  }
+  .edge-pl-holder.edge-standard-layout.edge-five-columns .edge-pli {
+    width: 100%;
+  }
+  .edge-pl-holder.edge-standard-layout.edge-six-columns .edge-pli {
+    width: 100%;
+  }
+  .edge-pl-holder.edge-masonry-layout.edge-two-columns .edge-pli,
+  .edge-pl-holder.edge-masonry-layout.edge-two-columns .edge-pl-sizer,
+  .edge-pl-holder.edge-masonry-layout.edge-two-columns .edge-pli.edge-woo-image-large-width,
+  .edge-pl-holder.edge-masonry-layout.edge-two-columns .edge-pli.edge-woo-image-large-width-height {
+    width: 100%;
+  }
+  .edge-pl-holder.edge-masonry-layout.edge-three-columns .edge-pli,
+  .edge-pl-holder.edge-masonry-layout.edge-three-columns .edge-pl-sizer,
+  .edge-pl-holder.edge-masonry-layout.edge-three-columns .edge-pli.edge-woo-image-large-width,
+  .edge-pl-holder.edge-masonry-layout.edge-three-columns .edge-pli.edge-woo-image-large-width-height {
+    width: 100%;
+  }
+  .edge-pl-holder.edge-masonry-layout.edge-four-columns .edge-pli,
+  .edge-pl-holder.edge-masonry-layout.edge-four-columns .edge-pl-sizer,
+  .edge-pl-holder.edge-masonry-layout.edge-four-columns .edge-pli.edge-woo-image-large-width,
+  .edge-pl-holder.edge-masonry-layout.edge-four-columns .edge-pli.edge-woo-image-large-width-height {
+    width: 100%;
+  }
+  .edge-pl-holder.edge-masonry-layout.edge-five-columns .edge-pli,
+  .edge-pl-holder.edge-masonry-layout.edge-five-columns .edge-pl-sizer,
+  .edge-pl-holder.edge-masonry-layout.edge-five-columns .edge-pli.edge-woo-image-large-width,
+  .edge-pl-holder.edge-masonry-layout.edge-five-columns .edge-pli.edge-woo-image-large-width-height {
+    width: 100%;
+  }
+  .edge-pl-holder.edge-masonry-layout.edge-six-columns .edge-pli,
+  .edge-pl-holder.edge-masonry-layout.edge-six-columns .edge-pl-sizer,
+  .edge-pl-holder.edge-masonry-layout.edge-six-columns .edge-pli.edge-woo-image-large-width,
+  .edge-pl-holder.edge-masonry-layout.edge-six-columns .edge-pli.edge-woo-image-large-width-height {
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+   Product List shortcode responsive styles - end
+   ========================================================================== */
+/* ==========================================================================
+   WooCommerce Responsive styles - end
+   ========================================================================== */
+
+/*# sourceMappingURL=../css/woocommerce-responsive.css.map */

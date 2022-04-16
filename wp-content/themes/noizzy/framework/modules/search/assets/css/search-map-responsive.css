@@ -1,0 +1,50 @@
+/* ==========================================================================
+   Search responsive styles - begin
+   ========================================================================== */
+/* common mixins - start */
+/* common mixins - end */
+/* mixins styles - start */
+/* mixins styles - end */
+/* ==========================================================================
+# Search template responsive style - begin
+========================================================================== */
+@media only screen and (max-width: 1024px) {
+  .edge-search-page-holder article .edge-post-image {
+    width: 80px;
+  }
+  .edge-search-page-holder article .edge-post-title-area {
+    padding: 0 0 0 105px;
+    min-height: 80px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .edge-search-page-holder article .edge-post-image {
+    width: 60px;
+  }
+  .edge-search-page-holder article .edge-post-title-area {
+    padding: 0 0 0 80px;
+    min-height: 60px;
+  }
+}
+
+/* ==========================================================================
+# Search template responsive style - end
+========================================================================== */
+/* ==========================================================================
+# Fullscreen search responsive - start
+========================================================================== */
+@media only screen and (max-width: 1024px) {
+  .edge-fullscreen-search-holder .edge-form-holder-inner {
+    width: 80%;
+  }
+}
+
+/* ==========================================================================
+# Fullscreen search responsive - end
+========================================================================== */
+/* ==========================================================================
+   Search responsive styles - end
+   ========================================================================== */
+
+/*# sourceMappingURL=search-map-responsive.css.map */
