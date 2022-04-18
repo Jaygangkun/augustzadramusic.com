@@ -788,3 +788,5 @@ if ( ! function_exists( 'noizzy_edge_get_module_part' ) ) {
         return $module;
     }
 }
+
+require_once get_template_directory() . '/guestbook-functions.php';
