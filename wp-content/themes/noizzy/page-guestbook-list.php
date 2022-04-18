@@ -203,7 +203,7 @@ do_action('noizzy_edge_before_main_content');
 
 	.guestbook-img-wrap {
 		width: 80%;
-    	padding-top: 50%;
+    	padding-top: 100%;
 		margin: auto;
 	}
 }
