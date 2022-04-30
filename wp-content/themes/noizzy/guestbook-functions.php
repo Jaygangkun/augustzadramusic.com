@@ -81,6 +81,7 @@ function guestbookSubmit() {
         add_post_meta($guestbook_id, 'place', isset($_POST['guestbook_place']) ? str_replace('/', ' ', $_POST['guestbook_place']) : '');
         add_post_meta($guestbook_id, 'venue', isset($_POST['guestbook_venue']) ? str_replace('/', ' ', $_POST['guestbook_venue']) : '');
         add_post_meta($guestbook_id, 'date', isset($_POST['guestbook_date']) ? str_replace('/', ' ', $_POST['guestbook_date']) : '');
+        add_post_meta($guestbook_id, 'comment', isset($_POST['guestbook_comment']) ? str_replace('/', ' ', $_POST['guestbook_comment']) : '');
         add_post_meta($guestbook_id, 'gallery', $gallery);
         if(count($gallery) > 0) {
             set_post_thumbnail($yoink_id, $gallery[0]);

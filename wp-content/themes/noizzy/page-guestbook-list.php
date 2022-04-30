@@ -19,9 +19,9 @@ do_action('noizzy_edge_before_main_content');
 	width: 100%;
 	height: 0px;
 	padding-top: 120%;
-	background-size: cover;
+	background-size: contain;
 	background-repeat: no-repeat;
-	background-position: top;
+	background-position: center;
 }
 
 .guestbook-list {
@@ -77,6 +77,29 @@ do_action('noizzy_edge_before_main_content');
 
 .guestbook-wrap:hover {
 	transform: scale(1.1) rotate(0deg)!important;
+}
+
+.guestbook-wrap::after {
+	content: 'Click To See More';
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #43323273;
+	font-family: Oswald,sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	display: none;
+	color: #ffffff;
+}
+
+.guestbook-wrap:hover::after {
+	display: flex;
+	display: none;
 }
 
 .guestbook-name {
@@ -168,6 +191,67 @@ do_action('noizzy_edge_before_main_content');
 	cursor: pointer;
 }
 
+.guestbook-submit-form textarea {
+	width: 100%;
+    border: 0;
+    border-bottom: 1px solid #000;
+    resize: none;
+    height: 100px;
+    appearance: none;
+    outline: none;
+}
+
+.guestbook-popup-name {
+	color: #ffffff;
+	font-weight: bold;
+    font-size: 16px;
+	text-align: center;
+}
+
+.guestbook-popup-place {
+	color: #ffffff;
+	font-size: 14px;
+    margin-bottom: 5px;
+	text-align: center;
+}
+
+.guestbook-popup-date {
+	color: #ffffff;
+	font-size: 14px;
+    margin-bottom: 5px;
+	text-align: center;
+}
+
+.guestbook-popup-comment {
+	color: #ffffff;
+	font-size: 14px;
+    margin-bottom: 5px;
+	text-align: left;
+    overflow: auto;
+}
+
+.fancybox__content,
+.fancybox__image {
+	/* min-height: 60vh !important; */
+}
+
+.fancybox__content {
+	min-height: initial !important;
+}
+
+.guestbook-link-wrap {
+	text-align: center;
+}
+
+#modal_guestbook_new .modal-title {
+	color: #ff0000;
+}
+
+.guest-book-form-note {
+	font-size: 12px;
+	color: #ff0000;
+}
+
 @media screen and (max-width: 1280px) {
 	.guestbook-wrap {
     	width: 22%;
@@ -195,7 +279,7 @@ do_action('noizzy_edge_before_main_content');
 }
 
 @media screen and (max-width: 480px) {
-	.guestbook-wrap {
+	/* .guestbook-wrap {
     	width: 100%;
 		margin-left: 0px;
 		margin-right: 0px;
@@ -205,7 +289,16 @@ do_action('noizzy_edge_before_main_content');
 		width: 80%;
     	padding-top: 100%;
 		margin: auto;
+	} */
+
+	.edge-container-inner {
+		width: 90%;
 	}
+
+	.captcha-row input {
+		width: 60px;
+	}
+
 }
 </style>
 <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/assets/lib/fancybox.css" media="all">
@@ -224,8 +317,10 @@ do_action('noizzy_edge_before_main_content');
 	
 	<div class="edge-container-inner clearfix">
         <?php do_action( 'noizzy_edge_after_container_inner_open' ); ?>
-		<div class="edge-btn edge-btn-medium edge-btn-solid" id="guestbook_new_btn">
-			<span class="">Add</span>
+		<div class="guestbook-link-wrap">
+			<div class="edge-btn edge-btn-medium edge-btn-solid" id="guestbook_new_btn">
+				<span class="">Click to Share Photos and Comments</span>
+			</div>
 		</div>
 		<div class="guestbook-list">
 			<?php
@@ -245,8 +340,11 @@ do_action('noizzy_edge_before_main_content');
 				if($gallery && count($gallery) > 0) {
 					$img = wp_get_attachment_image_url($gallery[0], 'full');
 				}
+				else {
+					$img = get_template_directory_uri()."/assets/img/zadra_guestbook_default.jpg";
+				}
 				?>
-				<div class="guestbook-wrap" data-fancybox="gallery-<?php echo $guestbook_index?>" href="<?php echo $img ?>">
+				<div class="guestbook-wrap" data-fancybox="gallery-<?php echo $guestbook_index?>" href="<?php echo $img ?>" data-name="<?php echo get_field('name', $guest_book->ID)?>" data-venue="<?php echo get_field('venue', $guest_book->ID)?>" data-place="<?php echo get_field('place', $guest_book->ID)?>" data-date="<?php echo get_field('date', $guest_book->ID)?>" data-comment="<?php echo get_field('comment', $guest_book->ID)?>">
 					<div class="guestbook-img-wrap" style="background-image:url(<?php echo $img?>)"></div>
 					<div class="guestbook-meta">
 						<div class="guestbook-name"><?php the_field('name', $guest_book->ID)?></div>
@@ -284,7 +382,53 @@ do_action('noizzy_edge_before_main_content');
 <script>
 jQuery(document).ready(function() {
 	Fancybox.bind(".guestbook-wrap", {
+		on: {
+			reveal: (fancybox, slide) => {
+				jQuery('.fancybox__image').css('opacity', '0');
+				jQuery('.fancybox__caption').css('opacity', '0');
+			},
+			done: (fancybox, slide) => {
+				// console.log(jQuery('.fancybox__content').width());
+				console.log(jQuery('.fancybox__image').width(), jQuery('.fancybox__image').height());
+				var imgw = jQuery('.fancybox__image').width();
+				var imgh = jQuery('.fancybox__image').height();
+				var vh = jQuery(window).height();
+				var vw = jQuery(window).width();
+
+				var newimgh = vh * 0.6;
+				var newimgw = newimgh * imgw / imgh;
+
+				if(newimgw > vw) {
+					newimgw = vw * 0.8;
+					newimgh = newimgw * imgh / imgw;
+				}
+
+				jQuery('.fancybox__image').height(newimgh);
+				jQuery('.fancybox__image').width(newimgw);
+
+				jQuery('.fancybox__content').height(newimgh);
+				jQuery('.fancybox__content').width(newimgw);
+
+				jQuery('.fancybox__caption').width(jQuery('.fancybox__content').width());
+				jQuery('.guestbook-popup-comment').height((vh - newimgh - jQuery('.guestbook-popup-name').height() - jQuery('.guestbook-popup-place').height() - jQuery('.guestbook-popup-date').height()) / 3);
+
+				jQuery('.fancybox__image').css('opacity', '1');
+				jQuery('.fancybox__caption').css('opacity', '1');
+			},
+		},
 		// Your options go here
+		caption : function(fancybox, carousel, slide) {
+			
+			var html = '';
+			html = '<div class="guestbook-popup-content-wrap">';
+			html += '<h3 class="guestbook-popup-name">' + slide.name + '</h3>';
+			html += '<p class="guestbook-popup-place">' + slide.venue + ' ' + slide.place + '</p>';
+			html += '<p class="guestbook-popup-date">' + slide.date + '</p>';
+			html += '<p class="guestbook-popup-comment">' + slide.comment.replaceAll('\n', '<br>') + '</p>';
+			html += '</div>';
+
+			return html;
+		}
 	});
 
 	jQuery(document).on('click', '#guestbook_new_btn', function() {
@@ -354,7 +498,7 @@ jQuery(document).ready(function() {
 	<div class="modal-dialog">
 		<div class="modal-content">
 			<div class="modal-header">
-				<h5 class="modal-title"></h5>
+				<h5 class="modal-title">Add Pics, Comments or Both Here</h5>
 				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 			</div>
 			<div class="modal-body">
@@ -375,6 +519,11 @@ jQuery(document).ready(function() {
 						<div class="guest-book-form-wrap">
 							<label>Month/Year</label>
 							<input type="text" name="guestbook_date" id="guestbook_date">
+						</div>
+						<div class="guest-book-form-wrap">
+							<label>Comment</label>
+							<textarea name="guestbook_comment" id="guestbook_comment"></textarea>
+							<span class="guest-book-form-note">144 Characters Max</span>
 						</div>
 						<div class="guest-book-form-wrap">
 							<div id="guestbook_images"></div>
